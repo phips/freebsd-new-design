@@ -1,0 +1,12 @@
+---
+title: Part II. Device Drivers
+prev: books/arch-handbook/smp
+next: books/arch-handbook/driverbasics
+showBookMenu: true
+weight: 10
+params:
+  path: "/books/arch-handbook/partii/"
+---
+
+[[devicedrivers]]
+= Device Drivers

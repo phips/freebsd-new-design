@@ -1,0 +1,8 @@
+---
+layout: total-list
+title: Artikelen
+---
+
+= Artikelen
+
+{{< list-articles-directories >}}

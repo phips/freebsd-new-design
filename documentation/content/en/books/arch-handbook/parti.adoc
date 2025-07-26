@@ -1,0 +1,13 @@
+---
+title: Part I. Kernel
+prev: books/arch-handbook
+next: books/arch-handbook/boot
+showBookMenu: true
+weight: 1
+params:
+  path: "/books/arch-handbook/parti/"
+BundleType: branch
+---
+
+[[kernel]]
+= Kernel

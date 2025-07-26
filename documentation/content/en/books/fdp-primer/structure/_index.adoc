@@ -1,0 +1,366 @@
+---
+title: Chapter 4. Documentation Directory Structure
+prev: books/fdp-primer/working-copy
+next: books/fdp-primer/doc-build
+description: Documentation Directory Structure explanation used in the FreeBSD Documentation Project
+tags: ["directory structure", "organization"]
+showBookMenu: true
+weight: 5
+params:
+  path: "/books/fdp-primer/structure/"
+---
+
+[[structure]]
+= Documentation Directory Structure
+:doctype: book
+:toc: macro
+:toclevels: 1
+:icons: font
+:sectnums:
+:sectnumlevels: 6
+:sectnumoffset: 4
+:partnums:
+:source-highlighter: rouge
+:experimental:
+:images-path: books/fdp-primer/
+
+ifdef::env-beastie[]
+ifdef::backend-html5[]
+:imagesdir: ../../../../images/{images-path}
+endif::[]
+ifndef::book[]
+include::shared/authors.adoc[]
+include::shared/mirrors.adoc[]
+include::shared/releases.adoc[]
+include::shared/attributes/attributes-{{% lang %}}.adoc[]
+include::shared/{{% lang %}}/teams.adoc[]
+include::shared/{{% lang %}}/mailing-lists.adoc[]
+include::shared/{{% lang %}}/urls.adoc[]
+toc::[]
+endif::[]
+ifdef::backend-pdf,backend-epub3[]
+include::../../../../../shared/asciidoctor.adoc[]
+endif::[]
+endif::[]
+
+ifndef::env-beastie[]
+toc::[]
+include::../../../../../shared/asciidoctor.adoc[]
+endif::[]
+
+Files and directories in the *doc/* tree follow a structure meant to:
+
+. Make it easy to automate converting the document to other formats.
+. Promote consistency between the different documentation organizations, to make it easier to switch between working on different documents.
+. Make it easy to decide where in the tree new documentation should be placed.
+
+In addition, the documentation tree must accommodate documents in many different languages.
+It is important that the documentation tree structure does not enforce any particular defaults or cultural preferences.
+
+[[structure-top]]
+== The Top Level, doc/
+
+There are three sections under *doc/*, documentation and website share the same structure.
+
+[cols="20%,80%", frame="none", options="header"]
+|===
+| Directory
+| Usage
+
+| *documentation*
+| Contains all the articles and books in AsciiDoc format.
+Contains subdirectories to further categorize the information by languages.
+
+| *tools*
+| Contains a set of tools used to translate the documentation and the website using link:https://weblate.org/en/[Weblate].
+The Weblate instance can be found link:https://translate-dev.freebsd.org[here].
+
+| *shared*
+| Contains files that are not specific to the various translations of the documentation.
+Contains subdirectories to further categorize the information by languages and three files to store the authors, releases and mirrors information.
+This directory is shared between `documentation` and the `website`.
+
+| *website*
+| Contains the link:https://www.FreeBSD.org[FreeBSD website] in AsciiDoc format.
+Contains subdirectories to further categorize the information by languages.
+|===
+
+[[structure-locale]]
+== The Directories
+
+These directories contain the documentation and the website.
+The documentation is organized into subdirectories below this level, following the link:https://gohugo.io/getting-started/directory-structure/[Hugo directory structure].
+
+[cols="20%,80%", frame="none", options="header"]
+|===
+| Directory
+| Usage
+
+
+| *archetypes*
+| Contain templates to create new articles, books and webpages.
+For more information take a look link:https://gohugo.io/content-management/archetypes/[here].
+
+| *config*
+| Contain the Hugo configuration files.
+One main file and one file per language.
+For more information take a look link:https://gohugo.io/getting-started/configuration/[here].
+
+| *content*
+| Contain the books, articles and webpages.
+One directory exists for each available translation of the documentation, for example `en` and `zh-tw`.
+
+| *data*
+| Contain custom data for build the website in link:https://en.wikipedia.org/wiki/TOML[TOML] format.
+This directory is used to store the events, news, press, etc.
+For more information take a look link:https://gohugo.io/templates/data-templates/[here].
+
+| *static*
+| Contain static assets.
+Images, security advisories, the pgpkeys, etc.
+For more information take a look link:https://gohugo.io/content-management/static-files/[here].
+
+| *themes*
+| Contain the templates in the form of `.html` files that specify how the website looks.
+For more information take a look link:https://gohugo.io/templates/[here].
+
+| *tools*
+| Contain tools used to enhance the documentation build.
+For example to generate the Table of Contents of the books, etc.
+
+| *beastie.png*
+| This image does not need an introduction ;)
+
+| *LICENSE*
+| License of the documentation, shared and website. BSD 2-Clause License.
+
+| *Makefile*
+| The *Makefile* defines the build process of the documentation and the website.
+|===
+
+[[structure-document]]
+== Document-Specific Information
+
+This section contains specific notes about particular documents managed by the FDP.
+
+[[structure-document-books]]
+== The Books: books/
+
+The books are written in AsciiDoc.
+
+For each FreeBSD book, the AsciiDoc document type (aka doctype) is `book`.
+Books have ``part``s, each of which contains several ``chapter``s.
+
+When the document is converted to HTML 5 (using the built-in `html5` backend):
+
+* AsciiDoc section level 0 (`=`) at the beginning of a ``chapter`` of a `book` will be `<h1>`
+* AsciiDoc section level 1 (`==`) must be used for the first logical section of a chapter, and will be `<h2>`
+* AsciiDoc section level 2 (`===`) must be used for the first logical subsection, and will be `<h3>`
+
+– and so on. Reference: link:https://docs.asciidoctor.org/asciidoc/latest/sections/titles-and-levels/[Section Titles and Levels | Asciidoctor Docs].
+
+[[structure-document-books-physical]]
+=== Physical Organization
+
+There are a number of files and directories within the books directory, all with the same structure.
+
+[[structure-document-books-physical-index]]
+==== _index.adoc
+
+The *_index.adoc* file defines some AsciiDoc variables that affect how the AsciiDoc source is converted to other formats and list the Table of Contents, Table of Examples, Table of Figures, Table of Tables and the abstract section.
+
+[[structure-document-books-physical-book]]
+==== book.adoc
+
+The *book.adoc* file defines some AsciiDoc variables that affect how the AsciiDoc source is converted to other formats and list the Table of Contents, Table of Examples, Table of Figures, Table of Tables, the abstract section and all the chapters.
+This file is used to generate the PDF with `asciidoctor-pdf` and to generate the book in one `html` page.
+
+[[structure-document-books-physical-part]]
+==== part*.adoc
+The **part*.adoc** files store a brief introduction of one part of the book.
+
+[[structure-document-handbook-physical-chapters]]
+==== directory/_index.adoc
+
+Each chapter in the Handbook is stored in a file called *_index.adoc* in a separate directory from the other chapters.
+
+For example, this is an example of the header of one chapter:
+
+[source.programlisting,asciidoc]
+....
+---
+title: Chapter 8. Configuring the FreeBSD Kernel
+part: Part II. Common Tasks
+prev: books/handbook/multimedia
+next: books/handbook/printing
+---
+
+[[kernelconfig]]
+= Configuring the FreeBSD Kernel
+...
+....
+
+When the HTML5 version of the Handbook is produced, this will yield *kernelconfig/index.html*.
+
+A brief look will show that there are many directories with individual *_index.adoc* files, including *basics/_index.adoc*, *introduction/_index.adoc*, and *printing/_index.adoc*.
+
+[IMPORTANT]
+====
+Do not name chapters or directories after their ordering within the Handbook.
+This ordering can change as the content within the Handbook is reorganized.
+Reorganization should be possible without renaming files, unless entire chapters are being promoted or demoted within the hierarchy.
+====
+
+[[structure-document-articles]]
+== The Articles: articles/
+
+The articles are written in AsciiDoc.
+
+The articles are organized as an AsciiDoc `article`.
+The articles are divided into sections (`=`) and subsections (`==`, `===`) and so on.
+
+[[structure-document-articles-physical]]
+=== Physical Organization
+
+There is one *_index.adoc* file per article.
+
+[[structure-document-articles-physical-index]]
+==== _index.adoc
+
+The *_index.adoc* file contains all the AsciiDoc variables and the content.
+
+For example, this is an example of one article, the structure is pretty similar to one book chapter:
+
+[source.programlisting,asciidoc]
+....
+---
+title: Why you should use a BSD style license for your Open Source Project
+authors:
+  - author: Bruce Montague
+    email: brucem@alumni.cse.ucsc.edu
+trademarks: ["freebsd", "intel", "general"]
+---
+
+= Why you should use a BSD style license for your Open Source Project
+:doctype: article
+:toc: macro
+:toclevels: 1
+:icons: font
+:sectnums:
+:sectnumlevels: 6
+:source-highlighter: rouge
+:experimental:
+
+'''
+
+toc::[]
+
+[[intro]]
+== Introduction
+....
+
+== Managing Contributor Lists
+
+The FreeBSD project recognizes contributors in several different lists in the documentation and in printed materials.
+This section describes how the documentation team manages changes to these lists.
+
+=== Finding the Correct Files
+
+extref:{contributors}[Contributors] to FreeBSD are maintained in article format.
+The source file for managing the *Contributors* article file is located at:
+
+[subs=+quotes]
+----
+doc
+ /documentation
+   /content
+     /{language}
+       /articles
+         /contributors
+           [.filename]#_index.adoc# – Contains a list of include files that apply to each section.
+           [.filename]#_index.po# – Translation page
+           [.filename]#contrib-develinmemoriam.adoc# - content of “In Memoriam” section
+           [.filename]#contrib-develinmemoriam.po# – Translation page
+----
+
+Copies of this contributors directory may exist in other content language directories.
+
+Note that the file [.filename]#contrib-develinmemoriam.adoc# is also found in this directory.
+See below for additional information.
+
+The [.filename]#contributors/_index.adoc# file is designed as a collection of include files.
+The include files are listed in the Hugo specific section of the source file.
+The section is divided into several parts with "ifdef::" statements.
+There is a sub-section for website output and one for non-website (including PDF) output.
+
+The text for each section of the *Contributors* page contains an "include::" statement.
+For example, the entry for "Port Manager Alumni" is `include::{include-contrib-portmgralumni}[]`.
+This pulls in the text for port manager alumni into the rendered output.
+
+To make a change, edit the appropriate include file:
+
+[subs=+quotes]
+----
+include-contrib-committers:     [.filename]#~/doc/shared/contrib-committers.adoc#
+include-contrib-corealumni:     [.filename]#~/doc/shared/contrib-corealumni.adoc#
+include-contrib-develalumni:    [.filename]#~/doc/shared/contrib-develalumni.adoc#
+include-contrib-portmgralumni:  [.filename]#~/doc/shared/contrib-portmgralumni.adoc#
+include-contrib-additional:     [.filename]#~/doc/shared/contrib-additional.adoc#
+include-contrib-386bsd:         [.filename]#~/doc/shared/contrib-386bsd.adoc#
+
+Also, edit the [.filename]#authors.adoc# file:  [.filename]#~/doc/shared/authors.adoc#
+and any related translations.
+
+----
+
+In general, if a person is being added, there is only one edit necessary, and they can be added to the appropriate include file.
+If a person is being moved from "current" to "alumni" status, two edits are required - one to remove and one to insert for the appropriate files.
+The order of entries for all files is found in the table below.
+
+[cols="25%,25%,25%,25%", frame="none", options="header"]
+|===
+| Purpose | Section Anchor | File in ~/doc/shared/ | Order Specification
+| *FreeBSD Developers* | include-contrib-committers | [.filename]#contrib-committers.adoc# | alphabetical order by last name
+| *Core Team Alumni* | include-contrib-corealumni | [.filename]#contrib-corealumni.adoc# | rough reverse chronological order
+| *Development Team Alumni* | include-contrib-develalumni | [.filename]#contrib-develalumni.adoc# | rough reverse chronological order
+| *Ports Management Team Alumni* | include-contrib-portmgralumni | [.filename]#contrib-portmgralumni.adoc# | rough reverse chronological order
+| *Additional FreeBSD Contributors* | include-contrib-additional | [.filename]#contrib-additional.adoc# | alphabetical order by first name
+| *386BSD Patch Kit Patch Contributors* | include-contrib-386bsd | [.filename]#contrib-386bsd.adoc# | alphabetical order by first name
+| *Contributors to the central server project* | No include file used | [.filename]#contributors/_index.adoc# | unordered
+| *Direct funding* | No include file used | [.filename]#contributors/_index.adoc# | unordered
+| *Hardware contributors* | No include file used | [.filename]#contributors/_index.adoc# | unordered
+| *Special contributors* | No include file used | [.filename]#contributors/_index.adoc# | unordered
+|===
+
+=== "In Memoriam" Section
+
+If the intent is to notify the BSD community of the death of a community member, the following procedures should be used:
+
+. Search the files above for the name, email address, and nickname (such as `foobsd`).
+. Since the member is deceased (which should be double checked) remove the name from the appropriate file and add them to the "In Memoriam" file ([.filename]#contrib-develinmemoriam.adoc# as noted above) by editing the appropriate files.
+Try to find some additional information about their contributions to FreeBSD over the years and add it with their entry in the file.
+This may require asking in the development mailing lists, contacting colleagues, contacting the FreeBSD Foundation, or searching through the commit logs.
+. Where an email address is found with a name, remove the email address, but leave the name.
++
+[cols="25%,25%,25%,25%", frame="none", options="header"]
+|===
+| Purpose | Section Anchor | File in ~/doc/documentation/content/{language}/articles/contributors/ | Order Specification
+| *Development Team: In Memoriam* | [.filename]#contrib-develinmemoriam.adoc# | [.filename]#contrib-develinmemoriam.adoc# | rough reverse chronological order
+|===
++
+. In the [.filename]#~/doc/shared/authors.adoc# file, comment out (using one backslash '\') the email address to avoid creating the email link "mailto:"
+See the example for `itojun` below:
++
+[source.programlisting,asciidoc]
+....
+[shared/authors.adoc]
+
+[..]
+
+:itojun-name: Jun-ichiro Itoh
+:itojun-email: \itojun@FreeBSD.org
+:itojun: {itojun-name} <{itojun-email}>
+
+[..]
+....
+

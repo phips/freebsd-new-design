@@ -1,0 +1,12 @@
+---
+title: Part I. Basics
+prev: books/developers-handbook
+next: books/developers-handbook/introduction
+showBookMenu: true
+weight: 1
+params:
+  path: "/books/developers-handbook/parti/"
+---
+
+[[basics]]
+= Basics

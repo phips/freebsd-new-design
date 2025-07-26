@@ -1,0 +1,8 @@
+---
+layout: total-list
+title: Boeken
+---
+
+= Boeken
+
+{{< list-books-directories >}}

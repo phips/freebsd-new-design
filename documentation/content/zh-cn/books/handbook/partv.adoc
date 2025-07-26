@@ -1,0 +1,12 @@
+---
+title: 部分 V. 附录
+prev: books/handbook/advanced-networking
+next: books/handbook/mirrors
+showBookMenu: true
+weight: 38
+params:
+  path: "/books/handbook/partv/"
+---
+
+[[appendices]]
+= 附录

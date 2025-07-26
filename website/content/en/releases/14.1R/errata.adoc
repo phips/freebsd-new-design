@@ -1,0 +1,94 @@
+---
+title: "FreeBSD 14.1-RELEASE Errata"
+sidenav: download
+---
+
+:release: 14.1-RELEASE
+:releaseNext: 14.2-RELEASE
+:releaseBranch: 14-STABLE
+
+= FreeBSD {release} Errata
+
+== Abstract
+
+This document lists errata items for FreeBSD {release}, containing significant information discovered after the release or too late in the release cycle to be otherwise included in the release documentation.
+This information includes security advisories, as well as news relating to the software or documentation that could affect its operation or usability.
+An up-to-date version of this document should always be consulted before installing this version of FreeBSD.
+
+This errata document for FreeBSD {release} will be maintained until the release of FreeBSD {releaseNext}.
+
+== Table of Contents
+
+* <<intro,Introduction>>
+* <<security,Security Advisories>>
+* <<errata,Errata Notices>>
+* <<open-issues,Open Issues>>
+* <<late-news,Late-Breaking News>>
+
+[[intro]]
+== Introduction
+
+This errata document contains "late-breaking news" about FreeBSD {release}.
+Before installing this version, it is important to consult this document to learn about any post-release discoveries or problems that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the release (for example, on a CDROM distribution) will be out of date by definition, but other copies are kept updated on the Internet and should be consulted as the "current errata" for this release.
+These other copies of the errata are located at https://www.FreeBSD.org/releases/, plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD {releaseBranch} also contain up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see https://www.FreeBSD.org/security/.
+
+[[security]]
+== Security Advisories
+
+[width="100%",cols="40%,30%,30%",options="header",]
+|===
+|Advisory |Date |Topic
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:04.openssh.asc[FreeBSD-SA-24:04.openssh] |1 July 2024 |OpenSSH pre-authentication remote code execution
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:05.pf.asc[FreeBSD-SA-24:05.pf] |7 August 2024 |pf incorrectly matches different ICMPv6 states in the state table
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:06.ktrace.asc[FreeBSD-SA-24:06.ktrace] |7 August 2024 |ktrace(2) fails to detach when executing a setuid binary
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:07.nfsclient.asc[FreeBSD-SA-24:07.nfsclient] |7 August 2024 |NFS client accepts file names containing path separators
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:08.openssh.asc[FreeBSD-SA-24:08.openssh] |7 August 2024 |OpenSSH pre-authentication async signal safety issue
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:09.libnv.asc[FreeBSD-SA-24:09.libnv] |4 September 2024 |Multiple vulnerabilities in libnv
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:10.bhyve.asc[FreeBSD-SA-24:10.bhyve] |4 September 2024 |bhyve(8) privileged guest escape via TPM device passthrough
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:11.ctl.asc[FreeBSD-SA-24:11.ctl] |4 September 2024 |Multiple issues in ctl(4) CAM Target Layer
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:12.bhyve.asc[FreeBSD-SA-24:12.bhyve] |4 September 2024 |bhyve(8) privileged guest escape via USB controller
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:13.openssl.asc[FreeBSD-SA-24:13.openssl] |4 September 2024 |Possible DoS in X.509 name checks in OpenSSL
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:14.umtx.asc[FreeBSD-SA-24:14.umtx] |4 September 2024 |umtx Kernel panic or Use-After-Free
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:15.bhyve.asc[FreeBSD-SA-24:15.bhyve] |19 September 2024 |bhyve(8) out-of-bounds read access via XHCI emulation
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:16.libnv.asc[FreeBSD-SA-24:16.libnv] |19 September 2024 |Integer overflow in libnv
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:17.bhyve.asc[FreeBSD-SA-24:17.bhyve] |29 October 2024 |Multiple issues in the bhyve hypervisor
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:18.ctl.asc[FreeBSD-SA-24:18.ctl] |29 October 2024 |Unbounded allocation in ctl(4) CAM Target Layer
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-24:19.fetch.asc[FreeBSD-SA-24:19.fetch] |29 October 2024 |Certificate revocation list fetch(1) option fails
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-25:01.openssh.asc[FreeBSD-SA-25:01.openssh] |29 January 2025 |OpenSSH Keystroke Obfuscation Bypass
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-25:02.fs.asc[FreeBSD-SA-25:02.fs] |29 January 2025 |Buffer overflow in some filesystems via NFS
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-25:03.etcupdate.asc[FreeBSD-SA-25:03.etcupdate] |29 January 2025 |Unprivileged access to system files
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-25:05.openssh.asc[FreeBSD-SA-25:05.openssh] |21 February 2025 |Multiple vulnerabilities in OpenSSH
+|===
+
+[[errata]]
+== Errata Notices
+
+[width="100%",cols="40%,30%,30%",options="header",]
+|===
+|Errata |Date |Topic
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-24:10.zfs.asc[FreeBSD-EN-24:10.zfs] |19 June 2024 |Kernel memory leak in ZFS
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-24:13.libc{plus}{plus}.asc[FreeBSD-EN-24:13.libc{plus}{plus}] |19 June 2024 |Incorrect size passed to heap allocated std::string delete
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-24:14.ifconfig.asc[FreeBSD-EN-24:14.ifconfig] |7 August 2024 |Incorrect ifconfig netmask assignment
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-24:15.calendar.asc[FreeBSD-EN-24:15.calendar] |4 September 2024 |cron(8) / periodic(8) session login
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-24:16.pf.asc[FreeBSD-EN-24:16.pf] |19 September 2024 |Incorrect ICMPv6 state handling in pf
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-24:17.pam_xdg.asc[FreeBSD-EN-24:17.pam_xdg] |29 October 2024 |XDG runtime directory's file descriptor leak at login
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-25:01.rpc.asc[FreeBSD-EN-25:01.rpc] |29 January 2025 |NULL pointer dereference in the NFSv4 client
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-25:02.audit.asc[FreeBSD-EN-25:02.audit] |29 January 2025 |System call auditing disabled by DTrace
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-25:03.tzdata.asc[FreeBSD-EN-25:03.tzdata] |29 January 2025 |Timezone database information update
+|===
+
+[[open-issues]]
+== Open Issues
+
+No open issues.
+
+[[late-news]]
+== Late-Breaking News
+
+No late-breaking news.

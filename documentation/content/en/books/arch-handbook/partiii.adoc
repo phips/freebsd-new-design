@@ -1,0 +1,12 @@
+---
+title: Part III. Appendices
+prev: books/arch-handbook/pccard
+next: books/arch-handbook/bibliography
+showBookMenu: true
+weight: 19
+params:
+  path: "/books/arch-handbook/partiii/"
+---
+
+[[appendices]]
+= Appendices

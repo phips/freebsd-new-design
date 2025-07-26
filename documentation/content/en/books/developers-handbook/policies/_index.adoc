@@ -1,0 +1,166 @@
+---
+title: Chapter 5. Source Tree Guidelines and Policies
+authors:
+  - author: Poul-Henning Kamp
+  - author: Giorgos Keramidas
+prev: books/developers-handbook/l10n
+next: books/developers-handbook/testing
+description: Source Tree Guidelines and Policies
+tags: ["Style Guidelines", "MAINTAINER", "Makefiles", "Contributed Software", "Shared libraries"]
+showBookMenu: true
+weight: 6
+params:
+  path: "/books/developers-handbook/policies/"
+---
+
+[[policies]]
+= Source Tree Guidelines and Policies
+:doctype: book
+:toc: macro
+:toclevels: 1
+:icons: font
+:sectnums:
+:sectnumlevels: 6
+:sectnumoffset: 5
+:partnums:
+:source-highlighter: rouge
+:experimental:
+:images-path: books/developers-handbook/
+
+ifdef::env-beastie[]
+ifdef::backend-html5[]
+:imagesdir: ../../../../images/{images-path}
+endif::[]
+ifndef::book[]
+include::shared/authors.adoc[]
+include::shared/mirrors.adoc[]
+include::shared/releases.adoc[]
+include::shared/attributes/attributes-{{% lang %}}.adoc[]
+include::shared/{{% lang %}}/teams.adoc[]
+include::shared/{{% lang %}}/mailing-lists.adoc[]
+include::shared/{{% lang %}}/urls.adoc[]
+toc::[]
+endif::[]
+ifdef::backend-pdf,backend-epub3[]
+include::../../../../../shared/asciidoctor.adoc[]
+endif::[]
+endif::[]
+
+ifndef::env-beastie[]
+toc::[]
+include::../../../../../shared/asciidoctor.adoc[]
+endif::[]
+
+This chapter documents various guidelines and policies in force for the FreeBSD source tree.
+
+[[policies-style]]
+== Style Guidelines
+
+Consistent coding style is extremely important, particularly with large projects like FreeBSD.
+Code should follow the FreeBSD coding styles described in man:style[9] and man:style.Makefile[5].
+
+[[policies-maintainer]]
+== `MAINTAINER` on Makefiles
+
+If a particular portion of the FreeBSD [.filename]#src/# distribution is being maintained by a person or group of persons, this is communicated through an entry in [.filename]#src/MAINTAINERS#.
+Maintainers of ports within the Ports Collection express their maintainership to the world by adding a `MAINTAINER` line to the [.filename]#Makefile# of the port in question:
+
+[.programlisting]
+....
+MAINTAINER= email-addresses
+....
+
+[TIP]
+====
+For other parts of the repository, or for sections not listed as having a maintainer, or when you are unsure who the active maintainer is, try looking at the recent commit history of the relevant parts of the source tree.
+It is quite often the case that a maintainer is not explicitly named, but the people who are actively working in a part of the source tree for, say, the last couple of years are interested in reviewing changes.
+Even if this is not specifically mentioned in the documentation or the source itself, asking for a review as a form of courtesy is a very reasonable thing to do.
+====
+
+The role of the maintainer is as follows:
+
+* The maintainer owns and is responsible for that code. This means that he or she is responsible for fixing bugs and answering problem reports pertaining to that piece of the code, and in the case of contributed software, for tracking new versions, as appropriate.
+* Changes to directories which have a maintainer defined shall be sent to the maintainer for review before being committed. Only if the maintainer does not respond for an unacceptable period of time, to several emails, will it be acceptable to commit changes without review by the maintainer. However, it is suggested that you try to have the changes reviewed by someone else if at all possible.
+* It is of course not acceptable to add a person or group as maintainer unless they agree to assume this duty. On the other hand it does not have to be a committer and it can easily be a group of people.
+
+[[policies-contributed]]
+== Contributed Software
+
+Some parts of the FreeBSD distribution consist of software that is actively being maintained outside the FreeBSD project.
+For historical reasons, we call this _contributed_ software.
+Some examples are LLVM, man:zlib[3], and man:awk[1].
+
+The accepted procedure for managing contributed software involves creating a _vendor branch_, where the software can be imported cleanly (without modification) and updates can be tracked in a versioned manner.
+Then, the content of the vendor branch is applied to the source tree, possibly with local modifications.
+FreeBSD-specific build glue is maintained in the source tree, not in the vendor branch.
+
+Depending on their needs and complexity, individual software projects may deviate from this procedure, at the discretion of the maintainer.
+The exact steps required to update a particular piece of contributed software should be recorded in a file named `FREEBSD-upgrade`;
+for example, link:https://cgit.freebsd.org/src/tree/contrib/libarchive/FREEBSD-upgrade[libarchive's FREEBSD-upgrade file].
+
+Contributed software is usually placed in the [.filepath]#contrib/# subdirectory of the source tree, with some exceptions.
+Contributed software used only by the kernel lives under [.filepath]#sys/contrib/#.
+
+[NOTE]
+====
+Because it makes it harder to import future versions minor, trivial and/or cosmetic changes are _strongly discouraged_ on files that are still tracking the vendor branch.
+====
+
+[[vendor-import]]
+=== Vendor Imports
+
+The standard process for managing contributed software and vendor branches is described in detail by the extref:{committers-guide}#vendor-import-git[Committer's Guide].
+
+[[policies-encumbered]]
+== Encumbered Files
+
+It might occasionally be necessary to include an encumbered file in the FreeBSD source tree.
+For example, if a device requires a small piece of binary code to be loaded to it before the device will operate,
+and we do not have the source to that code, then the binary file is said to be encumbered.
+The following policies apply to including encumbered files in the FreeBSD source tree.
+
+. Any file which is interpreted or executed by the system CPU(s) and not in source format is encumbered.
+. Any file with a license more restrictive than BSD or GNU is encumbered.
+. A file which contains downloadable binary data for use by the hardware is not encumbered, unless (1) or (2) apply to it.
+. Any encumbered file requires specific approval from the link:https://www.FreeBSD.org/administration/#t-core[Core Team] before it is added to the repository.
+. Encumbered files go in [.filename]#src/contrib# or [.filename]#src/sys/contrib#.
+. The entire module should be kept together. There is no point in splitting it, unless there is code-sharing with non-encumbered code.
+. In the past binary files were typically uuencoded, and named [.filename]#arch/filename.o.uu#.
+  This is no longer necessary, and binary files may be added to the repository unchanged.
+. Kernel files:
+.. Should always be referenced in [.filename]#conf/files.*# (for build simplicity).
+.. Should always be in [.filename]#LINT#, but the link:https://www.FreeBSD.org/administration/#t-core[Core Team] decides per case if it should be commented out or not. The link:https://www.FreeBSD.org/administration/#t-core[Core Team] can, of course, change their minds later on.
+.. The _Release Engineer_ decides whether or not it goes into the release.
+
+. User-land files:
+.. The link:https://www.FreeBSD.org/administration/#t-core[Core team] decides if the code should be part of the installed base system.
+.. The link:https://www.FreeBSD.org/administration/#t-re[Release Engineering] decides if it goes into the release.
+
+[[policies-shlib]]
+== Shared Libraries
+
+If you are adding shared library support to a port or other piece of software that does not have one, the version numbers should follow these rules.
+Generally, the resulting numbers will have nothing to do with the release version of the software.
+
+For ports:
+
+* Prefer using the number already selected by upstream
+* If upstream provides symbol versioning, ensure that we use their script
+
+For the base system:
+
+* Start library version from 1
+* It is strongly recommended to add symbol versioning to the new library
+* If there is an incompatible change, handle it with symbol versioning, maintaining backward ABI compatibility
+* If this is impossible, or the library does not use symbol versioning, bump the library version
+* Before even considering bumping library version for symbol-versioned library, consult with Release Engineering team, providing reasons why the change is so important that it should be allowed despite breaking the ABI
+
+For instance, added functions and bugfixes not changing the interfaces are fine, while deleted functions, changed function call syntax, etc. should either provide backward-compat symbols, or will force the major version number to change.
+
+It is the duty of the committer making the change to handle library versioning.
+
+The ELF dynamic linker matches library names literally.
+There is a popular convention where library version is written in the form `libexample.so.x.y`, where x is the major version, and y is minor.
+Common practice is to set the library' soname (`DT_SONAME` ELF tag) to `libexample.so.x`, and set up symlinks `libexample.so.x->libexample.so.x.y`, `libexample.so->libexample.so.x` on library installation for the latest minor version y.
+Then, since the static linker searches for `libexample.so` when the `-lexample` command line option is specified, objects linked with libexample get a dependency on the right library.
+Almost all popular build systems use this scheme automatically.

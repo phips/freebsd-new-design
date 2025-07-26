@@ -1,0 +1,12 @@
+---
+title: Parte V. Apéndices
+prev: books/handbook/advanced-networking
+next: books/handbook/mirrors
+showBookMenu: true
+weight: 35
+params:
+  path: "/books/handbook/partv/"
+---
+
+[[appendices]]
+= Apéndices

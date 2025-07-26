@@ -1,0 +1,16 @@
+---
+next: books/handbook/config
+params:
+  path: /books/handbook/partiii/
+prev: books/handbook/linuxemu
+showBookMenu: 'true'
+title: 'Deel III. Systeembeheer'
+weight: 17
+---
+
+[[system-administration]]
+= Systeembeheer
+
+De resterende hoofdstukken van het handboek beslaan alle aspecten van het FreeBSD systeembeheer. Elk hoofdstuk begint met de leerdoelen van het hoofdstuk en geeft ook een beschrijving van de verwachte voorkennis.
+
+Deze hoofdstukken kunnen worden gelezen als naslagwerk. Ze kunnen in willekeurige volgorde worden gelezen en zijn niet vereist om te kunnen beginnen met FreeBSD.

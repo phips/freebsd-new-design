@@ -1,0 +1,88 @@
+---
+title: "FreeBSD 12.4-RELEASE Errata"
+sidenav: download
+---
+
+:release: 12.4-RELEASE
+:releaseBranch: 12-STABLE
+
+= FreeBSD {release} Errata
+
+== Abstract
+
+This document lists errata items for FreeBSD {release}, containing significant information discovered after the release or too late in the release cycle to be otherwise included in the release documentation.
+This information includes security advisories, as well as news relating to the software or documentation that could affect its operation or usability.
+An up-to-date version of this document should always be consulted before installing this version of FreeBSD.
+
+This errata document for FreeBSD {release} will be maintained until the FreeBSD {release} end of life.
+
+== Table of Contents
+
+* <<intro,Introduction>>
+* <<security,Security Advisories>>
+* <<errata,Errata Notices>>
+* <<open-issues,Open Issues>>
+* <<late-news,Late-Breaking News>>
+
+[[intro]]
+== Introduction
+
+This errata document contains "late-breaking news" about FreeBSD {release}.
+Before installing this version, it is important to consult this document to learn about any post-release discoveries or problems that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the release (for example, on a CDROM distribution) will be out of date by definition, but other copies are kept updated on the Internet and should be consulted as the "current errata" for this release.
+These other copies of the errata are located at https://www.FreeBSD.org/releases/, plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD {releaseBranch} also contain up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see https://www.FreeBSD.org/security/.
+
+[[security]]
+== Security Advisories
+
+[width="100%",cols="40%,30%,30%",options="header",]
+|===
+|Advisory |Date |Topic
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:01.geli.asc[FreeBSD-SA-23:01.geli] |8 February 2023 |GELI silently omits the keyfile if read from stdin
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:02.openssh.asc[FreeBSD-SA-23:02.openssh] |16 February 2023 |OpenSSH pre-authentication double free
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:03.openssl.asc[FreeBSD-SA-23:03.openssl] |16 February 2023 |Multiple vulnerabilities in OpenSSL
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:04.pam_krb5.asc[FreeBSD-SA-23:04.pam_krb5] |21 June 2023 |Network authentication attack via pam_krb5
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:05.openssh.asc[FreeBSD-SA-23:05.openssh] |21 June 2023 |ssh-add does not honor per-hop destination constraints
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:06.ipv6.asc[FreeBSD-SA-23:06.ipv6] |1 August 2023 |Remote denial of service in IPv6 fragment reassembly
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:08.ssh.asc[FreeBSD-SA-23:08.ssh] |1 August 2023 |Potential remote code execution via ssh-agent forwarding
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:09.pam_krb5.asc[FreeBSD-SA-23:09.pam_krb5] |1 August 2023 |Network authentication attack via pam_krb5
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:10.pf.asc[FreeBSD-SA-23:10.pf] |6 September 2023 |pf incorrectly handles multiple IPv6 fragment headers
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:11.wifi.asc[FreeBSD-SA-23:11.wifi] |6 September 2023 |Wi-Fi encryption bypass
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:12.msdosfs.asc[FreeBSD-SA-23:12.msdosfs] |3 October 2023 |msdosfs data disclosure
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:15.stdio.asc[FreeBSD-SA-23:15.stdio] |8 November 2023 |libc stdio buffer overflow
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:17.pf.asc[FreeBSD-SA-23:17.pf] |5 December 2023 |TCP spoofing vulnerability in pf(4)
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-SA-23:19.openssh.asc[FreeBSD-SA-23:19.openssh] |19 December 2023 |Prefix Truncation Attack in the SSH protocol
+|===
+
+[[errata]]
+== Errata Notices
+
+[width="100%",cols="40%,30%,30%",options="header",]
+|===
+|Errata |Date |Topic
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:01.tzdata.asc[FreeBSD-EN-23:01.tzdata] |8 February 2023 |Timezone database information update
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:04.ixgbe.asc[FreeBSD-EN-23:04.ixgbe] |8 February 2023 |ixgbe incorrectly reports input errors for 82599ES
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:05.tzdata.asc[FreeBSD-EN-23:05.tzdata] |21 June 2023 |Timezone database information update
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:07.mpr.asc[FreeBSD-EN-23:07.mpr] |21 June 2023 |mpr(4) may fail to initialize devices
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:09.freebsd-update.asc[FreeBSD-EN-23:09.freebsd-update] |3 October 2023 (revised) |freebsd-update to 14.0 fails
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:12.freebsd-update.asc[FreeBSD-EN-23:12.freebsd-update] |3 October 2023 |freebsd-update to 14.0 fails
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:13.freebsd-update.asc[FreeBSD-EN-23:13.freebsd-update] |8 November 2023 |freebsd-update does not handle deep boot environments
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:14.regcomp.asc[FreeBSD-EN-23:14.regcomp] |8 November 2023 |Incorrect regular expression escape handling
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-23:16.openzfs.asc[FreeBSD-EN-23:16.openzfs] |1 December 2023 |OpenZFS data corruption
+|===
+
+[[open-issues]]
+== Open Issues
+
+If upgrading from an earlier version of FreeBSD, sshd (from OpenSSH 9.1p1) will not accept new connections until it is restarted.
+After installing the new userland, either reboot (as specified in the source update procedure), or execute `service sshd restart`.
+
+[[late-news]]
+== Late-Breaking News
+
+No late-breaking news

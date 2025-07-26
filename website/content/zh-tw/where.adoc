@@ -1,0 +1,287 @@
+---
+title: 下載 FreeBSD
+sidenav: download
+---
+
+:url-rel: https://download.FreeBSD.org/releases
+:url-snapshot: https://download.freebsd.org/snapshots
+
+include::shared/releases.adoc[]
+include::shared/zh-tw/urls.adoc[]
+
+= 取得 FreeBSD
+
+關於過去、現在和未來發行版的資訊，請參閱 link:../releases/[Release Information]。
+
+[[choose-version]]
+[[choose-arch]]
+== 選擇一個架構
+
+大多數 FreeBSD 使用者所擁有的硬體設備是 **amd64** 或 **aarch64**。我們對這些架構有很好的支援。
+
+大多數現代個人電腦，包含 Intel(R) 的處理器的電腦，都使用 **amd64**架構。
+
+對於嵌入式和單板電腦(SBC) 像是 Raspberry Pi 3 與4 、 ESPRESSObin，以及許多 ALLwinner 和 Rockchip 開發版，請使用 **aarch64** 。
+
+所有其他的使用者應參考支援 FreeBSD 平台的 link:../platforms/#_supported_platforms[支援平台列表]
+
+[[choose-image]]
+== 選擇一個映像檔
+
+FreeBSD 安裝程式有許多不同的格式可供下載，包含 CD (disc1)、DVD (dvd1) 及網路安裝 (bootonly) 大小的 ISO 光碟映像檔，以及一般或迷你大小的隨身碟映像檔。
+
+對於虛擬機器： 虛擬機映像檔有預安裝的 FreeBSD 。
+
+對於嵌入式平台： 我們有 SD 卡映像檔。
+
+[[download]]
+== Production 品質
+
+FreeBSD `RELEASE` 版本為 _release engineering_ 的最終成果。
+
+[[download-rel141]]
+=== FreeBSD {rel141-current}-RELEASE
+
+[.tblbasic]
+[.tblDownload]
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|安裝程式映像檔 |虛擬機映像檔 |SD 卡映像檔 |文件
+a|
+* link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel141-current}/[amd64]
+* link:{url-rel}/i386/i386/ISO-IMAGES/{rel141-current}/[i386]
+* link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel141-current}/[powerpc]
+* link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel141-current}/[powerpc64]
+* link:{url-rel}/powerpc/powerpc64le/ISO-IMAGES/{rel141-current}/[powerpc64le]
+* link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel141-current}/[powerpcspe]
+* link:{url-rel}/arm/armv7/ISO-IMAGES/{rel141-current}/[armv7]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[aarch64]
+* link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel141-current}/[riscv64]
+
+a|
+* link:{url-rel}/VM-IMAGES/README.txt[README]
+* link:{url-rel}/VM-IMAGES/{rel141-current}-RELEASE/amd64/Latest/[amd64]
+* link:{url-rel}/VM-IMAGES/{rel141-current}-RELEASE/i386/Latest/[i386]
+* link:{url-rel}/VM-IMAGES/{rel141-current}-RELEASE/aarch64/Latest/[aarch64]
+* link:{url-rel}/VM-IMAGES/{rel141-current}-RELEASE/riscv64/Latest/[riscv64]
+* link:{url-rel}/CI-IMAGES/{rel141-current}-RELEASE/amd64/Latest/[amd64] (BASIC-CI)
+
+a|
+* aarch64
+* {blank}
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[PINE64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[PINE64-LTS]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[ROCK64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[ROCKPRO64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[RPI] (3/4)
+* armv7
+* {blank}
+** link:{url-rel}/arm/armv7/ISO-IMAGES/{rel141-current}/[GENERICSD]
+* riscv64
+* {blank}
+** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel141-current}/[GENERICSD]
+
+a|
+* {blank}
+* link:../releases/#current[發行於]: {rel141-current-date}
+* link:{u-rel141-notes}[發行說明]
+* link:{u-rel141-readme}[Readme]
+* link:{u-rel141-hardware}[硬體相容性表]
+* link:{u-rel141-installation}[安裝說明]
+* link:{u-rel141-errata}[勘誤]
+* link:{u-rel141-signatures}[校驗植]
+
+|===
+
+[[download-rel140]]
+=== FreeBSD {rel140-current}-RELEASE
+
+[.tblbasic]
+[.tblDownload]
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|安裝程式映像檔 |虛擬機映像檔 |SD 卡映像檔 |文件
+a|
+* link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel140-current}/[amd64]
+* link:{url-rel}/i386/i386/ISO-IMAGES/{rel140-current}/[i386]
+* link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel140-current}/[powerpc]
+* link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel140-current}/[powerpc64]
+* link:{url-rel}/powerpc/powerpc64le/ISO-IMAGES/{rel140-current}/[powerpc64le]
+* link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel140-current}/[powerpcspe]
+* link:{url-rel}/arm/armv7/ISO-IMAGES/{rel140-current}/[armv7]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel140-current}/[aarch64]
+* link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel140-current}/[riscv64]
+
+a|
+* link:{url-rel}/VM-IMAGES/README.txt[README]
+* link:{url-rel}/VM-IMAGES/{rel140-current}-RELEASE/amd64/Latest/[amd64]
+* link:{url-rel}/VM-IMAGES/{rel140-current}-RELEASE/i386/Latest/[i386]
+* link:{url-rel}/VM-IMAGES/{rel140-current}-RELEASE/aarch64/Latest/[aarch64]
+* link:{url-rel}/VM-IMAGES/{rel140-current}-RELEASE/riscv64/Latest/[riscv64]
+* link:{url-rel}/CI-IMAGES/{rel140-current}-RELEASE/amd64/Latest/[amd64] (BASIC-CI)
+
+a|
+* aarch64
+* {blank}
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel140-current}/[PINE64-LTS]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel140-current}/[ROCK64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel140-current}/[ROCKPRO64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel140-current}/[RPI] (3/4)
+* armv7
+* {blank}
+** link:{url-rel}/arm/armv7/ISO-IMAGES/{rel140-current}/[GENERICSD]
+* riscv64
+* {blank}
+** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel140-current}/[GENERICSD]
+
+a|
+* {blank}
+* link:../releases/#current[發行於]: {rel140-current-date}
+* link:{u-rel140-notes}[發行說明]
+* link:{u-rel140-readme}[Readme]
+* link:{u-rel140-hardware}[硬體相容性表]
+* link:{u-rel140-installation}[安裝說明]
+* link:{u-rel140-errata}[勘誤]
+* link:{u-rel140-signatures}[校驗植]
+
+|===
+
+[[download-rel133]]
+=== FreeBSD {rel133-current}-RELEASE
+[.tblbasic]
+[.tblDownload]
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|安裝程式映像檔 |虛擬機映像檔 |SD 卡映像檔 |文件
+a|
+* link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel133-current}/[amd64]
+* link:{url-rel}/i386/i386/ISO-IMAGES/{rel133-current}/[i386]
+* link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel133-current}/[powerpc]
+* link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel133-current}/[powerpc64]
+* link:{url-rel}/powerpc/powerpc64le/ISO-IMAGES/{rel133-current}/[powerpc64le]
+* link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel133-current}/[powerpcspe]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[aarch64]
+* link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel133-current}/[riscv64]
+
+a|
+* link:{url-rel}/VM-IMAGES/README.txt[README]
+* link:{url-rel}/VM-IMAGES/{rel133-current}-RELEASE/amd64/Latest/[amd64]
+* link:{url-rel}/VM-IMAGES/{rel133-current}-RELEASE/i386/Latest/[i386]
+* link:{url-rel}/VM-IMAGES/{rel133-current}-RELEASE/aarch64/Latest/[aarch64]
+* link:{url-rel}/VM-IMAGES/{rel133-current}-RELEASE/riscv64/Latest/[riscv64]
+* link:{url-rel}/CI-IMAGES/{rel133-current}-RELEASE/amd64/Latest/[amd64] (BASIC-CI)
+
+a|
+* aarch64
+* {blank}
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[PINE64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[PINE64-LTS]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[PINEBOOK]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[ROCK64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[ROCKPRO64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[RPI] (3/4)
+* armv6/armv7
+* {blank}
+** link:{url-rel}/arm/armv7/ISO-IMAGES/{rel133-current}/[GENERICSD]
+** link:{url-rel}/arm/armv6/ISO-IMAGES/{rel133-current}/[RPI-B]
+* riscv64
+* {blank}
+** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel133-current}/[GENERICSD]
+
+a|
+* link:../releases/#current[發行於]: {rel133-current-date}
+* link:{u-rel133-notes}[發行說明]
+* link:{u-rel133-readme}[Readme]
+* link:{u-rel133-hardware}[硬體相容性表]
+* link:{u-rel133-installation}[安裝說明]
+* link:{u-rel133-errata}[勘誤]
+* link:{u-rel133-signatures}[校驗植]
+
+|===
+
+[[helptest]]
+== Development and Testing
+
+以下為FreeBSD的Pre-`RELEASE` 版本, 不適用在正式環境中:
+
+* `CURRENT` – 主分支, 為開發的核心。
+* `STABLE` – 從 `CURRENT` 分支出來, 為 release engineering 進行長期準備。
+* release engineering – `ALPHA`, `BETA`, release candidates (`RC`) – 從 `STABLE` 分支出來。
+
+大寫字母具有特殊含義。例如：
+
+* 第一個 _beta release_ 不是 (production) `RELEASE`。
+
+這個字 `CURRENT` 有時會造成混淆
+
+* 如果你在找FreeBSD的 _current version_ , 你可能想要的是 `RELEASE` 版本 (見上文) – **而不是** `CURRENT` – `CURRENT` 在開發過程中有特殊意義。
+
+[[download-snapshots]]
+== 開發快照
+
+請參考 link:../snapshots/[FreeBSD 的快照版本] 頁面。 
+
+== FreeBSD {rel-head}-CURRENT
+
+安裝程式與SD卡映像檔：link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel-head}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel-head}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel-head}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel-head}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel-head}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel-head}/[powerpcspe], link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel-head}/[armv6], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel-head}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel-head}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel-head}/[riscv64].
+
+虛擬機映像檔：link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/amd64/Latest/[amd64], link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/i386/Latest/[i386], link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/aarch64/Latest/[aarch64], and link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/riscv64/Latest/[riscv64].
+
+=== FreeBSD {rel141-current}-STABLE
+
+安裝程式與SD卡映像檔：link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel141-current}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel141-current}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel141-current}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel141-current}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel141-current}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel141-current}/[powerpcspe], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel141-current}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel141-current}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel141-current}/[riscv64].
+
+虛擬機映像檔：link:{url-snapshot}/VM-IMAGES/{rel141-current}-STABLE/amd64/Latest/[amd64], link:{url-snapshot}/VM-IMAGES/{rel141-current}-STABLE/i386/Latest/[i386], link:{url-snapshot}/VM-IMAGES/{rel141-current}-STABLE/aarch64/Latest/[aarch64], and link:{url-snapshot}/VM-IMAGES/{rel141-current}-STABLE/riscv64/Latest/[riscv64].
+
+=== FreeBSD {rel133-current}-STABLE
+
+安裝程式與SD卡映像檔：link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel133-current}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel133-current}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel132-current}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel133-current}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel133-current}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel133-current}/[powerpcspe], link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel133-current}/[armv6], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel133-current}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel133-current}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel133-current}/[riscv64].
+
+虛擬機映像檔：link:{url-snapshot}/VM-IMAGES/{rel133-current}-STABLE/amd64/Latest/[amd64], link:{url-snapshot}/VM-IMAGES/{rel133-current}-STABLE/i386/Latest/[i386], link:{url-snapshot}/VM-IMAGES/{rel133-current}-STABLE/aarch64/Latest/[aarch64], and link:{url-snapshot}/VM-IMAGES/{rel133-current}-STABLE/riscv64/Latest/[riscv64].
+
+[[install]]
+=== 安裝 FreeBSD
+
+選項包括:
+
+* 映像檔
+* 直接下載（匿名 FTP 和 HTTPS）。
+
+在下載完整的 FreeBSD 之前，請先閱讀 link:{handbook}bsdinstall/[FreeBSD安裝說明]。
+
+如果你欲通過 FTP 或 HTTPS 下載 FreeBSD，請查閱 FreeBSD 手冊中的 link:{handbook}mirrors/#mirrors[suitable mirrors]。
+
+[[distribution]]
+== 購買 FreeBSD
+
+你可以從 https://www.freebsdmall.com/[FreeBSD Mall] 和其他 link:{handbook}mirrors/#mirrors-disc[DVD 出版商] 獲取 FreeBSD 的 DVD。
+
+[[apps]]
+=== 應用和實用軟體
+ 
+==== Ports 套件庫
+
+FreeBSD Ports 套件庫是各種已經移植到 FreeBSD 的軟體和應用軟體集合。
+
+* link:../ports/[關於 FreeBSD Ports]
+* http://www.freshports.org/[FreshPorts - 一個更進階的 Ports 套件庫網頁界面]
+* link:{handbook}ports/[安裝應用程式：套件與 Ports]在 FreeBSD 手冊中
+* https://cgit.freebsd.org/ports/tree/[FreeBSD ports Git repository] | https://download.freebsd.org/ports/[web]。
+
+想了解 _您_ 如何貢獻 _您_ 最喜愛的軟體到 Ports套件庫中, 請參閱 _link:{porters-handbook}[The Porter's Handbook]_ and _link:{contributing}[為 FreeBSD 貢獻]_ 。
+
+[[derived]]
+=== FreeBSD衍生的作業系統
+
+FreeBSD 被廣泛用作其他商業及開源作業系統的基石。以下的項目特別令 FreeBSD 使用者感興趣。
+
+* https://www.truenas.com/[TrueNAS] 是一款網路附加儲存（NAS）軟體，可保護數據免受現代威脅如勒索軟體和惡意軟體的侵害。TrueNAS 使得用戶和客戶端設備能夠通過幾乎任何共享協議訪問共享數據。
+* https://www.ghostbsd.org[GhostBSD] 源自 FreeBSD，使用 GTK 環境提供美觀的界面和舒適的體驗，提供自然且原生的 UNIX(R) 工作環境。
+* https://www.midnightbsd.org[MidnightBSD] 從 FreeBSD 6.1 beta 分支出來，並繼續使用更新的 FreeBSD 代碼庫部分。MidnightBSD 針對桌面用戶開發，包含你日常任務所需的所有應用：郵件、網頁瀏覽、文字處理、遊戲等等。
+* https://www.nomadbsd.org[NomadBSD] 是一個基於 FreeBSD 的持久性 USB 隨身碟系統。配合自動硬體檢測和設置，配置為開箱即用的桌面系統，也可用於數據恢復、教育用途或測試 FreeBSD 硬體相容性。
+* http://www.pfsense.org[pfSense] 是一個 基於 FreeBSD 訂製發行版，專門用作防火牆與路由器。
+
+[[past]]
+== 過去的發行版
+
+請至 http://ftp-archive.FreeBSD.org/pub/FreeBSD-Archive/old-releases/[FTP 存檔] 下載。

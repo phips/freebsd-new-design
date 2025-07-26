@@ -1,0 +1,80 @@
+---
+title: "FreeBSD 14.3-RELEASE Errata"
+sidenav: download
+---
+
+:release: 14.3-RELEASE
+:releaseNext: 14.4-RELEASE
+:releaseBranch: 14-STABLE
+
+= FreeBSD {release} Errata
+
+== Abstract
+
+This document lists errata items for FreeBSD {release}, containing significant information discovered after the release or too late in the release cycle to be otherwise included in the release documentation.
+This information includes security advisories, as well as news relating to the software or documentation that could affect its operation or usability.
+An up-to-date version of this document should always be consulted before installing this version of FreeBSD.
+
+This errata document for FreeBSD {release} will be maintained until the release of FreeBSD {releaseNext}.
+
+== Table of Contents
+
+* <<intro,Introduction>>
+* <<security,Security Advisories>>
+* <<errata,Errata Notices>>
+* <<open-issues,Open Issues>>
+* <<late-news,Late-Breaking News>>
+
+[[intro]]
+== Introduction
+
+This errata document contains "late-breaking news" about FreeBSD {release}.
+Before installing this version, it is important to consult this document to learn about any post-release discoveries or problems that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the release (for example, on a CDROM distribution) will be out of date by definition, but other copies are kept updated on the Internet and should be consulted as the "current errata" for this release.
+These other copies of the errata are located at https://www.FreeBSD.org/releases/, plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD {releaseBranch} also contain up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see https://www.FreeBSD.org/security/.
+
+[[security]]
+== Security Advisories
+
+[width="100%",cols="40%,30%,30%",options="header",]
+|===
+|Advisory |Date |Topic
+
+|No advisories.||
+
+|===
+
+[[errata]]
+== Errata Notices
+
+[width="100%",cols="40%,30%,30%",options="header",]
+|===
+|Errata |Date |Topic
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-25:10.zfs.asc[FreeBSD-EN-25:10.zfs] |2 July 2025 |Corruption in ZFS replication streams from encrypted datasets
+|===
+
+[[open-issues]]
+== Open Issues
+
+* When "restarting" the FreeBSD installation process, some values are remembered and not re-prompted.
+
+* The installer produces a non-booting system in the (non-default) combination of MBR and ZFS.
+
+* SCTP can use deprecated addresses even when `net.inet6.ip6.use_deprecated` is set to zero (non-default).
+
+* Unloading the `snd_dummy` kernel module can cause a kernel panic.
+
+* Some wifi drivers fail to connect to networks using the (long-deprecated) TKIP protocol.
+
+[[late-news]]
+== Late-Breaking News
+
+[[late-287482]]
+The ZFS raw virtual machine image for AMD64 is prone to kernel panics (link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=287482[bug 287482]).
+`FreeBSD-14.3-RELEASE-amd64-zfs.raw.xz` has been removed from download.freebsd.org but remains available for reference on archive.freebsd.org.
+Torrents of the file should be avoided.

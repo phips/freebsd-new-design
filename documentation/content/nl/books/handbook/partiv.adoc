@@ -1,0 +1,23 @@
+---
+next: books/handbook/serialcomms
+params:
+  path: /books/handbook/partiv/
+prev: books/handbook/usb-device-mode
+showBookMenu: 'true'
+title: 'Deel IV. Netwerkcommunicatie'
+weight: 33
+---
+
+[[network-communication]]
+= Netwerkcommunicatie
+
+FreeBSD is een van de meest gebruikte besturingssystemen voor hoogwaardige, snelle netwerkservers. De hoofdstukken in dit deel behandelen:
+
+* Seriële communicatie
+* PPP en PPP over Ethernet
+* E-mail
+* Netwerkdiensten
+* Firewalls
+* Andere geavanceerde netwerkonderwerpen
+
+Deze hoofdstukken kunnen worden gelezen als naslagwerk. Ze kunnen in willekeurige volgorde worden gelezen en niet alle hoofdstukken hoeven gelezen te worden om FreeBSD te kunnen gaan gebruiken in een netwerkomgeving.

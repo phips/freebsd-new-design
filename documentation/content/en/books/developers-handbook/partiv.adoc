@@ -1,0 +1,12 @@
+---
+title: Part IV. Architectures
+prev: books/developers-handbook/kerneldebug
+next: books/developers-handbook/x86
+showBookMenu: true
+weight: 14
+params:
+  path: "/books/developers-handbook/partiv/"
+---
+
+[[architectures]]
+= Architectures

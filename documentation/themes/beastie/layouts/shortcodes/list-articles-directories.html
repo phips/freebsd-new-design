@@ -1,0 +1,17 @@
+{{ partial "global-search.html" . }}
+
+<h1>{{ i18n "articles" }}</h1>
+
+<p>{{ i18n "list-desc-articles" }}</p>
+
+<hr class="line"/>
+
+<ul class="documents-list">
+{{ $articles := .Site.GetPage "section" "articles" }}
+{{ range $articles.Sections }}
+    <li>
+      <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
+      <p>{{ .Params.description }}</p>
+    </li>
+{{ end }}
+</ul>
