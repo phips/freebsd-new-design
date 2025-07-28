@@ -1,23 +1,141 @@
 <header>
-  <div>
-    <a href={{ absLangURL ($.Site.BaseURL ) }} title={{ i18n "freebsd" }}>
-      <img src="{{ absLangURL ($.Site.BaseURL ) }}images/banner-red.png" alt={{ i18n "freebsdPowerServe" }} width="457" height="75" />
-    </a>
-  </div>
-  <div id="headerlogoright">
-    <div class="donate">
-      <a href="https://www.FreeBSDFoundation.org/donate/" title={{ i18n "donate" }}>{{ i18n "donate" }}</a>
+  <div class="header-container">
+    <div class="logo-menu-bars-container">
+      <a href="/" title={{ i18n "freebsd" }} class="logo">
+      <!--
+      {{ if $.Site.Params.isOnline }}
+        <img src="{{ absLangURL ($.Site.BaseURL) }}images/FreeBSD-monochromatic.svg" width="160" height="50" alt="FreeBSD logo" />
+      {{ else }}
+        <img src="/images/FreeBSD-monochromatic.svg" width="160" height="50" alt="FreeBSD logo" />
+      {{ end }}
+      -->
+      </a>
+      <label class="menu-bars" for="menu-bars">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
     </div>
-    <div id="search">
-      <form method="get" id="search-form" action="https://duckduckgo.com/" onsubmit="document.getElementById('words').value+=' site:FreeBSD.org'">
-        <input type="hidden" name="ka" value="v">
-        <input type="hidden" name="kt" value="v">
-        <input type="hidden" name="kh" value="1">
-        <input type="hidden" name="kj" value="r2">
-        <input id="words" name="q" type="text" size="20" maxlength="255" onfocus="if( this.value==this.defaultValue ) this.value='';" value={{ i18n "search" }} placeholder={{ i18n "search" }}>
-        <input id="submit" name="submit" type="submit" value={{ i18n "search" }}>
+    <input id="menu-bars" type="checkbox" />
+    <nav>
+      <ul class="menu">
+        <!--
+        <li class="menu-item">
+          <input id="about" type="checkbox" />
+          <a href="#" aria-label="Navigate to About section">
+            <label class="menu-item-description" for="about">
+              {{ i18n "h-about" }}
+              <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </label>
+          </a>
+          <ul class="sub-menu">
+            <li class="title"><a href="/about/" target="_blank">{{ i18n "h-about" }}</a></li>
+            <li><a href="/about/" target="_blank">{{ i18n "h-freebsd" }}</a></li>
+            <li><a href="https://freebsdfoundation.org/about-us/about-the-foundation/" target="_blank">{{ i18n "h-freebsd-foundation" }}</a></li>
+            <li><a href="https://www.freebsd.org/internal/code-of-conduct/" target="_blank">{{ i18n "h-code-of-conduct" }}</a></li>
+          </ul>
+        </li>
+        -->
+        <li class="menu-item">
+          <input id="header-download" type="checkbox" />
+          <a href="#" aria-label="Navigate to get FreeBSD section">
+            <label class="menu-item-description" for="header-download">
+            Download
+            <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </label>
+          </a>
+          <ul class="sub-menu">
+            <!--
+            <li class="title"><a href="/where/" target="_blank">{{ i18n "h-get-freebsd" }}</a></li>
+            <li><a href="https://www.freebsd.org/releases/" target="_blank">{{ i18n "h-release-information" }}</a></li>
+            <li><a href="https://www.freebsd.org/releng/" target="_blank">{{ i18n "h-release-engineering" }}</a></li>
+            <li><a href="https://www.freebsd.org/security/" target="_blank">{{ i18n "h-security-advisories" }}</a></li>
+            -->
+            <li><a href="/where/">Get FreeBSD</a></li>
+            <li><a href="/where/#download">Latest Release</a></li>
+            <li><a href="/releases/">Browse All Releases</a></li>
+            <li><a href="/snapshots/">Pre-Release Snapshots</a></li>
+            <li><a href="https://docs.freebsd.org/en/books/handbook/bsdinstall/">Installation Help</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <input id="header-documentation" type="checkbox" />
+          <a href="#" aria-label="Navigate to get Documentation section">
+            <label class="menu-item-description" for="header-documentation">
+              {{ i18n "h-documentation" }}
+              <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </label>
+          </a>
+          <ul class="sub-menu">
+            <!--
+            <li class="title"><a href="https://docs.freebsd.org/">Documentation</a></li>
+            <li><a href={{ "books/handbook" | absLangURL }}>{{ i18n "h-freebsd-handbook" }}</a></li>
+            <li><a href={{ "books/porters-handbook" | absLangURL }}>{{ i18n "h-porter-handbook" }}</a></li>
+            <li><a href="https://docs.FreeBSD.org/en/books/fdp-primer">{{ i18n "h-documentation-handbook" }}</a></li>
+            <li><a href="https://man.FreeBSD.org" target="_blank">{{ i18n "h-manual-pages" }}</a></li>
+            <li><a href="https://papers.FreeBSD.org" target="_blank">{{ i18n "h-presentation-and-papers" }}</a></li>
+            <li><a href="https://wiki.FreeBSD.org" target="_blank">{{ i18n "h-wiki" }}</a></li>
+            <li><a href={{ "books" | absLangURL }}>{{ i18n "h-books" }}</a></li>
+            <li><a href={{ "articles" | absLangURL }}>{{ i18n "h-articles" }}</a></li>
+            -->
+            <li><a href="https://docs.freebsd.org/en/books/handbook/">Handbook</a></li>
+            <li><a href="https://man.freebsd.org/">Manuals</a></li>
+            <li><a href="https://docs.freebsd.org/en/articles/">Articles</a></li>
+            <li><a href="https://docs.freebsd.org/">Docs Portal</a></li>
+            <li><a href="/about/">About FreeBSD</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <input id="header-community" type="checkbox" />
+          <a href="#" aria-label="Navigate to get Community section">
+            <label class="menu-item-description" for="header-community">
+              {{ i18n "h-community" }}
+              <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </label>
+          </a>
+          <ul class="sub-menu">
+            <!--
+            <li class="title"><a href="https://www.freebsd.org/community/">{{ i18n "h-community" }}</a></li>
+            <li><a href={{ "articles/contributing" | absLangURL }}>{{ i18n "h-get-involved" }}</a></li>
+            <li><a href="https://forums.freebsd.org/" target="_blank">{{ i18n "h-community-forum" }}</a></li>
+            <li><a href="https://lists.freebsd.org/" target="_blank">{{ i18n "h-mailing-lists" }}</a></li>
+            <li><a href="https://wiki.freebsd.org/IRC/Channels" target="_blank">{{ i18n "h-irc-channels" }}</a></li>
+            <li><a href="https://bugs.freebsd.org/bugzilla/" target="_blank">{{ i18n "h-bug-tracker" }}</a></li>
+            <li><a href="https://www.freebsd.org/support/" target="_blank">{{ i18n "h-support" }}</a></li>
+            -->
+            <li><a href="https://docs.freebsd.org/en/articles/contributing/">How to Contribute</a></li>
+            <li><span style="opacity: 0.5">Project Activity</span><br>
+              <a href="https://www.freebsd.org/community/mailinglists/">Mailing Lists</a>,
+              <a href="https://reviews.freebsd.org/home/menu/view/25/">Review</a>,
+              <a href="https://bugs.freebsd.org/bugzilla/">Bugs</a>
+            </li>
+            <li><span style="opacity: 0.5">Writing</span><br>
+              <a href="https://freebsdfoundation.org/our-work/journal/">Journal</a>,
+              <a href="https://docs.freebsd.org/en/articles/">Articles</a>
+            </li>
+            <li><span style="opacity: 0.5">Social</span><br>
+              <a href="https://forums.freebsd.org/">Forums</a>,
+              <a href="https://wiki.freebsd.org/Discord/DiscordServer">Discord</a>,
+              <a href="https://wiki.freebsd.org/IRC/Channels">IRC</a>,
+              <a href="https://wiki.freebsd.org/Matrix">Matrix</a>,
+              <a href="https://mastodon.social/tags/freebsd">Mastodon</a>
+            </li>
+      </ul>
+    </nav>
+    <div class="search-donate-container">
+      {{ $currentLanguage := $.Site.Language }}
+      <form class="search" method="get" id="search-header-form" action="https://duckduckgo.com/?site=freebsd.org" name="search-header-form">
+        <input type="hidden" name="sites" value="freebsd.org" />
+        <input type="hidden" name="kj" value="r2" />
+        <input id="words" name="q" type="text" size="20" maxlength="255" value="" />
+        <button>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
       </form>
+      <div class="donate">
+        <a href="https://freebsdfoundation.org/donate/" target="_blank">
+          <span class="heart">♥</span>
+          <span class="donate-text">{{ i18n "h-donate" }}</span>
+        </a>
+      </div>
     </div>
   </div>
 </header>
-{{ partial "site-navigation.html" . }}

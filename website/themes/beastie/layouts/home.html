@@ -1,254 +1,172 @@
 {{ define "main" }}
 {{ $currentLang := $.Site.Language.Lang }}
-<div id="content">
-  <div id="frontcontainer">
-    <div id="frontfeaturecontainer">
-      <div id="frontfeatureleft">
-        <div id="frontfeaturecontent">
-          <h1>{{ i18n "freebsdProject" }}</h1>
-          <p>
-            {{ i18n "freebsdDescription1" }}
-            <a href={{ "platforms/" | absLangURL }}>{{ i18n "freebsdDescription2" }}</a>
-            {{ i18n "freebsdDescription3" }}
-            <a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/articles/contributors/#staff-committers" }}>{{ i18n "freebsdDescription4" }}</a>
-            {{ i18n "freebsdDescription5" }}
-            <a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/handbook/introduction/#introduction-nutshell-users" }}>{{ i18n "freebsdDescription6" }}</a>
-            {{ i18n "freebsdDescription7" }}
-          </p>
-          <div id="txtfrontfeaturelink"> »<a href={{ "about/" | absLangURL }} title={{ i18n "learnMore" }}>{{ i18n "learnMore" }}</a></div>
-          <div id="txtfrontjournalblock">
-            <br />»
-            <span id="txtfrontjournallink">
-            {{ i18n "getThe" }} <a href="https://freebsdfoundation.org/our-work/journal/" title={{ i18n "journal" }}>{{ i18n "journal" }}</a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div id="frontfeaturemiddle">
-        <div class="frontgetroundbox newtofreebsd">
-            <div class="frontgettop">
-                <div>
-                <b style="display: none">.</b>
-                </div>
-            </div>
-            <div class="frontgetcontent">
-                <a href={{ "projects/newbies/" | absLangURL }}>{{ i18n "newFreeBSD" }}</a>
-            </div>
-            <div class="frontgetbot">
-            <div>
-            <b style="display: none">.</b>
-            </div>
-        </div>
-        </div>
-        <div class="frontgetroundbox">
-          <div class="frontgettop">
-            <div>
-              <b style="display: none">.</b>
-            </div>
-          </div>
-          <div class="frontgetcontent">
-            <a href={{ "where/" | absLangURL }}>{{ i18n "downloadFreeBSD" }}</a>
-          </div>
-          <div class="frontgetbot">
-            <div>
-              <b style="display: none">.</b>
-            </div>
-          </div>
-        </div>
-        <div id="frontreleases">
-          <div id="frontreleasescontent" class="txtshortcuts">
-            <h2>
-              <a href={{ "releases/" | absLangURL }}>{{ i18n "supportedReleases" }}</a>
-            </h2>
-            <ul id="frontreleaseslist">
-              <li>
-                {{ i18n "production" }}:
-                <a href={{ index $.Site.Data.releases "u-rel143-announce" }}>{{ index $.Site.Data.releases "rel143-current" }}</a>
-              </li>
-              <li>
-                {{ i18n "legacy" }}:
-                <a href={{ index $.Site.Data.releases "u-rel135-announce" }}>{{ index $.Site.Data.releases "rel135-current" }}</a>,
-                <a href={{ index $.Site.Data.releases "u-rel142-announce" }}>{{ index $.Site.Data.releases "rel142-current" }}</a>
-              </li>
-              {{ $betaUpcoming := index $.Site.Data.releases "beta-upcoming" }}
-              {{ if ne $betaUpcoming "IGNORE" }}
-                <li>
-                  {{ i18n "upcoming" }}:
-                  <a href={{ index $.Site.Data.releases "u-betarel-schedule" }}>{{ index $.Site.Data.releases "betarel-current" }}</a>
-                </li>
-              {{ end }}
-              {{ $beta2Upcoming := index $.Site.Data.releases "beta2-upcoming" }}
-              {{ if ne $beta2Upcoming "IGNORE" }}
-                <li>
-                  {{ i18n "upcoming" }}:
-                  <a href={{ index $.Site.Data.releases "u-betarel2-schedule" }}>{{ index $.Site.Data.releases "betarel2-current" }}</a>
-                </li>
-              {{ end }}
-              {{ $beta3Upcoming := index $.Site.Data.releases "beta3-upcoming" }}
-              {{ if ne $beta3Upcoming "IGNORE" }}
-                <li>
-                  {{ i18n "upcoming" }}:
-                  <a href={{ index $.Site.Data.releases "u-betarel3-schedule" }}>{{ index $.Site.Data.releases "betarel3-current" }}</a>
-                </li>
-              {{ end }}
-              <li>
-                <a href={{ "security/" | absLangURL }}#sup>{{ i18n "supportLifecycle" }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="frontfeatureright">
-        <div id="languagenav">
-          <ul id="languagenavlist">
-            <!--
-            {{ range $.Site.Home.AllTranslations }}
-              <li><a href="{{ .Permalink }}">{{ .Language }}</a></li>
-            {{ end }}
-            -->
-            <li><a href="{{ $.Site.BaseURL }}">en</a></li>
-            <li><a href="{{ $.Site.BaseURL }}zh-tw">zh-tw</a></li>
-          </ul>
-        </div>
-        <div id="frontshortcuts">
-          <div id="frontshortcutscontent" class="txtshortcuts">
-            <h2>{{ i18n "shortcuts" }}</h2>
-            <ul id="frontshortcutslist">
-              <li>
-                <a href={{ "community/mailinglists/" | absLangURL }} title={{ i18n "mailingLists" }}>{{ i18n "mailingLists" }}</a>
-              </li>
-              <li>
-                <a href={{ "support/bugreports/" | absLangURL }} title={{ i18n "reportingProblems" }}>{{ i18n "reportingProblems" }}</a>
-              </li>
-              <li>
-                <a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/faq/" }} title={{ i18n "FAQ" }}>{{ i18n "FAQ" }}</a>
-              </li>
-              <li>
-                <a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/handbook/" }} title={{ i18n "handbook" }}>{{ i18n "handbook" }}</a>
-              </li>
-              <li>
-                <a href={{ "ports/" | absLangURL }} title={{ i18n "ports" }}>{{ i18n "ports" }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ $language := "" }}
-    {{ $currentLang := $.Site.Language.Lang }}
-    {{ $siteBaseUrl := absLangURL ($.Site.BaseURL) }}
 
-    {{ if ne $currentLang "en" }}
-      {{ $language = $currentLang }}
-    {{ end }}
-    <div id="frontnemscontainer">
-      <div id="frontnews">
-        <div id="frontnewscontent" class="txtnewsevent">
-          <h2>{{ i18n "latestNews" }}</h2>
-          <div class="newseventswrap">
-            {{ partial "news.html" . }}
-            <div>
-              <ul class="newseventslist">
-                <li class="first-child">
-                  <a href={{ printf "%s%s/%s" $siteBaseUrl $language "news/newsflash/" }} title={{ i18n "more" }}>{{ i18n "more" }}</a>
-                </li>
-                <li class="last-child">
-                  <a href="{{ absLangURL ($.Site.BaseURL) }}news/feed.xml" title={{ i18n "rssNews" }}>
-                  <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt={{ i18n "rssNews" }} width="27" height="12" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="frontseparator">
-        <b style="display: none">.</b>
-      </div>
-      <div id="frontevents">
-        <div id="fronteventscontent" class="txtnewsevent">
-          <h2>{{ i18n "upcomingEvents" }}</h2>
-          <div class="newseventswrap">
-            {{ partial "events.html" . }}
-            <div>
-              <ul class="newseventslist">
-                <li class="first-child">
-                  <a href={{ printf "%s%s/%s" $siteBaseUrl $language "events/" }} title={{ i18n "more" }}>{{ i18n "more" }}</a>
-                </li>
-                <li class="last-child">
-                  <a href="{{ absLangURL ($.Site.BaseURL) }}events/feed.xml" title={{ i18n "rssEvents" }}>
-                    <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt={{ i18n "rssEvents" }} width="27" height="12" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="frontseparator">
-        <b style="display: none">.</b>
-      </div>
-      <div id="frontmedia">
-        <div id="frontmediacontent" class="txtnewsevent">
-          <h2>{{ i18n "press" }}</h2>
-          <div class="newseventswrap">
-            {{ partial "press.html" . }}
-            <div>
-              <ul class="newseventslist">
-                <li class="first-child">
-                  <a href={{ printf "%s%s/%s" $siteBaseUrl $language "press/" }} title={{ i18n "more" }}>{{ i18n "more" }}</a>
-                </li>
-                <li class="last-child">
-                  <a href="{{ absLangURL ($.Site.BaseURL) }}press/feed.xml" title={{ i18n "rssMedia" }}>
-                    <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt={{ i18n "rssMedia" }} width="27" height="12" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="frontseparator">
-        <b style="display: none">.</b>
-      </div>
-      <div id="frontsecurity">
-        <div id="frontsecuritycontent" class="txtnewsevent">
-          <h2>{{ i18n "securityAdvisories" }}</h2>
-          <div class="newseventswrap">
-            {{ partial "advisories.html" . }}
-            <div>
-              <ul class="newseventslist">
-                <li class="first-child">
-                  <a href={{ printf "%s%s/%s" $siteBaseUrl $language "security/advisories/" }} title={{ i18n "more" }}>{{ i18n "more" }}</a>
-                </li>
-                <li class="last-child">
-                  <a href="{{ absLangURL ($.Site.BaseURL) }}security/feed.xml" title={{ i18n "rssSecurity" }}>
-                  <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt="News RSS Feed" width="27" height="12" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <br />
-          <h2>{{ i18n "errataNotices" }}</h2>
-          <div class="newseventswrap">
-            {{ partial "errata-notices.html" . }}
-            <div>
-              <ul class="newseventslist">
-                <li class="first-child">
-                  <a href={{ printf "%s%s/%s" $siteBaseUrl $language "security/notices/" }} title={{ i18n "more" }}>{{ i18n "more" }}</a>
-                </li>
-                <li class="last-child">
-                  <a href="{{ absLangURL ($.Site.BaseURL) }}security/feed.xml" title={{ i18n "rssSecurity" }}>
-                  <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt="News RSS Feed" width="27" height="12" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="front-page-band-off" style="background: linear-gradient(160deg, var(--background-accent-color), var(--background-color) 50vw);'">
+  <div class="front-page-band-content">
+
+
+<!-- begin alt1 -->
+<div style="margin: 40px 0 70px 0;">
+
+  <div class="logo-box freebsd-horizontal" style="margin: 60px 10px; float: none; width: auto; height: clamp(100px, 30vw, 180px);">
+    <div class="logo-box-image" style=""></div>
+  </div>
+
+  <div style="margin: 30px 0; line-height: normal; font-weight: 400; font-size: 30px; text-align: center;">
+      A Powerful, Open&nbsp;Source
+      <br>Operating&nbsp;System
+  </div>
+
+  <style>
+    .downloads a {text-decoration: none;}
+    .downloads a:hover {text-decoration: underline;}
+  </style>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto;">
+  <div class="downloads" style="flex: 0 0 20%; text-align: center; margin-top: 90px;">
+    <div style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500; margin: 0 0 5px 0; ">Download FreeBSD 14.3</div>
+    <div>
+      <a style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.3/">amd64</a>
+      <a style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.3/">aarch64</a>
+      <a style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;" href="/where/#download">other</a>
+    </div>
+    <div style="margin: 5px 0 0 0;">
+      <a href="/releases/14.3R/announce/">announcement</a>, <a href="/releases/14.3R/relnotes/">notes</a>
     </div>
   </div>
+
+  <div class="downloads" style="flex: 0 0 20%; text-align: center; margin-top: 90px;">
+    <div style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500;">Upcoming Releases</div>
+    <div style="margin: 5px 0;">
+      15.0: <a href="/releases/15.0R/schedule/">2025-12</a> –
+      14.4: <a href="/releng/">2026-03</a>
+    </div>
+    <div>
+      <a href="/where/#download-snapshots">development snapshots</a>
+    </div>
+  </div>
+
+  <div class="downloads" style="display: none; flex: 0 0 20%; text-align: center; margin-top: 90px;">
+    <div style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500;">Additional Resources</div>
+    <div>
+      <a href="/where">all downloads</a><br>
+      <a href="https://docs.freebsd.org/en/books/handbook/">the handbook</a>
+    </div>
+  </div>
+
 </div>
+</div>
+<!-- end alt1 -->
+
+  </div> <!-- end fp band content -->
+</div>   <!-- end fp band -->
+
+
+<div class="front-page-band-on">
+<div class="front-page-band-content">
+
+<div id="why" style="">
+  <h2>Why FreeBSD?</h2>
+  <p>There are many reasons to choose FreeBSD. Browse highlights below or explore <a href="/features/">features</a> for more insights.</p>
+
+<div class="why-freebsd-flex" style="margin-top: 30px">
+<div class="why-freebsd-flex-item">
+<h3>Native ZFS</h3>
+<div class="logo-box openzfs">
+<div class="logo-box-image"></div>
+</div>
+<p><a href="https://github.com/openzfs/zfs">OpenZFS</a> is a mature, sophisticated, and much-loved file system. FreeBSD is one of the only operating systems to offer it as a fully integrated feature and not as manual add-on. This means it's painless to choose ZFS from the installer, and you won't have to worry during system upgrades.</p>
+</div>
+<div class="why-freebsd-flex-item">
+<h3>Virtualization</h3>
+<div class="logo-box bhyve">
+<div class="logo-box-image"></div>
+</div>
+<p>FreeBSD comes with <a href="https://bhyve.org">bhyve</a>, a feature-rich type 2 hypervisor. bhyve supports virtio hardware, PCI passthrough, and high-performance emulated NVMe. Run <a href="https://man.freebsd.org/bhyve">bhyve(8)</a> directly, or leverage tools like <a href="https://man.freebsd.org/vm">vm-bhyve(8)</a> to simplify management of virtual machines.</p>
+</div>
+<div class="why-freebsd-flex-item">
+<h3>Jails</h3>
+<div class="logo-box jails">
+<div class="logo-box-image"></div>
+</div>
+<p>FreeBSD <a href="https://docs.freebsd.org/en/books/handbook/jails/">jails</a> are isolated environments that allow you to partition your system's workload. Want to run a web server with its own isolated file system and networking? Put it in a jail. Use the built-in <a href="https://man.freebsd.org/jail">jail(8)</a> command or leverage tools like <a href="https://bastillebsd.org">Bastille</a> to make jail management trivial.</p>
+</div>
+<div class="why-freebsd-flex-item">
+<h3>Networking</h3>
+<div class="logo-box network">
+<div class="logo-box-image"></div>
+</div>
+<p>FreeBSD has long been known for its execellent networking performance. Today companies like Netflix rely on the performance and stability of FreeBSD's network stack to handle some of the most demanding loads in the world.</p>
+</div>
+<div class="why-freebsd-flex-item">
+<h3>Documentation</h3>
+<div class="logo-box docs">
+<div class="logo-box-image"></div>
+</div>
+<p>FreeBSD prides itself in having comprehensive, well-written documentation. You'll find it on the <a href="https://docs.freebsd.org/en/">documentation page</a>, and perhaps more importantly you'll find it as part of the FreeBSD OS itself. Tools like <a href="https://man.freebsd.org/apropos">apropos(1)</a> make finding docs simple.</p>
+</div>
+<div class="why-freebsd-flex-item">
+<h3>Community</h3>
+<div class="logo-box fbf">
+<div class="logo-box-image"></div>
+</div>
+<p>The FreeBSD community is vibrant and collaborative. Engage virtually on <a href="https://web.libera.chat/?channel=#freebsd">IRC</a>, <a href="https://wiki.freebsd.org/Discord/DiscordServer">Discord</a>, or the <a href="https://lists.freebsd.org/">mailing lists</a>; or attend a FreeBSD <a href="https://www.freebsd.org/events/">event</a>. And be sure to checkout all the community engagement driven by the <a href="https://freebsdfoundation.org">FreeBSD Foundation</a>.</p>
+</div>
+</div>
+</div> <!-- end why -->
+</div> <!-- end fp band content -->
+</div>   <!-- end fp band -->
+
+
+<div class="front-page-band-off">
+<div class="front-page-band-content">
+
+<h2 style="margin-top: 40px; clear: both">Support the Project</h2>
+<!--<div class="logo-box freebsd">
+<div class="logo-box-image"></div>
+</div>-->
+<ul>
+    <li><a href="https://freebsdfoundation.org/donate/">Donate</a> - funding helps ensure the project thrives; for details read <a href="https://freebsdfoundation.org/about-us/about-the-foundation/">About the Foundation</a></li>
+    <li><a href="https://docs.freebsd.org/en/articles/contributing/">Become a Contributor</a> - submit source code, ports, docs, or bugs to make the next release the best yet</li>
+    <li><a href="https://docs.freebsd.org/en/books/faq/">Spread the Word</a> - if you love FreeBSD as much as we do, let people know</li>
+</ul>
+</div> <!-- end fp band content -->
+</div>   <!-- end fp band -->
+
+
+<div class="front-page-band-off">
+<div class="front-page-band-content">
+
+{{ $language := "" }}
+{{ $currentLang := $.Site.Language.Lang }}
+{{ $siteBaseUrl := absLangURL ($.Site.BaseURL) }}
+
+{{ if ne $currentLang "en" }}
+  {{ $language = $currentLang }}
+{{ end }}
+
+{{ .Scratch.Set "lang" $language }}
+{{ .Scratch.Set "sUrl" $siteBaseUrl }}
+<div id="news" class="feed-flex">
+  <div class="feed-flex-item">
+    {{ partial "news.html" . }}
+  </div>
+  <div class="feed-flex-item">
+    {{ partial "advisories.html" . }}
+  </div>
+  <div class="feed-flex-item">
+    {{ partial "errata-notices.html" . }}
+  </div>
+  <div class="feed-flex-item">
+    {{ partial "events.html" . }}
+  </div>
+  <div class="feed-flex-item">
+    {{ partial "press.html" . }}
+  </div>
+</div>
+
+  </div>
+  </div> <!-- end fp band content -->
+</div>   <!-- end fp band -->
+
+
 {{ end }}

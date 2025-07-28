@@ -1,3 +1,4 @@
+<h3>{{ i18n "upcomingEvents" }}</h3>
 {{ $eventsPath := (printf "data/%s/events/events.toml" $.Language.Lang (dateFormat "2006" now)) }}
 
 {{ $eventsData := "" }}
@@ -15,13 +16,11 @@
       {{ if le $eventsCounter 6 }}
         {{ range (sort .events "startDate" "asc") }}
           {{ if ge (dateFormat "20060102" .endDate) (dateFormat "20060102" now) }}
-            <p>
-              <span class="txtdate">{{ dateFormat "2006-01-02" .startDate }} - {{ dateFormat "2006-01-02" .endDate }}</span>
-              <br />
+            <h4 class="feed-item-date">{{ dateFormat "2006-01-02" .startDate }} - {{ dateFormat "2006-01-02" .endDate }}</h4>
+            <p class="feed-item">
               <a href="{{ if (fileExists $eventsPath) -}}{{ .Site.BaseURL | relLangURL }}{{ else }}{{ $.Site.BaseURL }}{{- end }}events/#{{ .id }}">
-                {{ .name }}
-                <br />
-                {{ if or (.city) (.country) }}({{end}}{{ if .city }}{{ .city }},{{ end }} {{ if .country }}{{ .country }}{{ end }}{{ if or (.city) (.country) }}){{end}}
+                {{ .name }}<br />
+                {{ if or (.city) (.country) }}{{end}}{{ if .city }}{{ .city }},{{ end }} {{ if .country }}{{ .country }}{{ end }}{{ if or (.city) (.country) }}{{end}}
               </a>
             </p>
             {{ $eventsCounter = add $eventsCounter 1 }}
@@ -30,3 +29,7 @@
       {{ end }}
     {{ end }}
 {{ end }}
+<div class="feed-source">
+  <a href="{{ printf "%s%s/%s" ($.Scratch.Get "sUrl") ($.Scratch.Get "lang") "events/" }}">{{ i18n "more" }}</a>,
+  <a href="{{ absLangURL ($.Site.BaseURL) }}events/feed.xml">Feed</a>
+</div>
