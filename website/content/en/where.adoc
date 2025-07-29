@@ -13,99 +13,43 @@ include::shared/en/urls.adoc[]
 
 For general information about past, present and future releases, see link:../releases/[Release Information].
 
-[[choose-version]]
-[[choose-arch]]
-== Choosing an Architecture
+// This is raw html to allow for a display:flex layout. asciidoctor doesn't support it.
+++++
+<h2 style="margin-bottom: 0; padding-bottom: 0">Considerations Before Downloading</h2>
+<div class="article-flex">
+<div class="article-flex-item">
+<h3>Version &amp; Branch</h3>
+<p>You likely want the latest production <strong>RELEASE</strong> of FreeBSD. Other branches like CURRENT and STABLE are developer-focused and require expertise to use successfully.</p>
+</div>
+<div class="article-flex-item">
+<h3>Architecture</h3>
+<p>Most users of FreeBSD will have hardware for <strong>amd64</strong> or <strong>aarch64</strong>. If you're uncertain which to use, check the manufactuer's documentation for your CPU.</p>
+</div>
+<div class="article-flex-item">
+<h3>Image Type</h3>
+<p>For most cases, use <strong>bootonly</strong> if you have a network connection, <strong>dvd1</strong> if you don't. Some embedded platforms have their own images, e.g., Raspberry Pi. See release announcements and <a href="https://docs.freebsd.org/en/books/handbook/bsdinstall/#bsdinstall-installation-media">handbook</a> for details. </p>
+</div>
+</div>
+++++
 
-Most users of FreeBSD will have hardware for **amd64** or **aarch64**. These architectures are well-supported.
+Combined, these three attributes make up the download file name which looks like:
 
-Most modern PCs, including those with Intel(R) processors, use **amd64**.
-
-Embedded devices and single-board computers (SBCs) such as the Raspberry Pi 3 and 4, ESPRESSObin, as well as many Allwinner and Rockchip boards, use **aarch64**.
-
-For all other architectures, please see the link:../platforms/#_supported_platforms[table of supported platforms].
-
-[[choose-image]]
-== Choosing an Image
-
-For the FreeBSD installer: formats include DVD (disc1, dvd1), and network install (bootonly) sized ISO, plus regular and mini USB memory sticks.
-
-For virtual machines: virtual disk images have FreeBSD preinstalled.
-
-For embedded platforms: SD card images are available.
+* FreeBSD-VERSION-BRANCH-ARCHITECTURE-IMAGETYPE.format
+* Example: FreeBSD-14.2-RELEASE-amd64-bootonly.iso
 
 [[download]]
-== Production Quality
+== Latest Releases
 
-`RELEASE` versions of FreeBSD are the end result of _release engineering_ and are recommended for most users.
-
-[[download-rel143]]
-=== FreeBSD {rel143-current}-RELEASE
-
-[.tblbasic]
-[.tblDownload]
-[width="100%",cols="25%,25%,25%,25%",options="header",]
-|===
-|Installer |VM |SD Card |Documentation
-a|
-* link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel143-current}/[amd64]
-* link:{url-rel}/i386/i386/ISO-IMAGES/{rel143-current}/[i386]
-* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[aarch64]
-* link:{url-rel}/arm/armv7/ISO-IMAGES/{rel143-current}/[armv7]
-* link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel143-current}/[powerpc]
-* link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel143-current}/[powerpc64]
-* link:{url-rel}/powerpc/powerpc64le/ISO-IMAGES/{rel143-current}/[powerpc64le]
-* link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel143-current}/[powerpcspe]
-* link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel143-current}/[riscv64]
-
-a|
-* link:{url-rel}/VM-IMAGES/README.txt[README]
-* link:{url-rel}/VM-IMAGES/{rel143-current}-RELEASE/amd64/Latest/[amd64]
-* link:{url-rel}/VM-IMAGES/{rel143-current}-RELEASE/i386/Latest/[i386]
-* link:{url-rel}/VM-IMAGES/{rel143-current}-RELEASE/aarch64/Latest/[aarch64]
-* link:{url-rel}/VM-IMAGES/{rel143-current}-RELEASE/riscv64/Latest/[riscv64]
-* link:{url-rel}/CI-IMAGES/{rel143-current}-RELEASE/amd64/Latest/[amd64] (BASIC-CI)
-* link:{url-rel}/CI-IMAGES/{rel143-current}-RELEASE/aarch64/Latest/[aarch64] (BASIC-CI)
-
-a|
-* aarch64
-* {blank}
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[PINE64]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[PINE64-LTS]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[ROCK64]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[ROCKPRO64]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[RPI] (3/4)
-* armv7
-* {blank}
-** link:{url-rel}/arm/armv7/ISO-IMAGES/{rel143-current}/[GENERICSD]
-* riscv64
-* {blank}
-** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel143-current}/[GENERICSD]
-
-a|
-* {blank}
-* link:../releases/#current[Released]: {rel143-current-date}
-* link:{u-rel143-notes}[Release Notes]
-* link:{u-rel143-readme}[Readme]
-* link:{u-rel143-hardware}[Hardware Compatibility List]
-* link:{u-rel143-installation}[Installation Instructions]
-* link:{u-rel143-errata}[Errata]
-* link:{u-rel143-signatures}[Signed Checksums]
-
-|===
-
-== Production Quality (legacy)
-
-Some FreeBSD `RELEASEs` are supported but are older or built from older `STABLE` branches; these are considered "legacy" and are probably only of interest to people maintaining existing systems on FreeBSD.
+FreeBSD provides support for the latest major version ("production") and the previous major version ("legacy"). See link:/security/#sup[supported FreeBSD releases] for complete lifecycle details. If installing new, use the latest production release.
 
 [[download-rel142]]
 === FreeBSD {rel142-current}-RELEASE
 
 [.tblbasic]
 [.tblDownload]
-[width="100%",cols="25%,25%,25%,25%",options="header",]
+[options="header,footer"]
 |===
-|Installer |VM |SD Card |Documentation
+|Installer |VM |SD Card 
 a|
 * link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel142-current}/[amd64]
 * link:{url-rel}/i386/i386/ISO-IMAGES/{rel142-current}/[i386]
@@ -127,29 +71,29 @@ a|
 * link:{url-rel}/CI-IMAGES/{rel142-current}-RELEASE/aarch64/Latest/[aarch64] (BASIC-CI)
 
 a|
-* aarch64
-* {blank}
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[PINE64]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[PINE64-LTS]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[ROCK64]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[ROCKPRO64]
-** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[RPI] (3/4)
-* armv7
-* {blank}
-** link:{url-rel}/arm/armv7/ISO-IMAGES/{rel142-current}/[GENERICSD]
-* riscv64
-* {blank}
-** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel142-current}/[GENERICSD]
 
-a|
-* {blank}
-* link:../releases/#current[Released]: {rel142-current-date}
-* link:{u-rel142-notes}[Release Notes]
-* link:{u-rel142-readme}[Readme]
-* link:{u-rel142-hardware}[Hardware Compatibility List]
-* link:{u-rel142-installation}[Installation Instructions]
-* link:{u-rel142-errata}[Errata]
-* link:{u-rel142-signatures}[Signed Checksums]
+Platform Specific
+
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[PINE64]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[PINE64-LTS]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[ROCK64]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[ROCKPRO64]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[RPI] (3/4)
+
+Generic
+
+* link:{url-rel}/arm/armv7/ISO-IMAGES/{rel142-current}/[GENERICSD] (armv7)
+* link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel142-current}/[GENERICSD] (riscv64)
+
+3+|
+link:../releases/#current[Released]: {rel142-current-date}
+
+link:{u-rel142-notes}[Release Notes]
+link:{u-rel142-readme}[Readme]
+link:{u-rel142-hardware}[Hardware Compatibility List]
+link:{u-rel142-installation}[Installation Instructions]
+link:{u-rel142-errata}[Errata]
+link:{u-rel142-signatures}[Signed Checksums]
 
 |===
 
@@ -157,9 +101,9 @@ a|
 === FreeBSD {rel135-current}-RELEASE
 [.tblbasic]
 [.tblDownload]
-[width="100%",cols="25%,25%,25%,25%",options="header",]
+[options="header,footer"]
 |===
-|Installer |VM |SD Card |Documentation
+|Installer |VM |SD Card 
 a|
 * link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel135-current}/[amd64]
 * link:{url-rel}/i386/i386/ISO-IMAGES/{rel135-current}/[i386]
@@ -196,51 +140,136 @@ a|
 * {blank}
 ** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel135-current}/[GENERICSD]
 
-a|
-* link:../releases/#current[Released]: {rel135-current-date}
-* link:{u-rel135-notes}[Release Notes]
-* link:{u-rel135-readme}[Readme]
-* link:{u-rel135-hardware}[Hardware Compatibility List]
-* link:{u-rel135-installation}[Installation Instructions]
-* link:{u-rel135-errata}[Errata]
-* link:{u-rel135-signatures}[Signed Checksums]
+3+|
+link:../releases/#current[Released]: {rel135-current-date}
+
+link:{u-rel135-notes}[Release Notes]
+link:{u-rel135-readme}[Readme]
+link:{u-rel135-hardware}[Hardware Compatibility List]
+link:{u-rel135-installation}[Installation Instructions]
+link:{u-rel135-errata}[Errata]
+link:{u-rel135-signatures}[Signed Checksums]
 |===
 
-[[helptest]]
-== Development and Testing
+[[download-rel134]]
+=== FreeBSD {rel134-current}-RELEASE
+[.tblbasic]
+[.tblDownload]
+[options="header,footer"]
+|===
+|Installer |VM |SD Card 
+a|
+* link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel134-current}/[amd64]
+* link:{url-rel}/i386/i386/ISO-IMAGES/{rel134-current}/[i386]
+* link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel134-current}/[powerpc]
+* link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel134-current}/[powerpc64]
+* link:{url-rel}/powerpc/powerpc64le/ISO-IMAGES/{rel134-current}/[powerpc64le]
+* link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel134-current}/[powerpcspe]
+* link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[aarch64]
+* link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel134-current}/[riscv64]
 
-Pre-`RELEASE` versions of FreeBSD, not intended for use in production environments:
+a|
+* link:{url-rel}/VM-IMAGES/README.txt[README]
+* link:{url-rel}/VM-IMAGES/{rel134-current}-RELEASE/amd64/Latest/[amd64]
+* link:{url-rel}/VM-IMAGES/{rel134-current}-RELEASE/i386/Latest/[i386]
+* link:{url-rel}/VM-IMAGES/{rel134-current}-RELEASE/aarch64/Latest/[aarch64]
+* link:{url-rel}/VM-IMAGES/{rel134-current}-RELEASE/riscv64/Latest/[riscv64]
+* link:{url-rel}/CI-IMAGES/{rel134-current}-RELEASE/amd64/Latest/[amd64] (BASIC-CI)
+* link:{url-rel}/CI-IMAGES/{rel134-current}-RELEASE/aarch64/Latest/[aarch64] (BASIC-CI)
 
-* `CURRENT` – the main branch, the core of development
-* `STABLE` – branched from `CURRENT`, long-term preparations for release engineering
-* release engineering – `ALPHA`, `BETA`, release candidates (`RC`) – branched from `STABLE`.
+a|
+* aarch64
+* {blank}
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[PINE64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[PINE64-LTS]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[PINEBOOK]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[ROCK64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[ROCKPRO64]
+** link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel134-current}/[RPI] (3/4)
+* armv6/armv7
+* {blank}
+** link:{url-rel}/arm/armv7/ISO-IMAGES/{rel134-current}/[GENERICSD]
+** link:{url-rel}/arm/armv6/ISO-IMAGES/{rel134-current}/[RPI-B]
+* riscv64
+* {blank}
+** link:{url-rel}/riscv/riscv64/ISO-IMAGES/{rel134-current}/[GENERICSD]
 
-Uppercase has special meaning. For example:
+3+|
+link:../releases/#current[Released]: {rel134-current-date}
 
-* a first _beta release_ is not a (production) `RELEASE`.
+link:{u-rel134-notes}[Release Notes]
+link:{u-rel134-readme}[Readme]
+link:{u-rel134-hardware}[Hardware Compatibility List]
+link:{u-rel134-installation}[Installation Instructions]
+link:{u-rel134-errata}[Errata]
+link:{u-rel134-signatures}[Signed Checksums]
+|===
 
-The word `CURRENT` is sometimes a source of confusion:
-
-* if you are looking for the _current version_ of FreeBSD, you most likely want a `RELEASE` version (see above) – **not** `CURRENT` – `CURRENT` has special meaning in the development process.
 
 [[download-snapshots]]
-=== Development Snapshots
+== Development Snapshots
+
+Prior to RELEASE there are a series of branches that represent various phases in development and release engineering.
+
+++++
+<div style="display: flex; flex-wrap: wrap; gap: 0 30px">
+<div style="flex: 1 1 45%">
+++++
+
+* RELEASE - FreeBSD as it inteded to be used. This is what most people will want.
+** Receives support and patches
+** Well documented
+** Detailed release communication
+* Pre-RELEASE - intended for development and testing. _Not for everyday use._
+** link:https://docs.freebsd.org/en/books/handbook/cutting-edge/#current[CURRENT] – main development branch
+** link:https://docs.freebsd.org/en/books/handbook/cutting-edge/#stable[STABLE] – for release engineering
+** ALPHA, BETA, RC (release candidates) – increasing quality milestones within release engineering that lead up to the final release
+
+
+++++
+</div>
+<div style="flex: 1 1 45%; min-width: 380px">
+
+<div style="text-align: left; margin: 15px 0 0 15px;">The Path To A FreeBSD RELEASE</div>
+++++
+
+----
+GIT SRC REPO      REVISION=   BRANCH=  
+main              15.0        CURRENT
+│
+├─stable/14       14.3        STABLE
+│ │
+│ ├─releng/14.3   14.3        STABLE
+│ │               14.3        ALPHA1
+│ │               14.3        BETA1
+│ │               14.3        RC1
+│ │               14.3        RELEASE 
+│ │               14.3        RELEASE-p1
+│ │
+│ ├─releng/14.4   14.4        STABLE
+┊ ┊               …           …
+----
+
+++++
+</div>
+</div>
+++++
 
 See link:../snapshots/[FreeBSD Snapshot Releases].
 
-=== FreeBSD {rel-head}-CURRENT
+=== {rel-head}-CURRENT
 
 Installer and SD card images are available for link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel-head}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel-head}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel-head}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel-head}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel-head}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel-head}/[powerpcspe], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel-head}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel-head}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel-head}/[riscv64].
 
 VM images are available for link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/amd64/Latest/[amd64], link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/i386/Latest/[i386], link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/aarch64/Latest/[aarch64], and link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/riscv64/Latest/[riscv64].
 
-=== FreeBSD {rel143-current}-STABLE
+=== {rel142-current}-STABLE
 
-Installer and SD card images are available for link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel143-current}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel143-current}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel143-current}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel143-current}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel143-current}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel143-current}/[powerpcspe], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel143-current}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel143-current}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel143-current}/[riscv64].
+Installer and SD card images are available for link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel142-current}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel142-current}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel142-current}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel142-current}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel142-current}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel142-current}/[powerpcspe], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel142-current}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel142-current}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel142-current}/[riscv64].
 
-VM images are available for link:{url-snapshot}/VM-IMAGES/{rel143-current}-STABLE/amd64/Latest/[amd64], link:{url-snapshot}/VM-IMAGES/{rel143-current}-STABLE/i386/Latest/[i386], link:{url-snapshot}/VM-IMAGES/{rel143-current}-STABLE/aarch64/Latest/[aarch64], and link:{url-snapshot}/VM-IMAGES/{rel143-current}-STABLE/riscv64/Latest/[riscv64].
+VM images are available for link:{url-snapshot}/VM-IMAGES/{rel142-current}-STABLE/amd64/Latest/[amd64], link:{url-snapshot}/VM-IMAGES/{rel142-current}-STABLE/i386/Latest/[i386], link:{url-snapshot}/VM-IMAGES/{rel142-current}-STABLE/aarch64/Latest/[aarch64], and link:{url-snapshot}/VM-IMAGES/{rel142-current}-STABLE/riscv64/Latest/[riscv64].
 
-=== FreeBSD {rel135-current}-STABLE
+=== {rel135-current}-STABLE
 
 Installer and SD card images are available for link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel135-current}/[amd64], link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel135-current}/[i386], link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel135-current}/[powerpc], link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel135-current}/[powerpc64], link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel135-current}/[powerpc64le], link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel135-current}/[powerpcspe], link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel135-current}/[armv6], link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel135-current}/[armv7], link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel135-current}/[aarch64], and link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel135-current}/[riscv64].
 
@@ -277,6 +306,10 @@ A diverse collection of utility and application software that has been _ported_ 
 
 For information about how _you_ can contribute _your_ favorite piece of software to the Collection, have a look at _link:{porters-handbook}[The Porter's Handbook]_ and _link:{contributing}[Contributing to FreeBSD]_.
 
+++++
+<!---
+++++
+
 [[derived]]
 == FreeBSD-derived Operating System Distributions
 
@@ -288,6 +321,10 @@ The projects below are of particular interest.
 * https://www.midnightbsd.org[MidnightBSD] was forked from FreeBSD 6.1 beta, and continues to use parts of more recent FreeBSD code bases. Developed with desktop users in mind, MidnightBSD includes everything that you would expect for your daily tasks: mail, web browsing, word processing, gaming, and much more.
 * https://www.nomadbsd.org[NomadBSD] is a persistent live system for USB flash drives, based on FreeBSD. Together with automatic hardware detection and setup, it is configured to be used as a desktop system that works out of the box, but can also be used for data recovery, for educational purposes, or to test FreeBSD hardware compatibility.
 * https://www.pfsense.org/[pfSense] is a FreeBSD-based customized distribution tailored for use as a firewall and router.
+
+++++
+-->
+++++
 
 [[past]]
 == Archives
