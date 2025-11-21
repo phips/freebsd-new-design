@@ -110,16 +110,16 @@
 }
 
 .theme-dark {
-  --header-background-color: linear-gradient(to bottom, #161616, #191919, #1c1c1c);
-  --header-fabar-color: #bbb;
-  --header-menu-item-color: #bbb;
-  --header-submenu-border-color: #833;
-  --header-submenu-background-color: #411;
-  --header-submenu-color: #bbb;
-  --header-search-background-color: #aaa;
-  --header-search-color: #000;
-  --header-donate-background-color: #aaa;
-  --header-donate-color: #611;
+  --header-background-color: #ab2b28;
+  --header-fabar-color: #fff;
+  --header-menu-item-color: #fff;
+  --header-submenu-color: #111;
+  --header-submenu-border-color: #ccc;
+  --header-submenu-background-color: #fff;
+  --header-search-background-color: #fff;
+  --header-search-color: #333;
+  --header-donate-background-color: #fff;
+  --header-donate-color: #000;
   --background-color: #101010;
   --background-accent-color: #333;
   --text-color: #bbb;
