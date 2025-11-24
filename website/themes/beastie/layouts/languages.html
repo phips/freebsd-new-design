@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div id="content">
+    <h1>{{ i18n "select-language" }}</h1>
+    <p>{{ i18n "current-selection" }} {{ .Site.Language.LanguageName }}</p>
+    <ul class="language-list">
+      {{ range $.Site.Home.AllTranslations }}
+        {{ $isCurrentLang := eq .Site.Home.Language .Language }}
+        <li {{ if $isCurrentLang }}class="selected"{{ end }}>
+          <a
+            href="{{ .RelPermalink }}"
+            lang="{{ .Language.Params.languageCode }}"
+            >{{ .Language.LanguageName }}</a
+          >
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
