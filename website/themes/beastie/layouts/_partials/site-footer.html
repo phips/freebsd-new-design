@@ -1,4 +1,3 @@
-{{ $currentLang := $.Site.Language.Lang }}
 <footer>
   <div class="footer-container">
     <section class="logo-column">
@@ -30,19 +29,19 @@
         <h3 class="column-title">{{ i18n "f-about" }}</h3>
         <ul class="column-elements-container">
           <li>
-            <a href="{{ $.Site.Params.websiteURL }}/about/" target="_blank" class="column-element">{{ i18n "f-freebsd" }}</a>
+            <a href="{{ $.Site.Params.websiteURL }}/about/" class="column-element">{{ i18n "f-freebsd" }}</a>
           </li>
           <li>
-            <a href="https://freebsdfoundation.org/" target="_blank" class="column-element">{{ i18n "f-freebsd-foundation" }}</a>
+            <a href="https://freebsdfoundation.org/" class="column-element">{{ i18n "f-freebsd-foundation" }}</a>
           </li>
           <li>
-            <a href="{{ $.Site.Params.websiteURL }}/where/" target="_blank" class="column-element">{{ i18n "f-get-freebsd" }}</a>
+            <a href="{{ $.Site.Params.websiteURL }}/where/" class="column-element">{{ i18n "f-get-freebsd" }}</a>
           </li>
           <li>
-            <a href="{{ $.Site.Params.websiteURL }}/internal/code-of-conduct" target="_blank" class="column-element">{{ i18n "f-code-of-conduct" }}</a>
+            <a href="{{ $.Site.Params.websiteURL }}/internal/code-of-conduct" class="column-element">{{ i18n "f-code-of-conduct" }}</a>
           </li>
           <li>
-            <a href="{{ $.Site.Params.websiteURL }}/security/" target="_blank" class="column-element">{{ i18n "f-security-advisories" }}</a>
+            <a href="{{ $.Site.Params.websiteURL }}/security/" class="column-element">{{ i18n "f-security-advisories" }}</a>
           </li>
         </ul>
       </section>
@@ -53,19 +52,19 @@
             <a href="https://docs.freebsd.org" class="column-element">{{ i18n "f-documentation-portal" }}</a>
           </li>
           <li>
-            <a href="https://man.FreeBSD.org" target="_blank" class="column-element">{{ i18n "f-manual-pages" }}</a>
+            <a href="https://man.FreeBSD.org" class="column-element">{{ i18n "f-manual-pages" }}</a>
           </li>
           <li>
-            <a href="https://papers.FreeBSD.org" target="_blank" class="column-element">{{ i18n "f-presentation-and-papers" }}</a>
+            <a href="https://papers.FreeBSD.org" class="column-element">{{ i18n "f-presentation-and-papers" }}</a>
           </li>
           <li>
-            <a href="https://docs-archive.freebsd.org/doc/" target="_blank" class="column-element">{{ i18n "f-previous-versions" }}</a>
+            <a href="https://docs-archive.freebsd.org/doc/" class="column-element">{{ i18n "f-previous-versions" }}</a>
           </li>
           <li>
-            <a href="https://docs-archive.freebsd.org/44doc/" target="_blank" class="column-element">{{ i18n "f-44bsd-documents" }}</a>
+            <a href="https://docs-archive.freebsd.org/44doc/" class="column-element">{{ i18n "f-44bsd-documents" }}</a>
           </li>
           <li>
-            <a href="https://wiki.freebsd.org/" target="_blank" class="column-element">{{ i18n "f-wiki" }}</a>
+            <a href="https://wiki.freebsd.org/" class="column-element">{{ i18n "f-wiki" }}</a>
           </li>
         </ul>
       </section>
@@ -73,19 +72,19 @@
         <h3 class="column-title">{{ i18n "f-community" }}</h3>
         <ul class="column-elements-container">
           <li>
-            <a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/articles/contributing" }} class="column-element">{{ i18n "h-get-involved" }}</a>
+            <a href="https://docs.FreeBSD.org/articles/contributing" }} class="column-element">{{ i18n "h-get-involved" }}</a>
           </li>
           <li>
-            <a href="https://forums.freebsd.org/" target="_blank" class="column-element">{{ i18n "f-community-forum" }}</a>
+            <a href="https://forums.freebsd.org/" class="column-element">{{ i18n "f-community-forum" }}</a>
           </li>
           <li>
-            <a href="https://lists.freebsd.org/" target="_blank" class="column-element">{{ i18n "f-mailing-lists" }}</a>
+            <a href="https://lists.freebsd.org/" class="column-element">{{ i18n "f-mailing-lists" }}</a>
           </li>
           <li>
-            <a href="https://wiki.freebsd.org/IRC/Channels" target="_blank" class="column-element">{{ i18n "f-irc-channels" }}</a>
+            <a href="https://wiki.freebsd.org/IRC/Channels" class="column-element">{{ i18n "f-irc-channels" }}</a>
           </li>
           <li>
-            <a href="https://bugs.freebsd.org/bugzilla/" target="_blank" class="column-element">{{ i18n "f-bug-tracker" }}</a>
+            <a href="https://bugs.freebsd.org/bugzilla/" class="column-element">{{ i18n "f-bug-tracker" }}</a>
           </li>
         </ul>
       </section>
@@ -93,17 +92,17 @@
         <h3 class="column-title">{{ i18n "f-legal" }}</h3>
         <ul class="column-elements-container">
           <li>
-            <a href="https://freebsdfoundation.org/donate/" target="_blank" class="column-element">{{ i18n "f-donations" }}</a>
+            <a href="https://freebsdfoundation.org/donate/" class="column-element">{{ i18n "f-donations" }}</a>
           </li>
           <li>
             <a href="{{ $.Site.Params.websiteURL }}/copyright/freebsd-license/" target="_blank"
               class="column-element">{{ i18n "f-licensing" }}</a>
           </li>
           <li>
-            <a href="{{ $.Site.Params.websiteURL }}/privacy/" target="_blank" class="column-element">{{ i18n "f-privacy-policy" }}</a>
+            <a href="{{ $.Site.Params.websiteURL }}/privacy/" class="column-element">{{ i18n "f-privacy-policy" }}</a>
           </li>
           <li>
-            <a href="{{ $.Site.Params.websiteURL }}/copyright/" target="_blank" class="column-element">{{ i18n "f-legal-notices" }}</a>
+            <a href="{{ $.Site.Params.websiteURL }}/copyright/" class="column-element">{{ i18n "f-legal-notices" }}</a>
           </li>
         </ul>
       </section>
