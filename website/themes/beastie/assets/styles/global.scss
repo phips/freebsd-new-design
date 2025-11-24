@@ -1,6 +1,8 @@
 /*
- * Copyright (c) 1994-2023, The FreeBSD Documentation Project
+ * Copyright (c) 1994-2025, The FreeBSD Project
  * Copyright (c) 2021-2023, Sergio Carlavilla <carlavilla@FreeBSD.org>
+ * Copyright (c) 2023, Mark McBride <mark@markmcb.com>
+ * Copyright (c) 2023, Mark Phillips <mark@freebsdfoundation.org>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -27,14 +29,42 @@
  */
 
 html {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
   scroll-padding-top: var(--header-height);
   scroll-behavior: auto;
 }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter var', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family:
+      "Inter var",
+      -apple-system,
+      BlinkMacSystemFont,
+      avenir next,
+      avenir,
+      segoe ui,
+      helvetica neue,
+      helvetica,
+      Cantarell,
+      Ubuntu,
+      roboto,
+      noto,
+      arial,
+      sans-serif;
   }
 }
 
@@ -65,7 +95,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: var(--max-width);
-  transition: padding .15s;
+  transition: padding 0.15s;
   background-color: var(--global-background-color);
 
   .welcome-container {
@@ -112,11 +142,11 @@ body {
         display: block;
         width: 80%;
         padding: 10px 20px;
-        border: 1px solid #CCC;
+        border: 1px solid #ccc;
         border-radius: 4px;
-        box-shadow: inset 0 1px 3px #DDD;
+        box-shadow: inset 0 1px 3px #ddd;
         box-sizing: border-box;
-        background-color: #FCFCFD;
+        background-color: #fcfcfd;
         color: #444;
       }
     }
@@ -226,7 +256,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
 }
 
 h1,
@@ -251,7 +281,7 @@ h2 {
 
 h3 {
   font-size: var(--size-550);
-  padding-top: .8rem;
+  padding-top: 0.8rem;
 }
 
 h4 {
@@ -266,11 +296,11 @@ h6 {
   font-size: var(--size-300);
 }
 
-h2>.anchor,
-h3>.anchor,
-h4>.anchor,
-h5>.anchor,
-h6>.anchor {
+h2 > .anchor,
+h3 > .anchor,
+h4 > .anchor,
+h5 > .anchor,
+h6 > .anchor {
   text-decoration: none;
 
   &:hover {
@@ -278,13 +308,13 @@ h6>.anchor {
   }
 }
 
-h2>.anchor::before,
-h3>.anchor::before,
-h4>.anchor::before,
-h5>.anchor::before,
-h6>.anchor::before {
+h2 > .anchor::before,
+h3 > .anchor::before,
+h4 > .anchor::before,
+h5 > .anchor::before,
+h6 > .anchor::before {
   visibility: hidden;
-  margin-left: .3rem;
+  margin-left: 0.3rem;
   content: "#";
   color: var(--global-font-color);
 }
@@ -316,7 +346,6 @@ a {
   &:hover {
     text-decoration: underline;
   }
-
 }
 
 img {
@@ -325,7 +354,7 @@ img {
 
 .imageblock {
   .title {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     padding-bottom: 0;
     font-weight: bolder;
     font-style: italic;
@@ -340,7 +369,13 @@ figcaption {
 
 pre {
   border-radius: 0.25rem;
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-family:
+    Menlo,
+    Consolas,
+    Monaco,
+    Liberation Mono,
+    Lucida Console,
+    monospace;
   background-color: var(--pre-background-color);
   font-size: 1rem;
   color: var(--pre-font-color);
@@ -373,7 +408,7 @@ blockquote {
 }
 
 .literalblock {
-  margin: .75em 0;
+  margin: 0.75em 0;
   overflow: auto;
 
   .content {
@@ -384,11 +419,11 @@ blockquote {
 /* callouts */
 .conum {
   display: inline-block;
-  color: #FFF !important;
+  color: #fff !important;
   background-color: #000;
   border-radius: 100px;
   text-align: center;
-  font-size: .75em;
+  font-size: 0.75em;
   width: 1.67em;
   height: 1.67em;
   font-style: normal;
@@ -396,9 +431,9 @@ blockquote {
 }
 
 .conum[data-value] {
-  color: #FFF !important;
+  color: #fff !important;
   text-align: center;
-  font-size: .75em;
+  font-size: 0.75em;
   line-height: 1.67em;
   font-style: normal;
   font-weight: bold;
@@ -446,17 +481,17 @@ table.tableblock {
     background-color: var(--table-header-background-color);
     color: var(--table-header-font-color);
     text-rendering: optimizeLegibility;
-    padding: .5em .625em .625em;
-    border: 0 solid #DEDEDE;
+    padding: 0.5em 0.625em 0.625em;
+    border: 0 solid #dedede;
     border-width: 0 1px 1px 0;
   }
 
   td {
     text-align: left;
-    border: 0 solid #DEDEDE;
+    border: 0 solid #dedede;
     text-rendering: optimizeLegibility;
     line-height: 1.6;
-    padding: .5em .625em .625em;
+    padding: 0.5em 0.625em 0.625em;
     font-size: inherit;
     border-width: 0 1px 1px 0;
     vertical-align: top;
@@ -499,22 +534,22 @@ table.stretch {
           top: 0;
           left: 0;
           line-height: 1;
-          padding-bottom: .5rem;
+          padding-bottom: 0.5rem;
 
           i {
             display: inline-flex;
             align-items: center;
             width: auto;
-            background-position-x: .5em;
+            background-position-x: 0.5em;
             vertical-align: initial;
             font-style: normal;
 
             &:after {
               content: attr(title);
-              font-family: 'Inter var', sans-serif;
+              font-family: "Inter var", sans-serif;
               font-weight: bolder;
-              padding: 0 .5em;
-              margin: -.05em;
+              padding: 0 0.5em;
+              margin: -0.05em;
             }
           }
 
@@ -525,7 +560,7 @@ table.stretch {
 
           .icon-tip::before {
             content: "\f0eb";
-            color: var(--admonition-tip-color)
+            color: var(--admonition-tip-color);
           }
 
           .icon-warning::before {
@@ -558,7 +593,7 @@ table.stretch {
           }
 
           .paragraph {
-            padding-top: .5rem;
+            padding-top: 0.5rem;
           }
 
           a {
@@ -604,12 +639,12 @@ table.stretch {
 }
 
 .exampleblock {
-  margin: .75rem 0;
+  margin: 0.75rem 0;
   color: var(--example-block-font-color);
 
   .title {
     font-weight: bolder;
-    font-family: 'Inter var', sans-serif;
+    font-family: "Inter var", sans-serif;
   }
 
   .content {
@@ -628,7 +663,7 @@ table.stretch {
 }
 
 .procedure {
-  border-left: 5px solid #B3B3B3;
+  border-left: 5px solid #b3b3b3;
   padding: 1rem;
   margin-bottom: 1.4rem;
 }
@@ -640,7 +675,7 @@ table.stretch {
 }
 
 .listingblock {
-  margin: .75em 0;
+  margin: 0.75em 0;
   position: relative;
 }
 
@@ -670,9 +705,16 @@ table.stretch {
 }
 
 code {
-  font-family: "DejaVu Sans Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  padding: .12rem .20rem;
-  border-radius: .25rem;
+  font-family:
+    "DejaVu Sans Mono",
+    Menlo,
+    Consolas,
+    Monaco,
+    Liberation Mono,
+    Lucida Console,
+    monospace;
+  padding: 0.12rem 0.2rem;
+  border-radius: 0.25rem;
   background-color: var(--pre-background-color);
   color: var(--pre-font-color);
 }
@@ -692,25 +734,27 @@ details {
 kbd {
   font-family: "DejaVu Sans", "DejaVu Sans Bold";
   display: inline-block;
-  color: rgba(0, 0, 0, .8);
-  font-size: .65em;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.65em;
   line-height: 1.45;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border: 1px solid #ccc;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 0 0 .1em #FFF inset;
-  margin: 0 .15em;
-  padding: .2em .5em;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    0 0 0 0.1em #fff inset;
+  margin: 0 0.15em;
+  padding: 0.2em 0.5em;
   vertical-align: middle;
   position: relative;
-  top: -.1em;
+  top: -0.1em;
   white-space: nowrap;
 }
 
 .to-top {
   opacity: 1;
   visibility: visible;
-  transition: .2s;
+  transition: 0.2s;
   position: fixed;
   bottom: 1.2rem;
   right: 1.5rem;
@@ -726,8 +770,8 @@ kbd {
 .copy-to-clipboard-wrapper {
   position: absolute;
   margin: 0;
-  padding: .50rem;
-  right: .5rem;
+  padding: 0.5rem;
+  right: 0.5rem;
   top: 0rem;
 
   button {
@@ -755,8 +799,8 @@ kbd {
     justify-content: center;
     margin-top: 1em;
     background-color: var(--copy-clipboard-tooltip-background-color);
-    border-radius: .25em;
-    padding: .5em;
+    border-radius: 0.25em;
+    padding: 0.5em;
     color: var(--white);
     z-index: 999;
 
@@ -770,5 +814,4 @@ kbd {
     opacity: 1;
     transition: visibility 0s easy 0s;
   }
-
 }
