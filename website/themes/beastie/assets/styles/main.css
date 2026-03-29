@@ -134,7 +134,7 @@
   --table-header-background-color: #F1F3F1;
   --table-header-font-color: #444;
   --lines-color: #4D4D4D;
-  --links-color: #990000;
+  --links-color: #FF8A80;
   --pre-background-color: #272727;
   --pre-font-color: #EEEFF1;
 
@@ -170,7 +170,7 @@
   --jails-logo-image: url("/images/bastille-icon.png");
   --network-logo-image: url("/images/fa-network-wired.svg");
   --docs-logo-image: url("/images/book.png");
-  --foundation-logo-image: url("/images/FreeBSD_Vrt_Grey.png");
+  --foundation-logo-image: url("/images/FreeBSD_Vrt.png");
   --freebsd-logo-vert: url("/images/FREEBSD_Logo_Vert_Rev_RGB.png");
 
 }
