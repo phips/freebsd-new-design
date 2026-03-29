@@ -2,6 +2,54 @@
 # $FreeBSD$
 
 [[advisories]]
+name = "FreeBSD-SA-26:09.pf"
+date = "2026-03-26"
+
+[[advisories]]
+name = "FreeBSD-SA-26:08.rpcsec_gss"
+date = "2026-03-26"
+
+[[advisories]]
+name = "FreeBSD-SA-26:07.nvmf"
+date = "2026-03-26"
+
+[[advisories]]
+name = "FreeBSD-SA-26:06.tcp"
+date = "2026-03-26"
+
+[[advisories]]
+name = "FreeBSD-SA-26:05.route"
+date = "2026-02-24"
+
+[[advisories]]
+name = "FreeBSD-SA-26:04.jail"
+date = "2026-02-24"
+
+[[advisories]]
+name = "FreeBSD-SA-26:03.blocklistd"
+date = "2026-02-10"
+
+[[advisories]]
+name = "FreeBSD-SA-26:02.jail"
+date = "2026-01-27"
+
+[[advisories]]
+name = "FreeBSD-SA-26:01.openssl"
+date = "2026-01-27"
+
+[[advisories]]
+name = "FreeBSD-SA-25:12.rtsold"
+date = "2025-12-16"
+
+[[advisories]]
+name = "FreeBSD-SA-25:11.ipfw"
+date = "2025-12-16"
+
+[[advisories]]
+name = "FreeBSD-SA-25:10.unbound"
+date = "2025-11-26"
+
+[[advisories]]
 name = "FreeBSD-SA-25:09.netinet"
 date = "2025-10-22"
 

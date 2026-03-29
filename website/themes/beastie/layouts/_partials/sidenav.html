@@ -22,7 +22,6 @@
   <li><a href="{{ "community/irc/" | absLangURL }}">IRC</a></li>
   <li><a href="{{ "community/mailinglists/" | absLangURL }}">{{ i18n "mailinglists" }}</a></li>
   <li><a href="https://www.reddit.com/r/freebsd/" target="_blank">Reddit</a></li>
-  <li><a href="https://twitter.com/freebsd" target="_blank">Twitter</a></li>
   <li><a href="{{ "usergroups" | absLangURL }}">{{ i18n "usergroups" }}</a></li>
   <li><a href="https://www.youtube.com/FreeBSDProject" target="_blank">YouTube</a></li>
 </ul>
@@ -56,9 +55,9 @@
   <li>
     <a href={{ "releases" | absLangURL }}>{{ i18n "releases" }}</a>
     <ul>
-      <li>Legacy Release: <br /><a href={{ index .data.releases "u-rel135-announce" }}>{{ index .data.releases "rel135-current" }}</a></li>
-      <li>Legacy Release: <br /><a href={{ index .data.releases "u-rel142-announce" }}>{{ index .data.releases "rel142-current" }}</a></li>
+      <li>{{ i18n "productionRelease" }}: <br /><a href={{ index .data.releases "u-rel150-announce" }}>{{ index .data.releases "rel150-current" }}</a></li>
       <li>{{ i18n "productionRelease" }}: <br /><a href={{ index .data.releases "u-rel143-announce" }}>{{ index .data.releases "rel143-current" }}</a></li>
+      <li>Legacy Release: <br /><a href={{ index .data.releases "u-rel135-announce" }}>{{ index .data.releases "rel135-current" }}</a></li>
     </ul>
   </li>
   <li>

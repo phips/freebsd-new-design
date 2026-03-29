@@ -617,11 +617,11 @@ Add dependency on package:math/eigen[].
 [[uses-elextronfix]]
 == `electronfix`
 
-Possible arguments: `31`, `32`, `33`
+Possible arguments: `37`, `38`, `39`
 
 Provide support for easy porting of Electron applications that are distributed in binary form.
-Adds a build and run time dependency on package:devel/electron31[],
-package:devel/electron32[], or package:devel/electron33[] depending on the argument used.
+Adds a build and run time dependency on package:devel/electron37[],
+package:devel/electron38[], or package:devel/electron39[] depending on the argument used.
 
 The framework provides the following variables that can be set by ports:
 
@@ -798,14 +798,6 @@ Possible arguments: (none)
 Changes some default behavior of build systems to allow installing as a user.
 See https://wiki.debian.org/FakeRoot[] for more information on `fakeroot`.
 
-[[uses-fam]]
-== `fam`
-
-Possible arguments: (none), `fam`, `gamin`
-
-Uses a File Alteration Monitor as a library dependency, either package:devel/fam[] or package:devel/gamin[].
-End users can set WITH_FAM_SYSTEM to specify their preference.
-
 [[uses-firebird]]
 == `firebird`
 
@@ -819,8 +811,8 @@ Add a dependency to the client library of the Firebird database.
 Possible arguments: (none), `fc`, `fontsdir` (default), `none`
 
 Adds a runtime dependency on tools needed to register fonts.
-Depending on the argument, add a `crossref:plist[plist-keywords-fc,`@fc`]
-${FONTSDIR}` line,  `crossref:plist[plist-keywords-fontsdir,`@fontsdir`] ${FONTSDIR}` line, or no line if the argument is `none`, to the plist.
+Depending on the argument, add a `crossref:plist[plist-keywords-fc,@fc] ${FONTSDIR}` line,
+`crossref:plist[plist-keywords-fontsdir,@fontsdir] ${FONTSDIR}` line, or no line if the argument is `none`, to the plist.
 `FONTSDIR` defaults to [.filename]#${PREFIX}/share/fonts/${FONTNAME}# and `FONTNAME` to `${PORTNAME}`.
 Add `FONTSDIR` to `PLIST_SUB` and `SUB_LIST`
 
@@ -1048,10 +1040,12 @@ See crossref:special[using-gnome,Using GNOME] for more information.
 Ports should not be created for Go libs, see crossref:special[go-libs,Go Libraries] for more information.
 ====
 
-Possible arguments: (none), `N.NN`, `N.NN-devel`, `modules`, `no_targets`, `run`
+Possible arguments: (none), `N.NN`, `N.NN+`, `N.NN-devel`, `modules`, `no_targets`, `run`
 
 Sets default values and targets used to build Go software.
 A build dependency on the Go compiler port is added, port maintainers can set version required.
+If the `X.Y+` format is used then Go `X.Y` will be used unless the default go
+version is higher than `X.Y` in which case the default version will be used.
 By default the build is performed in GOPATH mode.
 If Go software uses modules, the modules-aware mode can be switched on with `modules` argument.
 `no_targets` will setup build environment like `GO_ENV`, `GO_BUILDFLAGS` but skip creating extract and build targets.
@@ -1118,12 +1112,13 @@ Registers a dependency on package:textproc/groff[] if not present in the base sy
 [[uses-gssapi]]
 == `gssapi`
 
-Possible arguments: (none), `base` (default), `heimdal`, `mit`, `flags`, `bootstrap`
+Possible arguments: (none), `base` (default), `heimdal`, `mit`, `mit-devel`, `flags`, `bootstrap`
 
 Handle dependencies needed by consumers of the GSS-API.
 Only libraries that provide the Kerberos mechanism are available.
 By default, or set to `base`, the GSS-API library from the base system is used.
-Can also be set to `heimdal` to use package:security/heimdal[], or `mit` to use package:security/krb5[].
+Can also be set to `heimdal` to use package:security/heimdal[], `mit` to use
+package:security/krb5[], or `mit-devel` to use package:security/krb5-devel[].
 
 When the local Kerberos installation is not in `LOCALBASE`, set `HEIMDAL_HOME` (for `heimdal`) or `KRB5_HOME` (for `krb5`) to the location of the Kerberos installation.
 
@@ -1137,7 +1132,7 @@ These variables are exported for the ports to use:
 * `GSSAPILIBS`
 * `GSSAPI_CONFIGURE_ARGS`
 
-The `flags` option can be given alongside `base`, `heimdal`, or `mit` to automatically add `GSSAPICPPFLAGS`, `GSSAPILDFLAGS`, and `GSSAPILIBS` to `CFLAGS`, `LDFLAGS`, and `LDADD`, respectively.
+The `flags` option can be given alongside `base`, `heimdal`, `mit`, or `mit-devel` to automatically add `GSSAPICPPFLAGS`, `GSSAPILDFLAGS`, and `GSSAPILIBS` to `CFLAGS`, `LDFLAGS`, and `LDADD`, respectively.
 For example, use `base,flags`.
 
 The `bootstrap` option is a special prefix only for use by package:security/krb5[] and package:security/heimdal[].
@@ -1331,8 +1326,8 @@ The framework provides the following variables to be set by the port:
 
 `JAVA_VERSION`::
 List of space-separated suitable java versions for the port. An optional `\+`
-allows you to specify a range of versions. (allowed values `8[+]`, `11[\+]`,
-`17[+]`, `18[\+]`, `19[+]`, `20[\+]`, `21[+]`, `22[\+]`, `22[+]`)
+allows specifying a range of versions. (allowed values `8[+]`, `11[\+]`,
+`17[+]`, `18[\+]`, `19[+]`, `21[+]`, `22[\+]`, `23[+]`, `24[\+]`, `25[+]`)
 
 `JAVA_OS`::
 List of space-separated suitable JDK port operating systems for the port.
@@ -1807,10 +1802,12 @@ USE_MATE=	menus:build intlhack
 [[uses-meson]]
 == `meson`
 
-Possible arguments: (none)
+Possible arguments: (none), `muon`
 
 Provide support for Meson based projects.
 For more information see crossref:special[using-meson,Using `meson`].
+
+If `muon` is specified then a build dependency on package:devel/muon[] is added.
 
 [[uses-metaport]]
 == `metaport`
@@ -1984,7 +1981,7 @@ If the `findplist` argument is provided then contents of the `findlib` target di
 If the `ldconfig` argument is provided then OCaml's [.filename]#ld.conf# file
 will be automatically processed. When `dune` is used Dune may install stublibs
 in site-lib package directory(ies) or in a single directory below `DUNE_LIBDIR` site-lib directory.
-Set if your port installs shared libraries into ocaml
+Set if the port installs shared libraries into ocaml
 
 If the `run` argument is provided add ocamlc to `RUN_DEPENDS`.
 
@@ -2759,6 +2756,13 @@ BROKEN_SSL_REASON_libressl=	needs features only available in OpenSSL
 
 ====
 
+[[uses-sudo]]
+== `sudo`
+
+Possible arguments: (none)
+
+Adds a run time dependecy on package:security/sudo[].
+
 [[uses-tar]]
 == `tar`
 
@@ -3131,6 +3135,26 @@ The category has to match upstream categories.
 
 The second argument is the build system to use.
 autotools is the default, but meson is also supported.
+
+[[uses-zig]]
+== `zig`
+
+Possible arguments: (none)
+
+Provide support for building package:lang/zig[] based ports.
+
+The framework exposes the following variables to the port:
+
+`ZIG_TUPLE`::
+List of zig dependencies needed to build the port.
+Every entry is a triplet of a name, an URL, and a directory where the dependency
+is expected to be found.
+These triplets can be generated by running:
+
+[source,shell]
+....
+% make make-zig-tuple
+....
 
 [[uses-zip]]
 == `zip`

@@ -1,5 +1,5 @@
-<h3>{{ i18n "upcomingEvents" }}</h3>
-{{ $eventsPath := (printf "data/%s/events/events.toml" $.Language.Lang (dateFormat "2006" now)) }}
+<h4>{{ i18n "upcoming-events" }}</h4>
+{{ $eventsPath := (printf "data/%s/events/events%s.toml" $.Language.Lang (dateFormat "2006" now)) }}
 
 {{ $eventsData := "" }}
 {{ if (fileExists $eventsPath) -}}
@@ -16,11 +16,13 @@
       {{ if le $eventsCounter 6 }}
         {{ range (sort .events "startDate" "asc") }}
           {{ if ge (dateFormat "20060102" .endDate) (dateFormat "20060102" now) }}
-            <h4 class="feed-item-date">{{ dateFormat "2006-01-02" .startDate }} - {{ dateFormat "2006-01-02" .endDate }}</h4>
-            <p class="feed-item">
+            <p>
+              <span class="txtdate">{{ dateFormat "2006-01-02" .startDate }} - {{ dateFormat "2006-01-02" .endDate }}</span>
+              <br />
               <a href="{{ if (fileExists $eventsPath) -}}{{ .Site.BaseURL | relLangURL }}{{ else }}{{ $.Site.BaseURL }}{{- end }}events/#{{ .id }}">
-                {{ .name }}<br />
-                {{ if or (.city) (.country) }}{{end}}{{ if .city }}{{ .city }},{{ end }} {{ if .country }}{{ .country }}{{ end }}{{ if or (.city) (.country) }}{{end}}
+                {{ .name }}
+                <br />
+                {{ if or (.city) (.country) }}({{end}}{{ if .city }}{{ .city }},{{ end }} {{ if .country }}{{ .country }}{{ end }}{{ if or (.city) (.country) }}){{end}}
               </a>
             </p>
             {{ $eventsCounter = add $eventsCounter 1 }}
@@ -30,6 +32,8 @@
     {{ end }}
 {{ end }}
 <div class="feed-source">
-  <a href="{{ printf "%s%s/%s" ($.Scratch.Get "sUrl") ($.Scratch.Get "lang") "events/" }}">{{ i18n "more" }}</a>,
-  <a href="{{ absLangURL ($.Site.BaseURL) }}events/feed.xml">Feed</a>
+  <a href="{{ "events" | relLangURL }}">{{ i18n "more" }}</a> |
+  <a href="{{ "events/feed.xml" | relURL }}" title={{ i18n "rss" }}>
+    <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt={{ i18n "rss" }} width="27" height="12" />
+  </a>
 </div>

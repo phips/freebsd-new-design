@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2025-06-29 21:20+0100\n"
+"POT-Creation-Date: 2026-02-22 15:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -264,53 +264,53 @@ msgstr ""
 #: documentation/content/en/books/handbook/glossary.adoc:129
 #: documentation/content/en/books/handbook/glossary.adoc:214
 #: documentation/content/en/books/handbook/glossary.adoc:224
-#: documentation/content/en/books/handbook/glossary.adoc:258
-#: documentation/content/en/books/handbook/glossary.adoc:284
-#: documentation/content/en/books/handbook/glossary.adoc:308
-#: documentation/content/en/books/handbook/glossary.adoc:312
+#: documentation/content/en/books/handbook/glossary.adoc:261
+#: documentation/content/en/books/handbook/glossary.adoc:287
 #: documentation/content/en/books/handbook/glossary.adoc:316
-#: documentation/content/en/books/handbook/glossary.adoc:335
-#: documentation/content/en/books/handbook/glossary.adoc:339
+#: documentation/content/en/books/handbook/glossary.adoc:320
+#: documentation/content/en/books/handbook/glossary.adoc:324
+#: documentation/content/en/books/handbook/glossary.adoc:343
 #: documentation/content/en/books/handbook/glossary.adoc:347
-#: documentation/content/en/books/handbook/glossary.adoc:376
-#: documentation/content/en/books/handbook/glossary.adoc:414
-#: documentation/content/en/books/handbook/glossary.adoc:431
-#: documentation/content/en/books/handbook/glossary.adoc:445
-#: documentation/content/en/books/handbook/glossary.adoc:491
-#: documentation/content/en/books/handbook/glossary.adoc:495
-#: documentation/content/en/books/handbook/glossary.adoc:516
-#: documentation/content/en/books/handbook/glossary.adoc:579
-#: documentation/content/en/books/handbook/glossary.adoc:583
-#: documentation/content/en/books/handbook/glossary.adoc:604
-#: documentation/content/en/books/handbook/glossary.adoc:612
-#: documentation/content/en/books/handbook/glossary.adoc:616
-#: documentation/content/en/books/handbook/glossary.adoc:642
-#: documentation/content/en/books/handbook/glossary.adoc:666
-#: documentation/content/en/books/handbook/glossary.adoc:725
-#: documentation/content/en/books/handbook/glossary.adoc:729
+#: documentation/content/en/books/handbook/glossary.adoc:355
+#: documentation/content/en/books/handbook/glossary.adoc:384
+#: documentation/content/en/books/handbook/glossary.adoc:422
+#: documentation/content/en/books/handbook/glossary.adoc:439
+#: documentation/content/en/books/handbook/glossary.adoc:453
+#: documentation/content/en/books/handbook/glossary.adoc:505
+#: documentation/content/en/books/handbook/glossary.adoc:509
+#: documentation/content/en/books/handbook/glossary.adoc:530
+#: documentation/content/en/books/handbook/glossary.adoc:593
+#: documentation/content/en/books/handbook/glossary.adoc:597
+#: documentation/content/en/books/handbook/glossary.adoc:618
+#: documentation/content/en/books/handbook/glossary.adoc:626
+#: documentation/content/en/books/handbook/glossary.adoc:630
+#: documentation/content/en/books/handbook/glossary.adoc:656
+#: documentation/content/en/books/handbook/glossary.adoc:680
 #: documentation/content/en/books/handbook/glossary.adoc:739
 #: documentation/content/en/books/handbook/glossary.adoc:743
-#: documentation/content/en/books/handbook/glossary.adoc:747
-#: documentation/content/en/books/handbook/glossary.adoc:755
-#: documentation/content/en/books/handbook/glossary.adoc:759
+#: documentation/content/en/books/handbook/glossary.adoc:753
+#: documentation/content/en/books/handbook/glossary.adoc:757
+#: documentation/content/en/books/handbook/glossary.adoc:761
 #: documentation/content/en/books/handbook/glossary.adoc:769
+#: documentation/content/en/books/handbook/glossary.adoc:773
 #: documentation/content/en/books/handbook/glossary.adoc:783
-#: documentation/content/en/books/handbook/glossary.adoc:787
-#: documentation/content/en/books/handbook/glossary.adoc:843
-#: documentation/content/en/books/handbook/glossary.adoc:872
-#: documentation/content/en/books/handbook/glossary.adoc:876
-#: documentation/content/en/books/handbook/glossary.adoc:893
-#: documentation/content/en/books/handbook/glossary.adoc:933
-#: documentation/content/en/books/handbook/glossary.adoc:937
-#: documentation/content/en/books/handbook/glossary.adoc:941
-#: documentation/content/en/books/handbook/glossary.adoc:949
-#: documentation/content/en/books/handbook/glossary.adoc:953
-#: documentation/content/en/books/handbook/glossary.adoc:957
-#: documentation/content/en/books/handbook/glossary.adoc:965
-#: documentation/content/en/books/handbook/glossary.adoc:969
-#: documentation/content/en/books/handbook/glossary.adoc:973
-#: documentation/content/en/books/handbook/glossary.adoc:999
-#: documentation/content/en/books/handbook/glossary.adoc:1022
+#: documentation/content/en/books/handbook/glossary.adoc:797
+#: documentation/content/en/books/handbook/glossary.adoc:801
+#: documentation/content/en/books/handbook/glossary.adoc:862
+#: documentation/content/en/books/handbook/glossary.adoc:891
+#: documentation/content/en/books/handbook/glossary.adoc:895
+#: documentation/content/en/books/handbook/glossary.adoc:912
+#: documentation/content/en/books/handbook/glossary.adoc:952
+#: documentation/content/en/books/handbook/glossary.adoc:956
+#: documentation/content/en/books/handbook/glossary.adoc:960
+#: documentation/content/en/books/handbook/glossary.adoc:968
+#: documentation/content/en/books/handbook/glossary.adoc:972
+#: documentation/content/en/books/handbook/glossary.adoc:976
+#: documentation/content/en/books/handbook/glossary.adoc:984
+#: documentation/content/en/books/handbook/glossary.adoc:988
+#: documentation/content/en/books/handbook/glossary.adoc:992
+#: documentation/content/en/books/handbook/glossary.adoc:1018
+#: documentation/content/en/books/handbook/glossary.adoc:1041
 msgid "{empty}"
 msgstr ""
 
@@ -671,108 +671,119 @@ msgstr ""
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:243
 #, no-wrap
-msgid "DSDT"
+msgid "DRM"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:245
-msgid ""
-"See crossref:glossary[dsdt-glossary,Differentiated System Description Table]."
+msgid "See crossref:glossary[drm-glossary,Direct Rendering Manager]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:246
 #, no-wrap
-msgid "DSR"
+msgid "DSDT"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:248
-msgid "See crossref:glossary[dsr-glossary,Data Set Ready]."
+msgid ""
+"See crossref:glossary[dsdt-glossary,Differentiated System Description Table]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:249
 #, no-wrap
-msgid "DTR"
+msgid "DSR"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:251
-msgid "See crossref:glossary[dtr-glossary,Data Terminal Ready]."
+msgid "See crossref:glossary[dsr-glossary,Data Set Ready]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:252
 #, no-wrap
-msgid "DVMRP"
+msgid "DTR"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:254
+msgid "See crossref:glossary[dtr-glossary,Data Terminal Ready]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:255
+#, no-wrap
+msgid "DVMRP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:257
 msgid ""
 "See crossref:glossary[dvmrp-glossary,Distance-Vector Multicast Routing "
 "Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:256
+#: documentation/content/en/books/handbook/glossary.adoc:259
 #, no-wrap
 msgid "Discretionary Access Control"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:260
+#: documentation/content/en/books/handbook/glossary.adoc:263
 #, no-wrap
 msgid "Data Encryption Standard"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:262
+#: documentation/content/en/books/handbook/glossary.adoc:265
 msgid ""
 "A method of encrypting information, traditionally used as the method of "
 "encryption for UNIX(R) passwords and the man:crypt[3] function."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:264
+#: documentation/content/en/books/handbook/glossary.adoc:267
 #, no-wrap
 msgid "Data Set Ready"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:266
+#: documentation/content/en/books/handbook/glossary.adoc:269
 msgid ""
 "An RS232C signal sent from the modem to the computer or terminal indicating "
 "a readiness to send and receive data."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:268
+#: documentation/content/en/books/handbook/glossary.adoc:271
 msgid "See crossref:glossary[dtr-glossary,Also Data Terminal Ready]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:270
+#: documentation/content/en/books/handbook/glossary.adoc:273
 #, no-wrap
 msgid "Data Terminal Ready"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:272
+#: documentation/content/en/books/handbook/glossary.adoc:275
 msgid ""
 "An RS232C signal sent from the computer or terminal to the modem indicating "
 "a readiness to send and receive data."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:274
+#: documentation/content/en/books/handbook/glossary.adoc:277
 #, no-wrap
 msgid "Debugger"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:276
+#: documentation/content/en/books/handbook/glossary.adoc:279
 msgid ""
 "An interactive in-kernel facility for examining the status of a system, "
 "often used after a system has crashed to establish the events surrounding "
@@ -780,213 +791,226 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:278
+#: documentation/content/en/books/handbook/glossary.adoc:281
 #, no-wrap
 msgid "Differentiated System Description Table"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:280
+#: documentation/content/en/books/handbook/glossary.adoc:283
 msgid ""
 "An ACPI table, supplying basic configuration information about the base "
 "system."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:282
+#: documentation/content/en/books/handbook/glossary.adoc:285
 #, no-wrap
 msgid "Distance-Vector Multicast Routing Protocol"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:286
+#: documentation/content/en/books/handbook/glossary.adoc:289
 #, no-wrap
 msgid "Domain Name System"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:288
+#: documentation/content/en/books/handbook/glossary.adoc:291
 msgid ""
 "The system that converts humanly readable hostnames (i.e., mail.example.net) "
 "to Internet addresses and vice versa."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:290
+#: documentation/content/en/books/handbook/glossary.adoc:293
+#, no-wrap
+msgid "Direct Rendering Manager"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:295
+msgid ""
+"The man:drm[7] kernel module allows client applications direct access to the "
+"graphical hardware via the Direct Rendering Infrastructure."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:297
 #, no-wrap
 msgid "Dynamic Host Configuration Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:293
+#: documentation/content/en/books/handbook/glossary.adoc:300
 msgid ""
 "A protocol that dynamically assigns IP addresses to a computer (host) when "
 "it requests one from the server.  The address assignment is called a “lease”."
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:295
+#: documentation/content/en/books/handbook/glossary.adoc:302
 #, no-wrap
 msgid "E"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:297
+#: documentation/content/en/books/handbook/glossary.adoc:304
 #, no-wrap
 msgid "ECOFF"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:299
+#: documentation/content/en/books/handbook/glossary.adoc:306
 msgid "See crossref:glossary[ecoff-glossary,Extended COFF]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:300
+#: documentation/content/en/books/handbook/glossary.adoc:307
 #, no-wrap
 msgid "ELF"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:302
+#: documentation/content/en/books/handbook/glossary.adoc:309
 msgid "See crossref:glossary[elf-glossary,Executable and Linking Format]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:303
-#, no-wrap
-msgid "ESP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:305
-msgid "See crossref:glossary[esp-glossary,Encapsulated Security Payload]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:306
-#, no-wrap
-msgid "Encapsulated Security Payload"
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:310
 #, no-wrap
-msgid "Executable and Linking Format"
+msgid "ESP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:312
+msgid "See crossref:glossary[esp-glossary,Encapsulated Security Payload]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:314
 #, no-wrap
+msgid "Encapsulated Security Payload"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:318
+#, no-wrap
+msgid "Executable and Linking Format"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:322
+#, no-wrap
 msgid "Extended COFF"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:318
+#: documentation/content/en/books/handbook/glossary.adoc:326
 #, no-wrap
 msgid "F"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:320
+#: documentation/content/en/books/handbook/glossary.adoc:328
 #, no-wrap
 msgid "FADT"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:322
+#: documentation/content/en/books/handbook/glossary.adoc:330
 msgid "See crossref:glossary[fadt-glossary,Fixed ACPI Description Table]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:323
+#: documentation/content/en/books/handbook/glossary.adoc:331
 #, no-wrap
 msgid "FAT"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:325
+#: documentation/content/en/books/handbook/glossary.adoc:333
 msgid "See crossref:glossary[fat-glossary,File Allocation Table]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:326
+#: documentation/content/en/books/handbook/glossary.adoc:334
 #, no-wrap
 msgid "FAT16"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:328
+#: documentation/content/en/books/handbook/glossary.adoc:336
 msgid "See crossref:glossary[fat16-glossary,File Allocation Table (16-bit)]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:329
-#, no-wrap
-msgid "FTP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:331
-msgid "See crossref:glossary[ftp-glossary,File Transfer Protocol]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:333
-#, no-wrap
-msgid "File Allocation Table"
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:337
 #, no-wrap
-msgid "File Allocation Table (16-bit)"
+msgid "FTP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:339
+msgid "See crossref:glossary[ftp-glossary,File Transfer Protocol]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:341
 #, no-wrap
+msgid "File Allocation Table"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:345
+#, no-wrap
+msgid "File Allocation Table (16-bit)"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:349
+#, no-wrap
 msgid "File Transfer Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:343
+#: documentation/content/en/books/handbook/glossary.adoc:351
 msgid ""
 "A member of the family of high-level protocols implemented on top of TCP "
 "which can be used to transfer files over a TCP/IP network."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:345
+#: documentation/content/en/books/handbook/glossary.adoc:353
 #, no-wrap
 msgid "Fixed ACPI Description Table"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:349
+#: documentation/content/en/books/handbook/glossary.adoc:357
 #, no-wrap
 msgid "G"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:351
+#: documentation/content/en/books/handbook/glossary.adoc:359
 #, no-wrap
 msgid "GUI"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:353
+#: documentation/content/en/books/handbook/glossary.adoc:361
 msgid "See crossref:glossary[gui-glossary,Graphical User Interface]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:355
+#: documentation/content/en/books/handbook/glossary.adoc:363
 #, no-wrap
 msgid "Giant"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:359
+#: documentation/content/en/books/handbook/glossary.adoc:367
 msgid ""
 "The name of a mutual exclusion mechanism (a sleep `mutex`) that protects a "
 "large set of kernel resources.  Although a simple locking mechanism was "
@@ -999,228 +1023,228 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:361
+#: documentation/content/en/books/handbook/glossary.adoc:369
 #, no-wrap
 msgid "Graphical User Interface"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:363
+#: documentation/content/en/books/handbook/glossary.adoc:371
 msgid "A system where the user and computer interact with graphics."
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:365
+#: documentation/content/en/books/handbook/glossary.adoc:373
 #, no-wrap
 msgid "H"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:367
+#: documentation/content/en/books/handbook/glossary.adoc:375
 #, no-wrap
 msgid "HTML"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:369
+#: documentation/content/en/books/handbook/glossary.adoc:377
 msgid "See crossref:glossary[html-glossary,HyperText Markup Language]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:370
-#, no-wrap
-msgid "HUP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:372
-msgid "See crossref:glossary[hup-glossary,HangUp]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:374
-#, no-wrap
-msgid "HangUp"
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:378
 #, no-wrap
-msgid "HyperText Markup Language"
+msgid "HUP"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:380
+msgid "See crossref:glossary[hup-glossary,HangUp]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:382
+#, no-wrap
+msgid "HangUp"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:386
+#, no-wrap
+msgid "HyperText Markup Language"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:388
 msgid "The markup language used to create web pages."
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:382
+#: documentation/content/en/books/handbook/glossary.adoc:390
 #, no-wrap
 msgid "I"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:384
+#: documentation/content/en/books/handbook/glossary.adoc:392
 #, no-wrap
 msgid "I/O"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:386
+#: documentation/content/en/books/handbook/glossary.adoc:394
 msgid "See crossref:glossary[io-glossary,Input/Output]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:387
+#: documentation/content/en/books/handbook/glossary.adoc:395
 #, no-wrap
 msgid "IASL"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:389
+#: documentation/content/en/books/handbook/glossary.adoc:397
 msgid "See crossref:glossary[iasl-glossary,Intel’s ASL compiler]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:390
+#: documentation/content/en/books/handbook/glossary.adoc:398
 #, no-wrap
 msgid "IMAP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:392
+#: documentation/content/en/books/handbook/glossary.adoc:400
 msgid "See crossref:glossary[imap-glossary,Internet Message Access Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:393
+#: documentation/content/en/books/handbook/glossary.adoc:401
 #, no-wrap
 msgid "IP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:395
+#: documentation/content/en/books/handbook/glossary.adoc:403
 msgid "See crossref:glossary[ip-glossary,Internet Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:396
+#: documentation/content/en/books/handbook/glossary.adoc:404
 #, no-wrap
 msgid "IPFW"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:398
+#: documentation/content/en/books/handbook/glossary.adoc:406
 msgid "See crossref:glossary[ipfw-glossary,IP Firewall]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:399
+#: documentation/content/en/books/handbook/glossary.adoc:407
 #, no-wrap
 msgid "IPP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:401
+#: documentation/content/en/books/handbook/glossary.adoc:409
 msgid "See crossref:glossary[ipp-glossary,Internet Printing Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:402
+#: documentation/content/en/books/handbook/glossary.adoc:410
 #, no-wrap
 msgid "IPv4"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:404
+#: documentation/content/en/books/handbook/glossary.adoc:412
 msgid "See crossref:glossary[ipv4-glossary,IP Version 4]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:405
+#: documentation/content/en/books/handbook/glossary.adoc:413
 #, no-wrap
 msgid "IPv6"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:407
+#: documentation/content/en/books/handbook/glossary.adoc:415
 msgid "See crossref:glossary[ipv6-glossary,IP Version 6]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:408
-#, no-wrap
-msgid "ISP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:410
-msgid "See crossref:glossary[isp-glossary,Internet Service Provider]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:412
-#, no-wrap
-msgid "IP Firewall"
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:416
 #, no-wrap
+msgid "ISP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:418
+msgid "See crossref:glossary[isp-glossary,Internet Service Provider]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:420
+#, no-wrap
+msgid "IP Firewall"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:424
+#, no-wrap
 msgid "IP Version 4"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:419
+#: documentation/content/en/books/handbook/glossary.adoc:427
 msgid ""
 "The IP protocol version 4, which uses 32 bits for addressing.  This version "
 "is still the most widely used, but it is slowly being replaced with IPv6."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:421
+#: documentation/content/en/books/handbook/glossary.adoc:429
 msgid "See crossref:glossary[ipv6-glossary,Also IP Version 6]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:423
+#: documentation/content/en/books/handbook/glossary.adoc:431
 #, no-wrap
 msgid "IP Version 6"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:427
+#: documentation/content/en/books/handbook/glossary.adoc:435
 msgid ""
 "The new IP protocol.  Invented because the address space in IPv4 is running "
 "out.  Uses 128 bits for addressing."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:429
+#: documentation/content/en/books/handbook/glossary.adoc:437
 #, no-wrap
 msgid "Input/Output"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:433
+#: documentation/content/en/books/handbook/glossary.adoc:441
 #, no-wrap
 msgid "Intel’s ASL compiler"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:435
+#: documentation/content/en/books/handbook/glossary.adoc:443
 msgid "Intel’s compiler for converting ASL into AML."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:437
+#: documentation/content/en/books/handbook/glossary.adoc:445
 #, no-wrap
 msgid "Internet Message Access Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:439
+#: documentation/content/en/books/handbook/glossary.adoc:447
 msgid ""
 "A protocol for accessing email messages on a mail server, characterised by "
 "the messages usually being kept on the server as opposed to being downloaded "
@@ -1228,25 +1252,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:441
-#: documentation/content/en/books/handbook/glossary.adoc:773
+#: documentation/content/en/books/handbook/glossary.adoc:449
+#: documentation/content/en/books/handbook/glossary.adoc:787
 msgid "See Also Post Office Protocol Version 3."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:443
+#: documentation/content/en/books/handbook/glossary.adoc:451
 #, no-wrap
 msgid "Internet Printing Protocol"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:447
+#: documentation/content/en/books/handbook/glossary.adoc:455
 #, no-wrap
 msgid "Internet Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:452
+#: documentation/content/en/books/handbook/glossary.adoc:460
 msgid ""
 "The packet transmitting protocol that is the basic protocol on the "
 "Internet.  Originally developed at the U.S. Department of Defense and an "
@@ -1256,30 +1280,30 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:454
+#: documentation/content/en/books/handbook/glossary.adoc:462
 #, no-wrap
 msgid "Internet Service Provider"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:456
+#: documentation/content/en/books/handbook/glossary.adoc:464
 msgid "A company that provides access to the Internet."
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:458
+#: documentation/content/en/books/handbook/glossary.adoc:466
 #, no-wrap
 msgid "K"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:461
+#: documentation/content/en/books/handbook/glossary.adoc:469
 #, no-wrap
 msgid "KAME"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:463
+#: documentation/content/en/books/handbook/glossary.adoc:471
 msgid ""
 "Japanese for “turtle”, the term KAME is used in computing circles to refer "
 "to the link:http://www.kame.net/[KAME Project], who work on an "
@@ -1287,106 +1311,123 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:464
+#: documentation/content/en/books/handbook/glossary.adoc:472
 #, no-wrap
 msgid "KDC"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:466
+#: documentation/content/en/books/handbook/glossary.adoc:474
 msgid "See crossref:glossary[kdc-glossary,Key Distribution Center]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:467
+#: documentation/content/en/books/handbook/glossary.adoc:475
 #, no-wrap
 msgid "KLD"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:469
+#: documentation/content/en/books/handbook/glossary.adoc:477
 msgid "See crossref:glossary[kld-glossary,Kernel ld(1)]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:470
+#: documentation/content/en/books/handbook/glossary.adoc:478
+#, no-wrap
+msgid "KMS"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:480
+msgid "See crossref:glossary[kms-glossary,Kernel Mode Setting]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:481
 #, no-wrap
 msgid "KSE"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:472
+#: documentation/content/en/books/handbook/glossary.adoc:483
 msgid "See crossref:glossary[kse-glossary,Kernel Scheduler Entities]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:473
+#: documentation/content/en/books/handbook/glossary.adoc:484
 #, no-wrap
 msgid "KVA"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:475
+#: documentation/content/en/books/handbook/glossary.adoc:486
 msgid "See crossref:glossary[kva-glossary,Kernel Virtual Address]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:476
+#: documentation/content/en/books/handbook/glossary.adoc:487
 #, no-wrap
 msgid "Kbps"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:478
+#: documentation/content/en/books/handbook/glossary.adoc:489
 msgid "See crossref:glossary[kbps-glossary,Kilo Bits Per Second]."
 msgstr ""
 
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:492
+msgid "Setting the display mode in kernel space."
+msgstr ""
+
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:480
+#: documentation/content/en/books/handbook/glossary.adoc:494
 #, no-wrap
 msgid "Kernel man:ld[1]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:482
+#: documentation/content/en/books/handbook/glossary.adoc:496
 msgid ""
 "A method of dynamically loading functionality into a FreeBSD kernel without "
 "rebooting the system."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:484
+#: documentation/content/en/books/handbook/glossary.adoc:498
 #, no-wrap
 msgid "Kernel Scheduler Entities"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:487
+#: documentation/content/en/books/handbook/glossary.adoc:501
 msgid ""
-"A kernel-supported threading system.  See the link:http://www.freebsd.org/"
-"kse[project home page] for further details."
+"A kernel-supported threading system.  See the link:https://"
+"people.freebsd.org/~kuriyama/www/kse[KSE Project home page] for further "
+"details."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:489
+#: documentation/content/en/books/handbook/glossary.adoc:503
 #, no-wrap
 msgid "Kernel Virtual Address"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:493
+#: documentation/content/en/books/handbook/glossary.adoc:507
 #, no-wrap
 msgid "Key Distribution Center"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:497
+#: documentation/content/en/books/handbook/glossary.adoc:511
 #, no-wrap
 msgid "Kilo Bits Per Second"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:500
+#: documentation/content/en/books/handbook/glossary.adoc:514
 msgid ""
 "Used to measure bandwidth (how much data can pass a given point at a "
 "specified amount of time).  Alternates to the Kilo prefix include Mega, "
@@ -1394,69 +1435,69 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:502
+#: documentation/content/en/books/handbook/glossary.adoc:516
 #, no-wrap
 msgid "L"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:504
+#: documentation/content/en/books/handbook/glossary.adoc:518
 #, no-wrap
 msgid "LAN"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:506
+#: documentation/content/en/books/handbook/glossary.adoc:520
 msgid "See crossref:glossary[lan-glossary,Local Area Network]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:507
+#: documentation/content/en/books/handbook/glossary.adoc:521
 #, no-wrap
 msgid "LOR"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:509
+#: documentation/content/en/books/handbook/glossary.adoc:523
 msgid "See crossref:glossary[lor-glossary,Lock Order Reversal]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:510
+#: documentation/content/en/books/handbook/glossary.adoc:524
 #, no-wrap
 msgid "LPD"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:512
+#: documentation/content/en/books/handbook/glossary.adoc:526
 msgid "See crossref:glossary[lpd-glossary,Line Printer Daemon]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:514
+#: documentation/content/en/books/handbook/glossary.adoc:528
 #, no-wrap
 msgid "Line Printer Daemon"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:518
+#: documentation/content/en/books/handbook/glossary.adoc:532
 #, no-wrap
 msgid "Local Area Network"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:520
+#: documentation/content/en/books/handbook/glossary.adoc:534
 msgid "A network used on a local area, e.g. office, home, or so forth."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:522
+#: documentation/content/en/books/handbook/glossary.adoc:536
 #, no-wrap
 msgid "Lock Order Reversal"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:527
+#: documentation/content/en/books/handbook/glossary.adoc:541
 msgid ""
 "The FreeBSD kernel uses a number of resource locks to arbitrate contention "
 "for those resources.  A run-time lock diagnostic system found in FreeBSD-"
@@ -1468,7 +1509,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:529
+#: documentation/content/en/books/handbook/glossary.adoc:543
 msgid ""
 "True positive LORs tend to get fixed quickly, so check https://"
 "lists.FreeBSD.org/subscription/freebsd-current and the link:http://"
@@ -1477,141 +1518,141 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:531
+#: documentation/content/en/books/handbook/glossary.adoc:545
 #, no-wrap
 msgid "M"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:533
+#: documentation/content/en/books/handbook/glossary.adoc:547
 #, no-wrap
 msgid "MAC"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:535
+#: documentation/content/en/books/handbook/glossary.adoc:549
 msgid "See crossref:glossary[mac-glossary,Mandatory Access Control]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:536
+#: documentation/content/en/books/handbook/glossary.adoc:550
 #, no-wrap
 msgid "MADT"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:538
+#: documentation/content/en/books/handbook/glossary.adoc:552
 msgid "See crossref:glossary[madt-glossary,Multiple APIC Description Table]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:539
+#: documentation/content/en/books/handbook/glossary.adoc:553
 #, no-wrap
 msgid "MFC"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:541
+#: documentation/content/en/books/handbook/glossary.adoc:555
 msgid "See crossref:glossary[mfc-glossary,Merge From Current]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:542
+#: documentation/content/en/books/handbook/glossary.adoc:556
 #, no-wrap
 msgid "MFH"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:544
+#: documentation/content/en/books/handbook/glossary.adoc:558
 msgid "See crossref:glossary[mfh-glossary,Merge From Head]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:545
+#: documentation/content/en/books/handbook/glossary.adoc:559
 #, no-wrap
 msgid "MFS"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:547
+#: documentation/content/en/books/handbook/glossary.adoc:561
 msgid "See crossref:glossary[mfs-glossary,Merge From Stable]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:548
+#: documentation/content/en/books/handbook/glossary.adoc:562
 #, no-wrap
 msgid "MFV"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:550
+#: documentation/content/en/books/handbook/glossary.adoc:564
 msgid "See crossref:glossary[mfv-glossary,Merge From Vendor]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:551
+#: documentation/content/en/books/handbook/glossary.adoc:565
 #, no-wrap
 msgid "MIT"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:553
+#: documentation/content/en/books/handbook/glossary.adoc:567
 msgid ""
 "See crossref:glossary[mit-glossary,Massachusetts Institute of Technology]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:554
+#: documentation/content/en/books/handbook/glossary.adoc:568
 #, no-wrap
 msgid "MLS"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:556
+#: documentation/content/en/books/handbook/glossary.adoc:570
 msgid "See crossref:glossary[mls-glossary,Multi-Level Security]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:557
+#: documentation/content/en/books/handbook/glossary.adoc:571
 #, no-wrap
 msgid "MOTD"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:559
+#: documentation/content/en/books/handbook/glossary.adoc:573
 msgid "See crossref:glossary[motd-glossary,Message Of The Day]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:560
+#: documentation/content/en/books/handbook/glossary.adoc:574
 #, no-wrap
 msgid "MTA"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:562
+#: documentation/content/en/books/handbook/glossary.adoc:576
 msgid "See crossref:glossary[mta-glossary,Mail Transfer Agent]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:563
+#: documentation/content/en/books/handbook/glossary.adoc:577
 #, no-wrap
 msgid "MUA"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:565
+#: documentation/content/en/books/handbook/glossary.adoc:579
 msgid "See crossref:glossary[mua-glossary,Mail User Agent]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:567
+#: documentation/content/en/books/handbook/glossary.adoc:581
 #, no-wrap
 msgid "Mail Transfer Agent"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:571
+#: documentation/content/en/books/handbook/glossary.adoc:585
 msgid ""
 "An application used to transfer email.  An MTA has traditionally been part "
 "of the BSD base system.  Today Sendmail is included in the base system, but "
@@ -1619,62 +1660,62 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:573
+#: documentation/content/en/books/handbook/glossary.adoc:587
 #, no-wrap
 msgid "Mail User Agent"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:575
+#: documentation/content/en/books/handbook/glossary.adoc:589
 msgid "An application used by users to display and write email."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:577
+#: documentation/content/en/books/handbook/glossary.adoc:591
 #, no-wrap
 msgid "Mandatory Access Control"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:581
+#: documentation/content/en/books/handbook/glossary.adoc:595
 #, no-wrap
 msgid "Massachusetts Institute of Technology"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:585
+#: documentation/content/en/books/handbook/glossary.adoc:599
 #, no-wrap
 msgid "Merge From Current"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:587
+#: documentation/content/en/books/handbook/glossary.adoc:601
 msgid ""
 "To merge functionality or a patch from the -CURRENT branch to another, most "
 "often -STABLE."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:589
+#: documentation/content/en/books/handbook/glossary.adoc:603
 #, no-wrap
 msgid "Merge From Head"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:591
+#: documentation/content/en/books/handbook/glossary.adoc:605
 msgid ""
 "To merge functionality or a patch from a repository HEAD to an earlier "
 "branch."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:593
+#: documentation/content/en/books/handbook/glossary.adoc:607
 #, no-wrap
 msgid "Merge From Stable"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:596
+#: documentation/content/en/books/handbook/glossary.adoc:610
 msgid ""
 "In the normal course of FreeBSD development, a change will be committed to "
 "the -CURRENT branch for testing before being merged to -STABLE.  On rare "
@@ -1683,117 +1724,117 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:598
+#: documentation/content/en/books/handbook/glossary.adoc:612
 msgid ""
 "This term is also used when a patch is merged from -STABLE to a security "
 "branch."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:600
+#: documentation/content/en/books/handbook/glossary.adoc:614
 msgid "See crossref:glossary[mfc-glossary,Also Merge From Current]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:602
+#: documentation/content/en/books/handbook/glossary.adoc:616
 #, no-wrap
 msgid "Merge From Vendor"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:606
+#: documentation/content/en/books/handbook/glossary.adoc:620
 #, no-wrap
 msgid "Message Of The Day"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:608
+#: documentation/content/en/books/handbook/glossary.adoc:622
 msgid ""
 "A message, usually shown on login, often used to distribute information to "
 "users of the system."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:610
+#: documentation/content/en/books/handbook/glossary.adoc:624
 #, no-wrap
 msgid "Multi-Level Security"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:614
+#: documentation/content/en/books/handbook/glossary.adoc:628
 #, no-wrap
 msgid "Multiple APIC Description Table"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:618
+#: documentation/content/en/books/handbook/glossary.adoc:632
 #, no-wrap
 msgid "N"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:620
+#: documentation/content/en/books/handbook/glossary.adoc:634
 #, no-wrap
 msgid "NAT"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:622
+#: documentation/content/en/books/handbook/glossary.adoc:636
 msgid "See crossref:glossary[nat-glossary,Network Address Translation]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:623
+#: documentation/content/en/books/handbook/glossary.adoc:637
 #, no-wrap
 msgid "NDISulator"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:625
+#: documentation/content/en/books/handbook/glossary.adoc:639
 msgid "See crossref:glossary[projectevil-glossary,Project Evil]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:626
+#: documentation/content/en/books/handbook/glossary.adoc:640
 #, no-wrap
 msgid "NFS"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:628
+#: documentation/content/en/books/handbook/glossary.adoc:642
 msgid "See crossref:glossary[nfs-glossary,Network File System]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:629
+#: documentation/content/en/books/handbook/glossary.adoc:643
 #, no-wrap
 msgid "NTFS"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:631
+#: documentation/content/en/books/handbook/glossary.adoc:645
 msgid "See crossref:glossary[ntfs-glossary,New Technology File System]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:632
+#: documentation/content/en/books/handbook/glossary.adoc:646
 #, no-wrap
 msgid "NTP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:634
+#: documentation/content/en/books/handbook/glossary.adoc:648
 msgid "See crossref:glossary[ntp-glossary,Network Time Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:636
+#: documentation/content/en/books/handbook/glossary.adoc:650
 #, no-wrap
 msgid "Network Address Translation"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:638
+#: documentation/content/en/books/handbook/glossary.adoc:652
 msgid ""
 "A technique where IP packets are rewritten on the way through a gateway, "
 "enabling many machines behind the gateway to effectively share a single IP "
@@ -1801,88 +1842,88 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:640
+#: documentation/content/en/books/handbook/glossary.adoc:654
 #, no-wrap
 msgid "Network File System"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:644
+#: documentation/content/en/books/handbook/glossary.adoc:658
 #, no-wrap
 msgid "New Technology File System"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:646
+#: documentation/content/en/books/handbook/glossary.adoc:660
 msgid ""
 "A filesystem developed by Microsoft and available in its “New Technology” "
 "operating systems, such as Windows(R) 2000, Windows NT(R) and Windows(R) XP."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:648
+#: documentation/content/en/books/handbook/glossary.adoc:662
 #, no-wrap
 msgid "Network Time Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:650
+#: documentation/content/en/books/handbook/glossary.adoc:664
 msgid "A means of synchronizing clocks over a network."
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:652
+#: documentation/content/en/books/handbook/glossary.adoc:666
 #, no-wrap
 msgid "O"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:654
+#: documentation/content/en/books/handbook/glossary.adoc:668
 #, no-wrap
 msgid "OBE"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:656
+#: documentation/content/en/books/handbook/glossary.adoc:670
 msgid "See crossref:glossary[obe-glossary,Overtaken By Events]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:657
+#: documentation/content/en/books/handbook/glossary.adoc:671
 #, no-wrap
 msgid "ODMR"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:659
+#: documentation/content/en/books/handbook/glossary.adoc:673
 msgid "See crossref:glossary[odmr-glossary,On-Demand Mail Relay]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:660
+#: documentation/content/en/books/handbook/glossary.adoc:674
 #, no-wrap
 msgid "OS"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:662
+#: documentation/content/en/books/handbook/glossary.adoc:676
 msgid "See crossref:glossary[os-glossary,Operating System]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:664
+#: documentation/content/en/books/handbook/glossary.adoc:678
 #, no-wrap
 msgid "On-Demand Mail Relay"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:668
+#: documentation/content/en/books/handbook/glossary.adoc:682
 #, no-wrap
 msgid "Operating System"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:671
+#: documentation/content/en/books/handbook/glossary.adoc:685
 msgid ""
 "A set of programs, libraries and tools that provide access to the hardware "
 "resources of a computer.  Operating systems range today from simplistic "
@@ -1893,13 +1934,13 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:673
+#: documentation/content/en/books/handbook/glossary.adoc:687
 #, no-wrap
 msgid "Overtaken By Events"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:675
+#: documentation/content/en/books/handbook/glossary.adoc:689
 msgid ""
 "Indicates a suggested change (such as a Problem Report or a feature request) "
 "which is no longer relevant or applicable due to such things as later "
@@ -1908,227 +1949,227 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:677
+#: documentation/content/en/books/handbook/glossary.adoc:691
 #, no-wrap
 msgid "P"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:679
+#: documentation/content/en/books/handbook/glossary.adoc:693
 #, no-wrap
 msgid "PAE"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:681
+#: documentation/content/en/books/handbook/glossary.adoc:695
 msgid "See crossref:glossary[pae-glossary,Physical Address Extensions]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:682
+#: documentation/content/en/books/handbook/glossary.adoc:696
 #, no-wrap
 msgid "PAM"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:684
+#: documentation/content/en/books/handbook/glossary.adoc:698
 msgid "See crossref:glossary[pam-glossary,Pluggable Authentication Modules]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:685
+#: documentation/content/en/books/handbook/glossary.adoc:699
 #, no-wrap
 msgid "PAP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:687
+#: documentation/content/en/books/handbook/glossary.adoc:701
 msgid "See crossref:glossary[pap-glossary,Password Authentication Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:688
+#: documentation/content/en/books/handbook/glossary.adoc:702
 #, no-wrap
 msgid "PC"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:690
+#: documentation/content/en/books/handbook/glossary.adoc:704
 msgid "See crossref:glossary[pc-glossary,Personal Computer]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:691
+#: documentation/content/en/books/handbook/glossary.adoc:705
 #, no-wrap
 msgid "PCNSFD"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:694
+#: documentation/content/en/books/handbook/glossary.adoc:708
 msgid ""
 "See crossref:glossary[pcnfsd-glossary,Personal Computer Network File System "
 "Daemon]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:695
+#: documentation/content/en/books/handbook/glossary.adoc:709
 #, no-wrap
 msgid "PDF"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:697
+#: documentation/content/en/books/handbook/glossary.adoc:711
 msgid "See crossref:glossary[pdf-glossary,Portable Document Format]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:698
+#: documentation/content/en/books/handbook/glossary.adoc:712
 #, no-wrap
 msgid "PID"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:700
+#: documentation/content/en/books/handbook/glossary.adoc:714
 msgid "See crossref:glossary[pid-glossary,Process ID]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:701
+#: documentation/content/en/books/handbook/glossary.adoc:715
 #, no-wrap
 msgid "POLA"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:703
+#: documentation/content/en/books/handbook/glossary.adoc:717
 msgid "See crossref:glossary[pola-glossary,Principle Of Least Astonishment]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:704
+#: documentation/content/en/books/handbook/glossary.adoc:718
 #, no-wrap
 msgid "POP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:706
+#: documentation/content/en/books/handbook/glossary.adoc:720
 msgid "See crossref:glossary[pop-glossary,Post Office Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:707
+#: documentation/content/en/books/handbook/glossary.adoc:721
 #, no-wrap
 msgid "POP3"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:709
+#: documentation/content/en/books/handbook/glossary.adoc:723
 msgid "See crossref:glossary[pop3-glossary,Post Office Protocol Version 3]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:710
+#: documentation/content/en/books/handbook/glossary.adoc:724
 #, no-wrap
 msgid "PPD"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:712
+#: documentation/content/en/books/handbook/glossary.adoc:726
 msgid "See crossref:glossary[ppd-glossary,PostScript Printer Description]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:713
-#, no-wrap
-msgid "PPP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:715
-msgid "See crossref:glossary[ppp-glossary,Point-to-Point Protocol]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:716
-#, no-wrap
-msgid "PPPoA"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:718
-msgid "See crossref:glossary[pppoa-glossary,PPP over ATM]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:719
-#, no-wrap
-msgid "PPPoE"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:721
-msgid "See crossref:glossary[pppoe-glossary,PPP over Ethernet]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:723
-#, no-wrap
-msgid "PPP over ATM"
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:727
 #, no-wrap
-msgid "PPP over Ethernet"
+msgid "PPP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:729
+msgid "See crossref:glossary[ppp-glossary,Point-to-Point Protocol]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:730
 #, no-wrap
-msgid "PR"
+msgid "PPPoA"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:732
-msgid "See crossref:glossary[pr-glossary,Problem Report]."
+msgid "See crossref:glossary[pppoa-glossary,PPP over ATM]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:733
 #, no-wrap
-msgid "PXE"
+msgid "PPPoE"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:735
-msgid "See crossref:glossary[pxe-glossary,Preboot eXecution Environment]."
+msgid "See crossref:glossary[pppoe-glossary,PPP over Ethernet]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:737
 #, no-wrap
-msgid "Password Authentication Protocol"
+msgid "PPP over ATM"
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:741
 #, no-wrap
+msgid "PPP over Ethernet"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:744
+#, no-wrap
+msgid "PR"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:746
+msgid "See crossref:glossary[pr-glossary,Problem Report]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:747
+#, no-wrap
+msgid "PXE"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:749
+msgid "See crossref:glossary[pxe-glossary,Preboot eXecution Environment]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:751
+#, no-wrap
+msgid "Password Authentication Protocol"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:755
+#, no-wrap
 msgid "Personal Computer"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:745
+#: documentation/content/en/books/handbook/glossary.adoc:759
 #, no-wrap
 msgid "Personal Computer Network File System Daemon"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:749
+#: documentation/content/en/books/handbook/glossary.adoc:763
 #, no-wrap
 msgid "Physical Address Extensions"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:751
+#: documentation/content/en/books/handbook/glossary.adoc:765
 msgid ""
 "A method of enabling access to up to 64 GB of RAM on systems which only "
 "physically have a 32-bit wide address space (and would therefore be limited "
@@ -2136,25 +2177,25 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:753
+#: documentation/content/en/books/handbook/glossary.adoc:767
 #, no-wrap
 msgid "Pluggable Authentication Modules"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:757
+#: documentation/content/en/books/handbook/glossary.adoc:771
 #, no-wrap
 msgid "Point-to-Point Protocol"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:761
+#: documentation/content/en/books/handbook/glossary.adoc:775
 #, no-wrap
 msgid "Pointy Hat"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:765
+#: documentation/content/en/books/handbook/glossary.adoc:779
 msgid ""
 "A mythical piece of headgear, much like a dunce cap, awarded to any FreeBSD "
 "committer who breaks the build, makes revision numbers go backwards, or "
@@ -2164,25 +2205,25 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:767
+#: documentation/content/en/books/handbook/glossary.adoc:781
 #, no-wrap
 msgid "Portable Document Format"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:771
+#: documentation/content/en/books/handbook/glossary.adoc:785
 #, no-wrap
 msgid "Post Office Protocol"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:775
+#: documentation/content/en/books/handbook/glossary.adoc:789
 #, no-wrap
 msgid "Post Office Protocol Version 3"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:777
+#: documentation/content/en/books/handbook/glossary.adoc:791
 msgid ""
 "A protocol for accessing email messages on a mail server, characterised by "
 "the messages usually being downloaded from the server to the client, as "
@@ -2190,31 +2231,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:779
+#: documentation/content/en/books/handbook/glossary.adoc:793
 msgid ""
 "See crossref:glossary[imap-glossary,Also Internet Message Access Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:781
+#: documentation/content/en/books/handbook/glossary.adoc:795
 #, no-wrap
 msgid "PostScript Printer Description"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:785
+#: documentation/content/en/books/handbook/glossary.adoc:799
 #, no-wrap
 msgid "Preboot eXecution Environment"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:789
+#: documentation/content/en/books/handbook/glossary.adoc:803
 #, no-wrap
 msgid "Principle Of Least Astonishment"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:793
+#: documentation/content/en/books/handbook/glossary.adoc:807
 msgid ""
 "As FreeBSD evolves, changes visible to the user should be kept as "
 "unsurprising as possible.  For example, arbitrarily rearranging system "
@@ -2223,13 +2264,26 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:795
+#: documentation/content/en/books/handbook/glossary.adoc:809
+#, no-wrap
+msgid "PRIME"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:812
+msgid ""
+"A method of multiple physical graphics coprocessors coexisting by sharing "
+"their direct memory access buffers."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:814
 #, no-wrap
 msgid "Problem Report"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:798
+#: documentation/content/en/books/handbook/glossary.adoc:817
 msgid ""
 "A description of some kind of problem that has been found in either the "
 "FreeBSD source or documentation.  See extref:{problem-reports}[Writing "
@@ -2237,26 +2291,26 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:800
+#: documentation/content/en/books/handbook/glossary.adoc:819
 #, no-wrap
 msgid "Process ID"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:802
+#: documentation/content/en/books/handbook/glossary.adoc:821
 msgid ""
 "A number, unique to a particular process on a system, which identifies it "
 "and allows actions to be taken against it."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:804
+#: documentation/content/en/books/handbook/glossary.adoc:823
 #, no-wrap
 msgid "Project Evil"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:809
+#: documentation/content/en/books/handbook/glossary.adoc:828
 msgid ""
 "The working title for the NDISulator, written by Bill Paul, who named it "
 "referring to how awful it is (from a philosophical standpoint) to need to "
@@ -2268,125 +2322,125 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:811
+#: documentation/content/en/books/handbook/glossary.adoc:830
 #, no-wrap
 msgid "R"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:813
+#: documentation/content/en/books/handbook/glossary.adoc:832
 #, no-wrap
 msgid "RA"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:815
+#: documentation/content/en/books/handbook/glossary.adoc:834
 msgid "See crossref:glossary[ra-glossary,Router Advertisement]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:816
+#: documentation/content/en/books/handbook/glossary.adoc:835
 #, no-wrap
 msgid "RAID"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:818
+#: documentation/content/en/books/handbook/glossary.adoc:837
 msgid ""
 "See crossref:glossary[raid-glossary,Redundant Array of Inexpensive Disks]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:819
+#: documentation/content/en/books/handbook/glossary.adoc:838
 #, no-wrap
 msgid "RAM"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:821
+#: documentation/content/en/books/handbook/glossary.adoc:840
 msgid "See crossref:glossary[ram-glossary,Random Access Memory]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:822
-#, no-wrap
-msgid "RD"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:824
-msgid "See crossref:glossary[rd-glossary,Received Data]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:825
-#, no-wrap
-msgid "RFC"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:827
-msgid "See crossref:glossary[rfc-glossary,Request For Comments]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:828
-#, no-wrap
-msgid "RISC"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:830
-msgid "See crossref:glossary[risc-glossary,Reduced Instruction Set Computer]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:831
-#, no-wrap
-msgid "RPC"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:833
-msgid "See crossref:glossary[rpc-glossary,Remote Procedure Call]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:834
-#, no-wrap
-msgid "RS232C"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:836
-msgid "See crossref:glossary[rs232c-glossary,Recommended Standard 232C]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:837
-#, no-wrap
-msgid "RTS"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:839
-msgid "See crossref:glossary[rts-glossary,Request To Send]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:841
 #, no-wrap
+msgid "RD"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:843
+msgid "See crossref:glossary[rd-glossary,Received Data]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:844
+#, no-wrap
+msgid "RFC"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:846
+msgid "See crossref:glossary[rfc-glossary,Request For Comments]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:847
+#, no-wrap
+msgid "RISC"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:849
+msgid "See crossref:glossary[risc-glossary,Reduced Instruction Set Computer]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:850
+#, no-wrap
+msgid "RPC"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:852
+msgid "See crossref:glossary[rpc-glossary,Remote Procedure Call]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:853
+#, no-wrap
+msgid "RS232C"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:855
+msgid "See crossref:glossary[rs232c-glossary,Recommended Standard 232C]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:856
+#, no-wrap
+msgid "RTS"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:858
+msgid "See crossref:glossary[rts-glossary,Request To Send]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:860
+#, no-wrap
 msgid "Random Access Memory"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:845
+#: documentation/content/en/books/handbook/glossary.adoc:864
 #, no-wrap
 msgid "Revision Control System"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:850
+#: documentation/content/en/books/handbook/glossary.adoc:869
 msgid ""
 "The _Revision Control System (RCS)_ is one of the oldest software suites "
 "that implement “revision control” for plain files.  It allows the storage, "
@@ -2398,45 +2452,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:852
+#: documentation/content/en/books/handbook/glossary.adoc:871
 msgid "See crossref:glossary[svn-glossary,Also Subversion]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:854
+#: documentation/content/en/books/handbook/glossary.adoc:873
 #, no-wrap
 msgid "Received Data"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:856
+#: documentation/content/en/books/handbook/glossary.adoc:875
 msgid "An RS232C pin or wire that data is received on."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:858
+#: documentation/content/en/books/handbook/glossary.adoc:877
 msgid "See crossref:glossary[td-glossary,Also Transmitted Data]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:860
+#: documentation/content/en/books/handbook/glossary.adoc:879
 #, no-wrap
 msgid "Recommended Standard 232C"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:862
+#: documentation/content/en/books/handbook/glossary.adoc:881
 msgid "A standard for communications between serial devices."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:864
+#: documentation/content/en/books/handbook/glossary.adoc:883
 #, no-wrap
 msgid "Reduced Instruction Set Computer"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:868
+#: documentation/content/en/books/handbook/glossary.adoc:887
 msgid ""
 "An approach to processor design where the operations the hardware can "
 "perform are simplified but made as general purpose as possible.  This can "
@@ -2446,513 +2500,513 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:870
+#: documentation/content/en/books/handbook/glossary.adoc:889
 #, no-wrap
 msgid "Redundant Array of Inexpensive Disks"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:874
+#: documentation/content/en/books/handbook/glossary.adoc:893
 #, no-wrap
 msgid "Remote Procedure Call"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:878
+#: documentation/content/en/books/handbook/glossary.adoc:897
 #, no-wrap
 msgid "Request For Comments"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:881
+#: documentation/content/en/books/handbook/glossary.adoc:900
 msgid ""
 "A set of documents defining Internet standards, protocols, and so forth.  "
 "See www.rfc-editor.org."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:883
+#: documentation/content/en/books/handbook/glossary.adoc:902
 msgid ""
 "Also used as a general term when someone has a suggested change and wants "
 "feedback."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:885
+#: documentation/content/en/books/handbook/glossary.adoc:904
 #, no-wrap
 msgid "Request To Send"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:887
+#: documentation/content/en/books/handbook/glossary.adoc:906
 msgid ""
 "An RS232C signal requesting that the remote system commences transmission of "
 "data."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:889
+#: documentation/content/en/books/handbook/glossary.adoc:908
 msgid "See crossref:glossary[cts-glossary,Also Clear To Send]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:891
+#: documentation/content/en/books/handbook/glossary.adoc:910
 #, no-wrap
 msgid "Router Advertisement"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:895
+#: documentation/content/en/books/handbook/glossary.adoc:914
 #, no-wrap
 msgid "S"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:897
+#: documentation/content/en/books/handbook/glossary.adoc:916
 #, no-wrap
 msgid "SCI"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:899
+#: documentation/content/en/books/handbook/glossary.adoc:918
 msgid "See crossref:glossary[sci-glossary,System Control Interrupt]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:900
+#: documentation/content/en/books/handbook/glossary.adoc:919
 #, no-wrap
 msgid "SCSI"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:902
+#: documentation/content/en/books/handbook/glossary.adoc:921
 msgid "See crossref:glossary[scsi-glossary,Small Computer System Interface]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:903
+#: documentation/content/en/books/handbook/glossary.adoc:922
 #, no-wrap
 msgid "SG"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:905
+#: documentation/content/en/books/handbook/glossary.adoc:924
 msgid "See crossref:glossary[sg-glossary,Signal Ground]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:906
+#: documentation/content/en/books/handbook/glossary.adoc:925
 #, no-wrap
 msgid "SLAAC"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:908
+#: documentation/content/en/books/handbook/glossary.adoc:927
 msgid ""
 "See crossref:glossary[slaac-glossary,StateLess Address AutoConfiguration]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:909
+#: documentation/content/en/books/handbook/glossary.adoc:928
 #, no-wrap
 msgid "SMB"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:911
+#: documentation/content/en/books/handbook/glossary.adoc:930
 msgid "See crossref:glossary[smb-glossary,Server Message Block]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:912
-#, no-wrap
-msgid "SMP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:914
-msgid "See crossref:glossary[smp-glossary,Symmetric MultiProcessor]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:915
-#, no-wrap
-msgid "SMTP"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:917
-msgid "See crossref:glossary[smtp-glossary,Simple Mail Transfer Protocol]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:918
-#, no-wrap
-msgid "SMTP AUTH"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:920
-msgid "See crossref:glossary[smtpauth-glossary,SMTP Authentication]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:921
-#, no-wrap
-msgid "SSH"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:923
-msgid "See crossref:glossary[ssh-glossary,Secure Shell]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:924
-#, no-wrap
-msgid "STR"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:926
-msgid "See crossref:glossary[str-glossary,Suspend To RAM]."
-msgstr ""
-
-#. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:927
-#, no-wrap
-msgid "SVN"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:929
-msgid "See crossref:glossary[svn-glossary,Subversion]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:931
 #, no-wrap
-msgid "StateLess Address AutoConfiguration"
+msgid "SMP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:933
+msgid "See crossref:glossary[smp-glossary,Symmetric MultiProcessor]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:935
+#: documentation/content/en/books/handbook/glossary.adoc:934
 #, no-wrap
-msgid "SMTP Authentication"
+msgid "SMTP"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:936
+msgid "See crossref:glossary[smtp-glossary,Simple Mail Transfer Protocol]."
 msgstr ""
 
 #. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:937
+#, no-wrap
+msgid "SMTP AUTH"
+msgstr ""
+
+#. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:939
+msgid "See crossref:glossary[smtpauth-glossary,SMTP Authentication]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:940
 #, no-wrap
-msgid "Server Message Block"
+msgid "SSH"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:942
+msgid "See crossref:glossary[ssh-glossary,Secure Shell]."
 msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:943
 #, no-wrap
-msgid "Signal Ground"
+msgid "STR"
 msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/glossary.adoc:945
+msgid "See crossref:glossary[str-glossary,Suspend To RAM]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:946
+#, no-wrap
+msgid "SVN"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:948
+msgid "See crossref:glossary[svn-glossary,Subversion]."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:950
+#, no-wrap
+msgid "StateLess Address AutoConfiguration"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:954
+#, no-wrap
+msgid "SMTP Authentication"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:958
+#, no-wrap
+msgid "Server Message Block"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/glossary.adoc:962
+#, no-wrap
+msgid "Signal Ground"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/glossary.adoc:964
 msgid "An RS232 pin or wire that is the ground reference for the signal."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:947
+#: documentation/content/en/books/handbook/glossary.adoc:966
 #, no-wrap
 msgid "Simple Mail Transfer Protocol"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:951
+#: documentation/content/en/books/handbook/glossary.adoc:970
 #, no-wrap
 msgid "Secure Shell"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:955
+#: documentation/content/en/books/handbook/glossary.adoc:974
 #, no-wrap
 msgid "Small Computer System Interface"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:959
+#: documentation/content/en/books/handbook/glossary.adoc:978
 #, no-wrap
 msgid "Subversion"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:961
+#: documentation/content/en/books/handbook/glossary.adoc:980
 msgid ""
 "Subversion is a version control system currently used by the FreeBSD project."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:963
+#: documentation/content/en/books/handbook/glossary.adoc:982
 #, no-wrap
 msgid "Suspend To RAM"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:967
+#: documentation/content/en/books/handbook/glossary.adoc:986
 #, no-wrap
 msgid "Symmetric MultiProcessor"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:971
+#: documentation/content/en/books/handbook/glossary.adoc:990
 #, no-wrap
 msgid "System Control Interrupt"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:975
+#: documentation/content/en/books/handbook/glossary.adoc:994
 #, no-wrap
 msgid "T"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:977
+#: documentation/content/en/books/handbook/glossary.adoc:996
 #, no-wrap
 msgid "TCP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:979
+#: documentation/content/en/books/handbook/glossary.adoc:998
 msgid "See crossref:glossary[tcp-glossary,Transmission Control Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:980
+#: documentation/content/en/books/handbook/glossary.adoc:999
 #, no-wrap
 msgid "TCP/IP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:983
+#: documentation/content/en/books/handbook/glossary.adoc:1002
 msgid ""
 "See crossref:glossary[tcpip-glossary,Transmission Control Protocol/Internet "
 "Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:984
+#: documentation/content/en/books/handbook/glossary.adoc:1003
 #, no-wrap
 msgid "TD"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:986
+#: documentation/content/en/books/handbook/glossary.adoc:1005
 msgid "See crossref:glossary[td-glossary,Transmitted Data]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:987
+#: documentation/content/en/books/handbook/glossary.adoc:1006
 #, no-wrap
 msgid "TFTP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:989
+#: documentation/content/en/books/handbook/glossary.adoc:1008
 msgid "See crossref:glossary[tftp-glossary,Trivial FTP]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:990
+#: documentation/content/en/books/handbook/glossary.adoc:1009
 #, no-wrap
 msgid "TGT"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:992
+#: documentation/content/en/books/handbook/glossary.adoc:1011
 msgid "See crossref:glossary[tgt-glossary,Ticket-Granting Ticket]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:993
+#: documentation/content/en/books/handbook/glossary.adoc:1012
 #, no-wrap
 msgid "TSC"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:995
+#: documentation/content/en/books/handbook/glossary.adoc:1014
 msgid "See crossref:glossary[tsc-glossary,Time Stamp Counter]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:997
+#: documentation/content/en/books/handbook/glossary.adoc:1016
 #, no-wrap
 msgid "Ticket-Granting Ticket"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1001
+#: documentation/content/en/books/handbook/glossary.adoc:1020
 #, no-wrap
 msgid "Time Stamp Counter"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1003
+#: documentation/content/en/books/handbook/glossary.adoc:1022
 msgid ""
 "A profiling counter internal to modern Pentium(R) processors that counts "
 "core frequency clock ticks."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1005
+#: documentation/content/en/books/handbook/glossary.adoc:1024
 #, no-wrap
 msgid "Transmission Control Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1007
+#: documentation/content/en/books/handbook/glossary.adoc:1026
 msgid ""
 "A protocol that sits on top of (e.g.) the IP protocol and guarantees that "
 "packets are delivered in a reliable, ordered, fashion."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1009
+#: documentation/content/en/books/handbook/glossary.adoc:1028
 #, no-wrap
 msgid "Transmission Control Protocol/Internet Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1012
+#: documentation/content/en/books/handbook/glossary.adoc:1031
 msgid ""
 "The term for the combination of the TCP protocol running over the IP "
 "protocol.  Much of the Internet runs over TCP/IP."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1014
+#: documentation/content/en/books/handbook/glossary.adoc:1033
 #, no-wrap
 msgid "Transmitted Data"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1016
+#: documentation/content/en/books/handbook/glossary.adoc:1035
 msgid "An RS232C pin or wire that data is transmitted on."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1018
+#: documentation/content/en/books/handbook/glossary.adoc:1037
 msgid "See crossref:glossary[rd-glossary,Also Received Data]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1020
+#: documentation/content/en/books/handbook/glossary.adoc:1039
 #, no-wrap
 msgid "Trivial FTP"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:1024
+#: documentation/content/en/books/handbook/glossary.adoc:1043
 #, no-wrap
 msgid "U"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1026
+#: documentation/content/en/books/handbook/glossary.adoc:1045
 #, no-wrap
 msgid "UDP"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1028
+#: documentation/content/en/books/handbook/glossary.adoc:1047
 msgid "See crossref:glossary[udp-glossary,User Datagram Protocol]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1029
+#: documentation/content/en/books/handbook/glossary.adoc:1048
 #, no-wrap
 msgid "UFS1"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1031
+#: documentation/content/en/books/handbook/glossary.adoc:1050
 msgid "See crossref:glossary[ufs1-glossary,Unix File System Version 1]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1032
+#: documentation/content/en/books/handbook/glossary.adoc:1051
 #, no-wrap
 msgid "UFS2"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1034
+#: documentation/content/en/books/handbook/glossary.adoc:1053
 msgid "See crossref:glossary[ufs2-glossary,Unix File System Version 2]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1035
+#: documentation/content/en/books/handbook/glossary.adoc:1054
 #, no-wrap
 msgid "UID"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1037
+#: documentation/content/en/books/handbook/glossary.adoc:1056
 msgid "See crossref:glossary[uid-glossary,User ID]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1038
+#: documentation/content/en/books/handbook/glossary.adoc:1057
 #, no-wrap
 msgid "URL"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1040
+#: documentation/content/en/books/handbook/glossary.adoc:1059
 msgid "See crossref:glossary[url-glossary,Uniform Resource Locator]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1041
+#: documentation/content/en/books/handbook/glossary.adoc:1060
 #, no-wrap
 msgid "USB"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1043
+#: documentation/content/en/books/handbook/glossary.adoc:1062
 msgid "See crossref:glossary[usb-glossary,Universal Serial Bus]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1045
+#: documentation/content/en/books/handbook/glossary.adoc:1064
 #, no-wrap
 msgid "Uniform Resource Locator"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1047
+#: documentation/content/en/books/handbook/glossary.adoc:1066
 msgid ""
 "A method of locating a resource, such as a document on the Internet and a "
 "means to identify that resource."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1049
+#: documentation/content/en/books/handbook/glossary.adoc:1068
 #, no-wrap
 msgid "Unix File System Version 1"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1051
+#: documentation/content/en/books/handbook/glossary.adoc:1070
 msgid ""
 "The original UNIX(R) file system, sometimes called the Berkeley Fast File "
 "System."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1053
+#: documentation/content/en/books/handbook/glossary.adoc:1072
 #, no-wrap
 msgid "Unix File System Version 2"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1056
+#: documentation/content/en/books/handbook/glossary.adoc:1075
 msgid ""
 "An extension to UFS1, introduced in FreeBSD 5-CURRENT.  UFS2 adds 64 bit "
 "block pointers (breaking the 1T barrier), support for extended file storage "
@@ -2960,39 +3014,39 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1058
+#: documentation/content/en/books/handbook/glossary.adoc:1077
 #, no-wrap
 msgid "Universal Serial Bus"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1060
+#: documentation/content/en/books/handbook/glossary.adoc:1079
 msgid ""
 "A hardware standard used to connect a wide variety of computer peripherals "
 "to a universal interface."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1062
+#: documentation/content/en/books/handbook/glossary.adoc:1081
 #, no-wrap
 msgid "User ID"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1064
+#: documentation/content/en/books/handbook/glossary.adoc:1083
 msgid ""
 "A unique number assigned to each user of a computer, by which the resources "
 "and permissions assigned to that user can be identified."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1066
+#: documentation/content/en/books/handbook/glossary.adoc:1085
 #, no-wrap
 msgid "User Datagram Protocol"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1069
+#: documentation/content/en/books/handbook/glossary.adoc:1088
 msgid ""
 "A simple, unreliable datagram protocol which is used for exchanging data on "
 "a TCP/IP network.  UDP does not provide error checking and correction like "
@@ -3000,30 +3054,30 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/books/handbook/glossary.adoc:1071
+#: documentation/content/en/books/handbook/glossary.adoc:1090
 #, no-wrap
 msgid "V"
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1073
+#: documentation/content/en/books/handbook/glossary.adoc:1092
 #, no-wrap
 msgid "VPN"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1075
+#: documentation/content/en/books/handbook/glossary.adoc:1094
 msgid "See crossref:glossary[vpn-glossary,Virtual Private Network]."
 msgstr ""
 
 #. type: Labeled list
-#: documentation/content/en/books/handbook/glossary.adoc:1077
+#: documentation/content/en/books/handbook/glossary.adoc:1096
 #, no-wrap
 msgid "Virtual Private Network"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/books/handbook/glossary.adoc:1078
+#: documentation/content/en/books/handbook/glossary.adoc:1097
 msgid ""
 "A method of using a public telecommunication such as the Internet, to "
 "provide remote access to a localized network, such as a corporate LAN."

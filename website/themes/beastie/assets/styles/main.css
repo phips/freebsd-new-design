@@ -1,0 +1,1385 @@
+/*
+ * Copyright (c) 1994-2026, The FreeBSD Documentation Project
+ * Copyright (c) 2021-2026, Sergio Carlavilla <carlavilla@FreeBSD.org>
+ * Copyright (c) 2023, Mark McBride <mark@markmcb.com>
+ * Copyright (c) 2023, Mark Phillips <mark@freebsdfoundation.org>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ */
+
+:root {
+  --main-tag-padding: 30px 40px;
+  --header-tag-padding: 8px 15px 8px 15px;
+  --headings-font: Arial, sans-serif;
+  --max-width: 1200px;
+  --header-height: 4.5rem;
+  --documentation-padding: 0px 20px 20px 20px;
+
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.33rem;
+  --size-550: 1.55rem;
+  --size-600: 1.77rem;
+  --size-700: 2.3rem;
+  --size-750: 2.4rem;
+}
+
+@media (max-width: 599px) {
+  :root {
+    --main-tag-padding: 30px 15px;
+    --header-tag-padding: 5px 15px 3px 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  :root {
+    --main-tag-padding: 30px 20px;
+    --header-tag-padding: 8px 20px 8px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --main-tag-padding: 30px 40px;
+    --header-tag-padding: 8px 40px 8px 40px;
+  }
+}
+
+.theme-light {
+  --white: #FFF;
+  --black: #000;
+
+  --global-font-color: #444;
+  --global-background-color: #FFF;
+  --header-background: #AB2B28;
+  --header-font-color: #FFF;
+  --footer-background-color: #F0F1F5;
+  --footer-border-color: #F0F1F5;
+  --background-accent-color: #F9F0F0;
+  --background-frontpage-band-color: #FFF6F6;
+  --table-header-background-color: #F1F3F1;
+  --table-header-font-color: #444;
+  --lines-color: #DDD;
+  --links-color: #990000;
+  --pre-background-color: #F4F4F4;
+  --pre-font-color: #444;
+
+  --download-release-section-background-color: #FACC2E;
+  --download-release-section-font-color: #990000;
+
+  --download-section-background-color: #AB2B28;
+  --download-section-font-color: #FFF;
+
+  --feeds-background: #F9F0F0;
+
+  --admonition-font-color: #444;
+  --admonition-links-color: #0645AD;
+  --admonition-note-color: #19407C;
+  --admonition-note-background-color: #EAF1FB;
+  --admonition-warning-color: #BF6900;
+  --admonition-warning-background-color: #FFF4E6;
+  --admonition-important-color: #BF0000;
+  --admonition-important-background-color: #FFE6E6;
+  --admonition-caution-color: #BF3400;
+  --admonition-caution-background-color: #FFECE6;
+  --admonition-tip-color: #43B929;
+  --admonition-tip-background-color: #EDFAEA;
+
+  --example-block-color: #F1BB16;
+  --example-block-background-color: #FEF8E7;
+  --example-block-font-color: #444;
+
+  --freebsd-logo-image: url("/images/FreeBSD-monochromatic.svg");
+  --freebsd-logo-horizontal-image: url("/images/FREEBSD_Logo_Horiz_Pos_RGB_black.png");
+  --openzfs-logo-image: url("/images/OpenZFS_logo.png");
+  --bhyve-logo-image: url("/images/bhyve.png");
+  --jails-logo-image: url("/images/bastille-icon.png");
+  --network-logo-image: url("/images/fa-network-wired.svg");
+  --docs-logo-image: url("/images/book.png");
+  --foundation-logo-image: url("/images/FreeBSD_Vrt.png");
+  --freebsd-logo-vert: url("/images/FREEBSD_Logo_Vert_Pos_RGB.png");
+}
+
+.theme-dark {
+  --white: #FFF;
+  --black: #000;
+
+  --global-font-color: #EEEFF1;
+  --global-background-color: #333333;
+  --header-background: #AB2B28;
+  --header-font-color: #EEEFF1;
+  --footer-background-color: #2B2B2B;
+  --footer-border-color: #2B2B2B;
+  --background-accent-color: #333;
+  --background-frontpage-band-color: #333333;
+  --table-header-background-color: #F1F3F1;
+  --table-header-font-color: #444;
+  --lines-color: #4D4D4D;
+  --links-color: #990000;
+  --pre-background-color: #272727;
+  --pre-font-color: #EEEFF1;
+
+  --download-release-section-background-color: #FACC2E;
+  --download-release-section-font-color: #990000;
+
+  --download-section-background-color: #AB2B28;
+  --download-section-font-color: #FFF;
+
+  --feeds-background: #222;
+
+  --admonition-font-color: #444;
+  --admonition-links-color: #1A79FF;
+  --admonition-note-color: #19407C;
+  --admonition-note-background-color: #EAF1FB;
+  --admonition-warning-color: #BF6900;
+  --admonition-warning-background-color: #FFF4E6;
+  --admonition-important-color: #BF0000;
+  --admonition-important-background-color: #FFE6E6;
+  --admonition-caution-color: #BF3400;
+  --admonition-caution-background-color: #FFECE6;
+  --admonition-tip-color: #43B929;
+  --admonition-tip-background-color: #EDFAEA;
+
+  --example-block-color: #F1BB16;
+  --example-block-background-color: #FEF8E7;
+  --example-block-font-color: #272727;
+
+  --freebsd-logo-image: url("/images/FreeBSD-colors.svg");
+  --freebsd-logo-horizontal-image: url("/images/FREEBSD_Logo_Horiz_Pos_RGB_white.png");
+  --openzfs-logo-image: url("/images/OpenZFS_logo.png");
+  --bhyve-logo-image: url("/images/bhyve-dark.png");
+  --jails-logo-image: url("/images/bastille-icon.png");
+  --network-logo-image: url("/images/fa-network-wired.svg");
+  --docs-logo-image: url("/images/book.png");
+  --foundation-logo-image: url("/images/FreeBSD_Vrt_Grey.png");
+  --freebsd-logo-vert: url("/images/FREEBSD_Logo_Vert_Rev_RGB.png");
+
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: auto;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: var(--global-font-color);
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: 400;
+  font-style: normal;
+  cursor: auto;
+  background-color: var(--global-background-color);
+}
+
+/* HTML Tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding-bottom: 0.3rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--size-750);
+}
+
+h2 {
+  font-size: var(--size-600);
+}
+
+h3 {
+  font-size: var(--size-550);
+  padding-top: 0.8rem;
+}
+
+h4 {
+  font-size: var(--size-500);
+}
+
+h5 {
+  font-size: var(--size-400);
+}
+
+h6 {
+  font-size: var(--size-300);
+}
+
+h2 > .anchor,
+h3 > .anchor,
+h4 > .anchor,
+h5 > .anchor,
+h6 > .anchor {
+  text-decoration: none;
+}
+
+h2 > .anchor:hover,
+h3 > .anchor:hover,
+h4 > .anchor:hover,
+h5 > .anchor:hover,
+h6 > .anchor:hover {
+  text-decoration: none;
+}
+
+h2 > .anchor::before,
+h3 > .anchor::before,
+h4 > .anchor::before,
+h5 > .anchor::before,
+h6 > .anchor::before {
+  visibility: hidden;
+  margin-left: 0.3rem;
+  content: "#";
+  color: var(--global-font-color);
+}
+
+h2:hover .anchor::before,
+h3:hover .anchor::before,
+h4:hover .anchor::before,
+h5:hover .anchor::before,
+h6:hover .anchor::before {
+  visibility: visible;
+  transition: visibility 0s easy 0s;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid var(--lines-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--links-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: var(--size-300);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+pre {
+  border-radius: 0.25rem;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  background-color: var(--pre-background-color);
+  font-size: 1rem;
+  color: var(--pre-font-color);
+  line-height: 1.4;
+  margin: 0 0 24px;
+  overflow: auto !important;
+  padding: 1rem;
+  margin: 0;
+}
+
+p {
+  text-justify: inter-word;
+}
+
+b,
+dt,
+strong,
+th {
+  font-weight: bolder;
+}
+
+dt {
+  font-style: italic;
+}
+
+blockquote {
+  padding-left: var(--size-600);
+  border-left: 5px solid;
+  font-style: italic;
+}
+
+/* Header section */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: .5rem 1rem;
+  background-color: var(--header-background);
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.logo-menu-bars-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+header ul li {
+  list-style: none;
+}
+
+.menu-bars {
+  display: none;
+  margin-left: auto;
+  color: var(--white);
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  color: var(--white) !important;
+  margin-top: 0px !important;
+}
+
+.menu-item a {
+  padding: 1rem 0;
+  color: inherit;
+}
+
+.menu-item a,
+.donate a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-item a:hover,
+.donate a:hover {
+  text-decoration: none;
+}
+
+.donate a {
+  color: var(--black) !important;
+}
+
+.menu-item i {
+  margin-left: .1rem;
+}
+
+.sub-menu {
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  padding: 1rem .75rem;
+  min-width: 250px;
+  background-color: var(--white);
+  border-radius: .4rem;
+  color: #444;
+  border: 1px solid #CDCDCD;
+  z-index: 999;
+}
+
+.sub-menu:hover {
+  visibility: visible;
+}
+
+.menu-item a:hover+.sub-menu {
+  visibility: visible;
+}
+
+.sub-menu li {
+  margin-top: 0;
+  padding: .75rem .6rem;
+}
+
+.sub-menu .title {
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.sub-menu li a {
+  font-weight: normal !important;
+}
+
+.sub-menu .title a {
+  font-weight: bolder !important;
+}
+
+.search-donate-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: auto;
+}
+
+.search {
+  display: flex;
+  border-radius: .4rem;
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  margin-top: 0px;
+}
+
+.search input[type='text'] {
+  display: inline-block;
+  width: 100%;
+  padding: .3rem .8rem;
+  border: none;
+  border-radius: .4rem;
+  appearance: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.search button {
+  background-color: var(--white);
+  border: none;
+  border-radius: .4rem;
+}
+
+.search button i {
+  color: var(--black);
+}
+
+.donate {
+  margin-left: .5rem;
+}
+
+.donate a {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background-color: var(--white);
+  border-radius: .4rem;
+}
+
+.donate a .heart,
+.heart .heart {
+  font-size: 1.2rem;
+  color: #E38582;
+}
+
+.donate:hover a .heart,
+.heart:hover .heart {
+  color: #D1332E;
+}
+
+@media screen and (max-width: 1100px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .logo-menu-bars-container {
+    width: 100%;
+    padding: .5rem 0;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-bars {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  #menu-bars:checked~nav .menu {
+  display: block !important;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+    border-top: 1px solid var(--white);
+    cursor: pointer;
+  }
+
+  .menu-item a {
+    width: 100%;
+  }
+
+  .menu-item a:hover+.sub-menu {
+    visibility: visible;
+  }
+
+  .menu-item-description {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .menu-item-description i {
+    margin-left: auto;
+  }
+
+  .sub-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    position: static;
+    visibility: visible;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    box-shadow: inherit;
+  }
+
+  .sub-menu .title {
+    display: none;
+    border-bottom: none;
+  }
+
+  .sub-menu li {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #about:checked~.sub-menu,
+  #download:checked~.sub-menu,
+  #documentation:checked~.sub-menu,
+  #community:checked~.sub-menu {
+  display: flex;
+  }
+
+  .search-donate-container {
+    display: none;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  #menu-bars:checked~.search-donate-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: unset;
+  padding-top: .2rem;
+  }
+
+  .donate {
+    display: flex;
+    width: 100%;
+    margin-left: unset;
+    padding-top: .8rem;
+  }
+
+  .donate a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .donate a .heart {
+    font-size: 1.2rem;
+    color: #D1332E;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    padding: .5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1451px) {
+  header {
+    padding: .5rem 5rem;
+  }
+}
+
+/* Home page */
+.front-page-band-on {
+  background: var(--background-frontpage-band-color);
+}
+
+.front-page-band-content,
+section.front-page-band-content {
+  font-family: var(--headings-font);
+  max-width: var(--max-width);
+  margin: 0px auto;
+  padding: var(--main-tag-padding);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-section,
+section.main-section {
+  margin: 40px 0 70px 0;
+}
+
+.freebsd-horizontal .logo-box-image {
+  background-image: var(--freebsd-logo-horizontal-image);
+}
+
+.logo-box {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 5px 10px 20px 20px;
+}
+
+.logo-box-image {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.front-page-logo {
+  margin: 60px 10px;
+  float: none;
+  width: auto;
+  height: clamp(100px, 30vw, 180px);
+}
+
+.front-page-tagline {
+  margin: 30px 0;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+.downloads-container,
+section.downloads-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.downloads,
+section.downloads {
+  margin: 0;
+  min-width: 275px;
+}
+
+.download-section,
+section.download-section {
+  flex: 0 0 20%;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.download-section-title {
+  padding: 2px 0px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+.download-button-release {
+  background: var(--download-release-section-background-color);
+  color: var(--download-release-section-font-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.download-button {
+  background: var(--download-section-background-color);
+  color: var(--download-section-font-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.download-links {
+  margin: 5px 0 0 0;
+}
+
+.additional-downloads {
+  margin: 5px 0;
+}
+
+.why-freebsd-flex,
+section.why-freebsd-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.why-freebsd-flex-item,
+section.why-freebsd-flex-item {
+  flex: 1 1 30%;
+  min-width: 280px;
+}
+
+.why-freebsd-flex-item p {
+  padding: 0 20px 0 0;
+}
+
+.why-freebsd-flex-item h3 {
+  margin-top: 0;
+  border-radius: 5px;
+  padding: 2px 10px 0 0px;
+}
+
+.openzfs .logo-box-image {
+  background-image: var(--openzfs-logo-image);
+}
+
+.bhyve .logo-box-image {
+  background-image: var(--bhyve-logo-image);
+}
+
+.jails .logo-box-image {
+  background-image: var(--jails-logo-image);
+}
+
+.network .logo-box-image {
+  background-image: var(--network-logo-image);
+}
+
+.docs .logo-box-image {
+  background-image: var(--docs-logo-image);
+}
+
+.fbf .logo-box-image {
+  background-image: var(--foundation-logo-image);
+}
+
+/* Feeds section in home page */
+.feed-flex,
+section.feed-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.feed-flex-item,
+section.feed-flex-item {
+  background: var(--feeds-background);
+  line-height: 1.3em;
+  border-radius: 7px;
+}
+
+.feed-flex-item a {
+  text-decoration: none;
+}
+
+.feed-flex-item a:hover {
+  text-decoration: underline;
+}
+
+.feed-flex-item {
+  flex: 1 1 15%;
+  padding: 10px 10px;
+  min-width: 150px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.feed-flex-item .feed-item {
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+.feed-flex-item .feed-source {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.feed-flex-item .feed-source a {
+  color: var(--links-color);
+}
+
+.rssimage {
+  margin-top: .35rem;
+}
+
+/* Languages page */
+ul.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+ul.language-list li {
+  flex: 1 0 25%;
+  list-style-type: none;
+  max-width: 25%;
+}
+
+ul.language-list li a {
+  cursor: pointer;
+  color: var(--global-font-color);
+}
+
+ul.language-list .selected {
+  font-weight: bolder;
+}
+
+.imageblock .title {
+  margin-top: 0.5rem;
+  padding-bottom: 0;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.literalblock {
+  margin: 0.75em 0;
+  overflow: auto;
+}
+
+.literalblock .content {
+  overflow: auto;
+}
+
+/* Callouts */
+.conum {
+  display: inline-block;
+  color: #fff !important;
+  background-color: #000;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 0.75em;
+  width: 1.67em;
+  height: 1.67em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.conum[data-value] {
+  color: #fff !important;
+  text-align: center;
+  font-size: 0.75em;
+  line-height: 1.67em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.conum[data-value]::after {
+  content: attr(data-value);
+}
+
+.colist td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  vertical-align: top;
+}
+
+.colist tr td b,
+.programlisting b {
+  display: none;
+}
+
+.rouge b {
+  display: none;
+}
+
+/* Tables */
+table caption {
+  text-rendering: optimizeLegibility;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+table.tableblock {
+  display: block;
+  margin: auto;
+  margin-bottom: 1.25em;
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+table.tableblock th {
+  text-align: left;
+  background-color: var(--table-header-background-color);
+  color: var(--table-header-font-color);
+  text-rendering: optimizeLegibility;
+  padding: 0.5em 0.625em 0.625em;
+  border: 0 solid #dedede;
+  border-width: 0 1px 1px 0;
+}
+
+table.tableblock td {
+  text-align: left;
+  border: 0 solid #dedede;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  padding: 0.5em 0.625em 0.625em;
+  font-size: inherit;
+  border-width: 0 1px 1px 0;
+  vertical-align: top;
+}
+
+table.tableblock td.icon {
+  border: none;
+}
+
+table.tableblock td:first-of-type,
+table.tableblock th:first-of-type {
+  border-left: none;
+}
+
+table.tableblock td:last-of-type,
+table.tableblock th:last-of-type {
+  border-right: none;
+}
+
+table.stretch {
+  width: 100%;
+}
+
+/* Admonitions */
+.admonitionblock {
+  margin: 1.4rem 0;
+  padding: 1rem;
+  color: var(--admonition-font-color);
+}
+
+.admonitionblock table {
+  table-layout: fixed;
+  position: relative;
+  width: 100%;
+}
+
+.admonitionblock table tbody tr td.icon i {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  background-position-x: 0.5em;
+  vertical-align: initial;
+  font-style: normal;
+  padding-bottom: 2rem;
+}
+
+.admonitionblock table tbody tr td.icon i::after {
+  content: attr(title);
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 0 0.5em;
+  margin: -0.05em;
+}
+
+.admonitionblock table tbody tr td.icon .icon-note::before {
+  content: "\f05a";
+  color: var(--admonition-note-color);
+}
+
+.admonitionblock table tbody tr td.icon .icon-tip::before {
+  content: "\f0eb";
+  color: var(--admonition-tip-color);
+}
+
+.admonitionblock table tbody tr td.icon .icon-warning::before {
+  content: "\f071";
+  color: var(--admonition-warning-color);
+}
+
+.admonitionblock table tbody tr td.icon .icon-caution::before {
+  content: "\f06d";
+  color: var(--admonition-caution-color);
+}
+
+.admonitionblock table tbody tr td.icon .icon-important::before {
+  content: "\f06a";
+  color: var(--admonition-important-color);
+}
+
+.admonitionblock table tbody tr td.icon [class^="fa icon-"] {
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.admonitionblock table tbody tr td.content {
+  width: 100%;
+  word-wrap: anywhere;
+}
+
+.admonitionblock table tbody tr td.content .title {
+  margin-top: 2rem;
+}
+
+/* .paragraph {
+ * padding-top: 3rem;
+ * } * */
+
+.admonitionblock table tbody tr td.content a {
+  color: var(--admonition-links-color);
+}
+
+.note {
+  border-left: 5px solid var(--admonition-note-color);
+  background-color: var(--admonition-note-background-color);
+}
+
+.warning {
+  border-left: 5px solid var(--admonition-warning-color);
+  background-color: var(--admonition-warning-background-color);
+}
+
+.important {
+  border-left: 5px solid var(--admonition-important-color);
+  background-color: var(--admonition-important-background-color);
+}
+
+.caution {
+  border-left: 5px solid var(--admonition-caution-color);
+  background-color: var(--admonition-caution-background-color);
+}
+
+.tip {
+  border-left: 5px solid var(--admonition-tip-color);
+  background-color: var(--admonition-tip-background-color);
+}
+
+/* Example */
+.example,
+.exampleblock {
+  border-left: 5px solid var(--example-block-color);
+  padding: 1rem;
+  background-color: var(--example-block-background-color);
+}
+
+.exampleblock {
+  margin: 0.75rem 0;
+  color: var(--example-block-font-color);
+}
+
+.exampleblock .title {
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.exampleblock .content .literalblock .content {
+  background: #fefde6 !important;
+  border: none !important;
+  color: var(--global-font-color);
+}
+
+.exampleblock .content a {
+  color: var(--admonition-links-color);
+}
+
+.procedure {
+  border-left: 5px solid #b3b3b3;
+  padding: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+/* Misc */
+.fa {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+
+.listingblock {
+  margin: 0.75em 0;
+  position: relative;
+}
+
+.listingblock .title {
+  position: absolute;
+  top: -1em;
+  left: 1em;
+}
+
+.highlight {
+  padding: 1.5em 2em;
+}
+
+.highlight code {
+  font-size: 0.75rem;
+  padding: 0;
+  border-radius: inherit;
+  background-color: transparent;
+  color: inherit;
+}
+
+.highlight:hover code::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0.5em;
+  right: 3em;
+}
+
+code {
+  font-family: "DejaVu Sans Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  padding: 0.12rem 0.2rem;
+  border-radius: 0.25rem;
+  background-color: var(--pre-background-color);
+  color: var(--pre-font-color);
+}
+
+.filename {
+  font-weight: bolder;
+}
+
+details {
+  margin: 1rem 0;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+kbd {
+  font-family: "DejaVu Sans", "DejaVu Sans Bold";
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.65em;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow:
+  0 1px 0 rgba(0, 0, 0, 0.2),
+  0 0 0 0.1em #fff inset;
+  margin: 0 0.15em;
+  padding: 0.2em 0.5em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+  white-space: nowrap;
+}
+
+/* Footer section */
+footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  color: var(--global-font-color);
+  background-color: var(--footer-background-color);
+}
+
+.footer-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "logo"
+  "about"
+  "documentation"
+  "community"
+  "legal"
+  "copyright";
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-column {
+  grid-area: logo;
+}
+
+.about-column {
+  grid-area: about;
+}
+
+.community-column {
+  grid-area: community;
+}
+
+.documentation-column {
+  grid-area: documentation;
+}
+
+.legal-column {
+  grid-area: legal;
+}
+
+.copyright-column {
+  grid-area: copyright;
+  padding-top: 1rem;
+  border-top: 1px solid #E5E7EB;
+  line-height: 1rem;
+  font-size: .8rem;
+}
+
+.column-title {
+  margin-top: 0;
+  font-size: inherit;
+  border-bottom: none;
+}
+
+.column-elements-container {
+  margin: .5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.column-elements-container li {
+  margin-top: .7rem;
+}
+
+.column-element {
+  text-decoration: none;
+  line-height: 2rem;
+  color: inherit;
+  font-size: inherit;
+}
+
+.heart {
+  font-size: 1.2rem;
+  color: #E38582;
+}
+
+.heart:hover {
+  color: #D1332E;
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+}
+
+.theme-container {
+  display: none;
+  margin-left: 2rem;
+}
+
+.theme-container select {
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #FCFCFD;
+  color: #444;
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+}
+
+.language-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--global-font-color);
+  border-radius: 1px;
+  padding: .3rem;
+}
+
+.language-container a img {
+  display: inline-flex;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 450px) {
+  .footer-container {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "logo logo"
+    "about community"
+    "documentation legal"
+    "copyright copyright";
+  }
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    padding: 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo about documentation community legal"
+    "copyright copyright copyright copyright copyright";
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1451px) {
+  footer {
+    padding: 2rem 5rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+}

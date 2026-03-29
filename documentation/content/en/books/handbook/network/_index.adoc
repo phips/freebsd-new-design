@@ -4,7 +4,7 @@ part: Part I. Getting Started
 prev: books/handbook/wayland
 next: books/handbook/partii
 description: This chapter delves into the topic of network configuration and performance, showcasing the robust networking capabilities of the FreeBSD operating system.
-tags: ["network", "ipv4", "ipv6", "wireless", "wpa_supplicant", "static ip", "dynamic ip"]
+tags: ["network", "ipv4", "ipv6", "wireless", "wpa_supplicant", "static ip", "dynamic ip", "WiFi"]
 showBookMenu: true
 weight: 9
 params:
@@ -107,7 +107,7 @@ em0@pci0:0:25:0:        class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x
     class      = network
     subclass   = ethernet
 --
-iwn0@pci0:3:0:0:        class=0x028000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x4237 subvendor=0x8086 subdevice=0x1211
+iwm0@pci0:3:0:0:        class=0x028000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x4237 subvendor=0x8086 subdevice=0x1211
     vendor     = 'Intel Corporation' <1>
     device     = 'PRO/Wireless 5100 AGN [Shiloh] Network Connection' <2>
     class      = network
@@ -577,32 +577,59 @@ The following sections discuss each step.
 
 Connecting FreeBSD to an existing wireless network is a very common situation.
 
-This procedure shows the steps required:
+This Quick Start procedure shows the steps required to connect to a network using basic authentication.
+A more detailed procedure is given in the next section.
 
-* The first step will be to obtain the SSID (Service Set Identifier) and PSK (Pre-Shared Key) for the wireless network from the network administrator.
+The first step is to obtain the Service Set Identifier (SSID) and Pre-Shared Key (PSK) for the wireless network from the network administrator.
 
-* The second step will be to add an entry for this network to [.filename]#/etc/wpa_supplicant.conf#. If the file does not exist, create it:
+The second step is to add an entry for this network to [.filename]#/etc/wpa_supplicant.conf#.
+
+If the file does not exist, create it.
+Consult man:wpa_supplicant.conf[5] for details on formatting entries in this file.
 
 [.programlisting]
 ....
+ctrl_interface=/var/run/wpa_supplicant
+eapol_version=1
+ap_scan=1
+fast_reauth=1
+
 network={
  ssid="myssid" <.>
  psk="mypsk" <.>
 }
 ....
 
-<.> Is the SSID of the wireless network. Replace it with the name of the wireless network.
-<.> Is the PSK of the wireless network. Replace it with the password of the wireless network.
+<.> Is the SSID of the wireless network.
+Replace it with the name of the wireless network.
+<.> Is the PSK of the wireless network.
+Replace it with the password of the wireless network.
 
-* The third step will be to add the network entry to configure the network on startup:
+The third step is to add the network interface entry to configure the network on startup.
+Obtain the network device interface by using the sysctl `net.wlan.devices`.
+In the listing below, the output of this sysctl shows the network device interface is "iwm0".
 
 [source,shell]
 ....
-# sysrc wlans_iwn0="wlan0"
+# sysctl net.wlan.devices
+....
+
+The output should be similar to the following:
+
+[.programlisting]
+....
+net.wlan.devices: iwm0
+....
+
+In the sysrc line that follows, replace "iwm0" with the output of the sysctl command if needed.
+
+[source,shell]
+....
+# sysrc wlans_iwm0="wlan0"
 # sysrc ifconfig_wlan0="WPA DHCP"
 ....
 
-* And the last step will be the restart `netif` service executing the following command:
+* And the last step is to restart the `netif` service executing the following command:
 
 [source,shell]
 ....
@@ -612,7 +639,7 @@ network={
 [[basic-wireless-configuration]]
 === Basic Wireless Configuration
 
-The first step will be to configure the wireless network card to an interface.
+This section provides a more detailed example of configuring a wireless network card.
 To find out what wireless network cards are in the system check the section
 crossref:network[config-identify-network-adapter, Identify Network Adapters].
 

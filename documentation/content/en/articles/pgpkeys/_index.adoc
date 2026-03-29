@@ -258,6 +258,9 @@ include::{include-path}br.key[]
 === `{jch}`
 include::{include-path}jch.key[]
 
+=== `{laurent}`
+include::{include-path}laurent.key[]
+
 === `{jchandra}`
 include::{include-path}jchandra.key[]
 
@@ -474,6 +477,9 @@ include::{include-path}kgalazka.key[]
 === `{avg}`
 include::{include-path}avg.key[]
 
+=== `{tiga}`
+include::{include-path}tiga.key[]
+
 === `{beat}`
 include::{include-path}beat.key[]
 
@@ -656,6 +662,9 @@ include::{include-path}pluknet.key[]
 
 === `{cokane}`
 include::{include-path}cokane.key[]
+
+=== `{mce}`
+include::{include-path}mce.key[]
 
 === `{karels}`
 include::{include-path}karels.key[]
@@ -879,6 +888,9 @@ include::{include-path}christos.key[]
 === `{marino}`
 include::{include-path}marino.key[]
 
+=== `{emaste}`
+include::{include-path}emaste.key[]
+
 === `{cherry}`
 include::{include-path}cherry.key[]
 
@@ -1076,6 +1088,9 @@ include::{include-path}jdp.key[]
 
 === `{krion}`
 include::{include-path}krion.key[]
+
+=== `{vladlen}`
+include::{include-path}vladlen.key[]
 
 === `{sepotvin}`
 include::{include-path}sepotvin.key[]
@@ -1461,6 +1476,9 @@ include::{include-path}emax.key[]
 === `{oshogbo}`
 include::{include-path}oshogbo.key[]
 
+=== `{andy}`
+include::{include-path}andy.key[]
+
 === `{riggs}`
 include::{include-path}riggs.key[]
 
@@ -1521,6 +1539,18 @@ include::{include-path}khorben.key[]
 === `{vexeduxr}`
 include::{include-path}vexeduxr.key[]
 
+=== `{alven}`
+include::{include-path}alven.key[]
+
+=== `{pouria}`
+include::{include-path}pouria.key[]
+
+=== `{siva}`
+include::{include-path}siva.key[]
+
+=== `{nxjoseph}`
+include::{include-path}nxjoseph.key[]
+
 [[pgpkeys-other]]
 == Other Cluster Account Holders
 
@@ -1544,3 +1574,6 @@ include::{include-path}mwlucas.key[]
 
 === `{dhw}`
 include::{include-path}dhw.key[]
+
+=== `{tpearson}`
+include::{include-path}tpearson.key[]

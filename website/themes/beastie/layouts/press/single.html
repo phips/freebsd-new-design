@@ -7,7 +7,11 @@
       <div id="feedlinks">
         <ul>
           <li>
-            <a href="{{ absLangURL ($.Site.BaseURL) }}press/feed.xml" title="FreeBSD RSS 2.0 Feed">RSS 2.0 Feed</a>
+            <a
+              href="{{ absLangURL ($.Site.BaseURL) }}press/feed.xml"
+              title="FreeBSD RSS 2.0 Feed"
+              >RSS 2.0 Feed</a
+            >
           </li>
         </ul>
       </div>
@@ -28,6 +32,7 @@
           {{ $pressData = $dataDefaultLanguage.press }}
         {{ end }}
 
+
         <!-- First load all year-month to the array -->
         {{ $yearsMonths := slice }}
         {{ with $pressData.press }}
@@ -35,6 +40,7 @@
             {{ $yearsMonths = $yearsMonths | append (dateFormat "2006-1" .date) }}
           {{ end }}
         {{ end }}
+
 
         <!-- Remove duplicates -->
         {{ $yearsMonths = $yearsMonths | uniq }}
@@ -58,14 +64,17 @@
                       {{ end }}
                       <li>
                         <p>
-                          <a id="{{ dateFormat "2006-01" .date }}:{{ $pressMonthCounter }}"></a>
+                          <a
+                            id="{{ dateFormat "2006-01" .date }}:{{ $pressMonthCounter }}"
+                          ></a>
                           <a href="{{ .url }}">
                             <strong>{{ .name }}</strong>
                           </a>
-                          <br />
-                          <a href="{{ .siteUrl }}">{{ .siteName }}</a>, {{ .author }}
-                          <br />
-                          {{ .description | safeHTML}}
+                          <br>
+                          <a href="{{ .siteUrl }}">{{ .siteName }}</a>,
+                          {{ .author }}
+                          <br>
+                          {{ .description | safeHTML }}
                         </p>
                       </li>
                       {{ $pressMonthPrev = $pressMonthCur }}
@@ -78,10 +87,18 @@
         {{ end }}
       {{ end }}
       {{ if .GitInfo }}
-      <hr />
-      <div class="last-modified">
-        <p><strong>{{ i18n "last-modified" }}</strong>: {{ .GitInfo.AuthorDate | time.Format ":date_long" }} {{ i18n "by" }} <a href="https://cgit.freebsd.org/doc/commit/?id={{ .GitInfo.AbbreviatedHash }}" target="_blank">{{ .GitInfo.AuthorName }}</a></p>
-      </div>
+        <hr>
+        <div class="last-modified">
+          <p>
+            <strong>{{ i18n "last-modified" }}</strong>:
+            {{ .GitInfo.AuthorDate | time.Format ":date_long" }} {{ i18n "by" }}
+            <a
+              href="https://cgit.freebsd.org/doc/commit/?id={{ .GitInfo.AbbreviatedHash }}"
+              target="_blank"
+              >{{ .GitInfo.AuthorName }}</a
+            >
+          </p>
+        </div>
       {{ end }}
     </div>
   </div>

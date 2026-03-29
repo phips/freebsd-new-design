@@ -188,8 +188,7 @@ Rather than suggest a single way, here are some links to sites that describe var
 Protect the private key and passphrase.
 If either the private key or passphrase may have been compromised or disclosed, immediately notify mailto:accounts@FreeBSD.org[accounts@FreeBSD.org] and revoke the key.
 
-Committing the new key is shown in crossref:committers-guide[commit-steps, Steps
-for New Committers].
+Committing the new key is shown in crossref:committers-guide[commit-steps, Steps for New Committers].
 
 [[kerberos-ldap]]
 == Kerberos and LDAP web Password for FreeBSD Cluster
@@ -533,7 +532,7 @@ e.g.:
 ....
 so that won't be covered in depth here.
 
-If you want to build a custom kernel, extref:{handbook}[the kernel config section, kernelconfig] of the FreeBSD Handbook recommends creating a file MYKERNEL under sys/${ARCH}/conf with your changes against GENERIC.
+If you want to build a custom kernel, extref:{handbook}kernelconfig[the kernel config section, kernelconfig] of the FreeBSD Handbook recommends creating a file MYKERNEL under sys/${ARCH}/conf with your changes against GENERIC.
 To have MYKERNEL disregarded by Git, it can be added to .git/info/exclude.
 
 ===== Updating
@@ -688,9 +687,9 @@ The ports tree operates the same way.
 The branch names are different and the repositories are in different locations.
 
 The cgit repository web interface for use with web browsers is at https://cgit.FreeBSD.org/ports/ .
-The production Git repository is at https://git.FreeBSD.org/ports.git and at ssh://anongit@git.FreeBSD.org/ports.git (or anongit@git.FreeBSD.org:ports.git).
+The production Git repository is at https://git.FreeBSD.org/ports.git and at ssh://anongit@git.FreeBSD.org/ports.git (or `anongit@git.FreeBSD.org:ports.git`).
 
-There is also a mirror on GitHub, see extref:{handbook}/mirrors[External mirrors, mirrors] for an overview.
+There is also a mirror on GitHub, see extref:{handbook}mirrors[External mirrors, mirrors] for an overview.
 The _latest_ branch is `main`.
 The _quarterly_ branches are named `yyyyQn` for year 'yyyy' and quarter 'n'.
 
@@ -833,8 +832,10 @@ To abort and get back to the state before "git rebase", run "git rebase --abort"
 Could not apply 646e0f9cda11... no color ls
 ....
 which looks scary.
+
 If you bring up an editor, you will see it is a typical 3-way merge conflict resolution that you may be familiar with from other source code systems (the rest of ls.c has been omitted):
 [source,shell]
+....
  <<<<<<< HEAD
  #ifdef COLORLS_NEW
  #include <terminfo.h>
@@ -844,7 +845,9 @@ If you bring up an editor, you will see it is a typical 3-way merge conflict res
  #include <termcap.h>
  >>>>>>> 646e0f9cda11... no color ls
 ....
+
 The new code is first, and your code is second.
+
 The right fix here is to just add a #undef COLORLS_NEW before #ifdef and then delete the old changes:
 [source,shell]
 ....
@@ -853,6 +856,7 @@ The right fix here is to just add a #undef COLORLS_NEW before #ifdef and then de
 #include <terminfo.h>
 ....
 save the file.
+
 The rebase was interrupted, so you have to complete it:
 [source,shell]
 ....
@@ -942,7 +946,7 @@ The process is the same for either a typical merge or an exceptional direct comm
 % git cherry-pick -x $HASH --edit
 ....
 
-If you forget to to add the `Approved by:` line, you can do a `git commit --amend` to edit the commit message before you push the change.
+If you forget to add the `Approved by:` line, you can do a `git commit --amend` to edit the commit message before you push the change.
 
 ==== Multiple commit MFC
 
@@ -1391,7 +1395,7 @@ Here 'good' means:
 . All the right files, and none of the wrong ones, were merged into contrib/glorbnitz.
 . No other changes are in the tree.
 . The commit messages look crossref:committers-guide[commit-log-message,good]. It should contain a summary of what's changed since the last merge to the FreeBSD `main` branch and any caveats.
-. UPDATING should be updated if there is anything of note, such as user visible changes, important upgrade concerns, etc.
+. `RELNOTES` and `UPDATING` should be updated if there is anything of note, such as user visible changes, important upgrade concerns, etc.
 
 [NOTE]
 ====
@@ -1971,11 +1975,11 @@ Before you begin, make sure that your local Git repo is up to date and has the
 correct origins set crossref:committers-guide[keeping_current,as shown above].
 
 [source,shell]
-````
+....
 % git remote -v
 freebsd https://git.freebsd.org/src.git (fetch)
 freebsd ssh://git@gitrepo.freebsd.org/src.git (push)
-````
+....
 
 The first step is to create a fork of https://github.com/freebsd/freebsd-src[FreeBSD] on GitHub following these https://docs.github.com/en/github/getting-started-with-github/fork-a-repo[guidelines].
 The destination of the fork should be your own, personal, GitHub account (gvnn3 in my case).
@@ -2195,6 +2199,12 @@ It is very important to have a current PGP/GnuPG key in the repository. The key 
 [.filename]#src/share/misc/committers-<repository>.dot# - Add an entry to the current committers section, where _repository_ is `doc`, `ports`, or `src`, depending on the commit privileges granted.
 +
 Add an entry for each additional mentor/mentee relationship in the bottom section.
+. Update git mailmap file
++
+[.filename]#src/.mailmap#, [.filename]#doc/.mailmap#, and [.filename]#ports/.mailmap# - Add an entry for commits you created prior to becoming a FreeBSD committer.
++
+Mapping to your FreeBSD address allows us to track external committers who may be ready for a commit bit more easily.
+You can also use this to correct old names, mispelled names, etc in the default `git log` output.
 . Generate a Kerberos Password
 +
 See crossref:committers-guide[kerberos-ldap, Kerberos and LDAP web Password for FreeBSD Cluster] to generate or set a Kerberos account for use with other FreeBSD services like the link:https://bugs.freebsd.org/bugzilla/[bug-tracking database] (you get a bug-tracking account as part of that step).
@@ -2480,7 +2490,7 @@ The subject should, by itself, allow the reader to quickly determine if the chan
 
 The subject line should be as short as possible while still retaining the required information.
 This is to make browsing Git log more efficient, and so that git log --oneline can display the short hash and subject on a single 80-column line.
-A good rule of thumb is to stay below 63 characters, and aim for about 50 or fewer if possible.
+A good rule of thumb is to stay below 67 characters, and aim for about 50 or fewer if possible.
 
 === Prefix the subject line with a component, if applicable
 
@@ -2489,7 +2499,7 @@ If applicable, try to use the same prefix used in previous commits to the same f
 
 ✓ `foo: Add -k option to keep temporary data`
 
-Include the prefix in the 63-character limit suggested above, so that `git log --oneline` avoids wrapping.
+Include the prefix in the 67-character limit suggested above, so that `git log --oneline` avoids wrapping.
 
 === Capitalize the first letter of the subject
 
@@ -2578,11 +2588,13 @@ Typically used when there is no PR, for example if the issue was reported on
 a mailing list.
 
 |`Submitted by:` +
-(deprecated)
-|This has been deprecated with git; submitted patches should have the author set by using `git commit --author` with a full name and valid email.
+(discouraged)
+|Name of an author who submitted a change without providing a full valid patch, especially without a valid email.
+Submitted patches should have the author set by using `git commit --author` with a full name and valid email.
+Before the migration to git allowed separate author and committer fields, this was used for contributed patches.
 
 |`Reviewed by:`
-a|
+|
 The name and e-mail address of the person or people that reviewed the change; for developers, just the username on the FreeBSD cluster. If a patch was submitted to a mailing list for review, and the review was favorable, then just include the list name. If the reviewer is not a member of the project, provide the name, email, and if ports an external role like maintainer:
 
 Reviewed by a developer:
@@ -2635,7 +2647,7 @@ Approved by: re (username)
 |The name of the project (if any) from which the code was obtained. Do not use this line for the name of an individual person.
 
 |`Fixes:`
-|The Git short hash and the title line of a commit that is fixed by this change as returned by `git log -n 1 --pretty=format:'%h ("%s")' GIT-COMMIT-HASH`.
+|The Git short hash and the title line of a commit that is fixed by this change as returned by `git log -n1 --format='%h ("%s")' GIT-COMMIT-HASH`.
 We include the commit title so that the referenced commit can be located even in the case that a future VCS migration invalidates hash references.
 
 |`MFC after:`
@@ -2649,6 +2661,10 @@ We include the commit title so that the referenced commit can be located even in
 
 |`Relnotes:`
 |If the change is a candidate for inclusion in the release notes for the next release from the branch, set to `yes`.
+|Candidates are user-visible changes, new features, compatibility breaks, etc..
+|If you forget to set this line, or want to provide more details, add an entry to the `RELNOTES` file in the root of the src tree.
+|The `RELNOTES` file is used to generate release notes for the next release.
+|Do not use the `Relnotes:` line to describe the change: its only valid value is `yes`.
 
 |`Security:`
 |If the change is related to a security vulnerability or security exposure, include one or more references or a description of the issue. If possible, include a VuXML URL or a CVE ID.
@@ -2661,6 +2677,11 @@ We include the commit title so that the referenced commit can be located even in
 
 |`Pull Request:`
 |This change was submitted as a pull request or merge request against one of FreeBSD's public read-only Git repositories.
+It should include the entire URL to the pull request, as these often act as code reviews for the code.
+For example: `https://github.com/freebsd/freebsd-src/pull/745`
+
+| `Closes:`
+| This change concludes the patch series discussed at the specified Github pull request, and closes that request.
 It should include the entire URL to the pull request, as these often act as code reviews for the code.
 For example: `https://github.com/freebsd/freebsd-src/pull/745`
 
@@ -2972,7 +2993,7 @@ You can find out more about Bugzilla at:
 The FreeBSD Project utilizes https://reviews.freebsd.org[Phabricator] for code review requests.
 See the https://wiki.freebsd.org/Phabricator[Phabricator wiki page] for details.
 
-Please use the `git arc` command provided by `devel/freebsd-git-devtools` (install the port or package, then type `git help arc` for documentation) to create and update Phabricator reviews.
+Please use the `git arc` command provided by `devel/freebsd-git-arc` (install the port or package, then type `git help arc` for documentation) to create and update Phabricator reviews.
 This will make it easier for others to review and test your patches.
 
 Committers with non-``FreeBSD.org`` Phabricator accounts can have the old account renamed to the ``FreeBSD.org`` account by following these steps:
@@ -3149,7 +3170,7 @@ When in doubt, ask for review!
 . Respect existing maintainers if listed.
 +
 Many parts of FreeBSD are not "owned" in the sense that any specific individual will jump up and yell if you commit a change to "their" area, but it still pays to check first.
-One convention we use is to put a maintainer line in the [.filename]#Makefile# for any package or subtree which is being actively maintained by one or more people; see extref:{developers-handbook}[Source Tree Guidelines and Policies, policies] for documentation on this.
+One convention we use is to put a maintainer line in the [.filename]#Makefile# for any package or subtree which is being actively maintained by one or more people; see extref:{developers-handbook}policies[Source Tree Guidelines and Policies, policies] for documentation on this.
 Where sections of code have several maintainers, commits to affected areas by one maintainer need to be reviewed by at least one other maintainer.
 In cases where the "maintainer-ship" of something is not clear, look at the repository logs for the files in question and see if someone has been working recently or predominantly in that area.
 . Any disputed change must be backed out pending resolution of the dispute if requested by a maintainer. Security related changes may override a maintainer's wishes at the Security Officer's discretion.
@@ -3289,9 +3310,37 @@ Developers should be mindful of this, and ensure any compiler specific flags are
 The versions of supported compilers for a given branch such as `main` or `stable/X` varies over time.
 The authoritative source for supported compiler versions are automated CI jobs tested in GitHub's cross-build actions and Jenkins.
 
-For `main`, the in-tree compiler is currently Clang 19.
-Currently, GCC 12, 13, and 14 are tested for amd64 via CI jobs in Jenkins.
-Clang 14 and 18 are tested for aarch64 and arm64 in GitHub's cross-build actions.
+[.tblbasic]
+[cols="12*",options="header",]
+|===
+|Branch | In-tree Compiler
+|llvm12 | llvm13 | llvm14 | llvm15 | llvm18
+|amd64-gcc12 | amd64-gcc13 | amd64-gcc14 | amd64-gcc15
+|riscv64-gcc15
+
+|main | llvm 19
+|   |   |   | Y | Y
+| Y | Y | Y | Y
+| Y
+
+|stable/15 | llvm 19
+|   |   | Y |   | Y
+| Y | Y | Y |
+|
+
+|stable/14 | llvm 19
+| Y | Y | Y |   |
+| Y |   | Y |
+|
+
+|stable/13 | llvm 19
+| Y | Y | Y |   |
+| Y |   | Y |
+|
+|===
+
+GCC toolchains are tested for amd64 and riscv64 via CI jobs in Jenkins.
+LLVM toolchains are tested for aarch64 and amd64 in GitHub's cross-build actions.
 
 === Other Suggestions
 
@@ -3645,7 +3694,7 @@ The `-x` parameter ensures the hash `$HASH` of the `main` branch is included in 
 [[ports-qa-new-category-how]]
 ==== What is the procedure for creating a new category?
 
-Please see extref:{porters-handbook}[Proposing a New Category, proposing-categories] in the Porter's Handbook.
+Please see extref:{porters-handbook}makefiles[Proposing a New Category, proposing-categories] in the Porter's Handbook.
 Once that procedure has been followed and the PR has been assigned to the {portmgr}, it is their decision whether or not to approve it.
 If they do, it is their responsibility to:
 
@@ -3679,7 +3728,7 @@ To do this, use the [.filename]#chkorigin.sh# tool: `env PORTSDIR=/path/to/ports
 . Once this is done, you can commit the updated [.filename]#ports/Makefile# to connect the new category to the build and also commit the [.filename]#Makefile# changes for the old category or categories.
 . Add appropriate entries to [.filename]#ports/MOVED#.
 . Update the documentation by modifying:
-** the extref:{porters-handbook}[list of categories, PORTING-CATEGORIES] in the Porter's Handbook
+** the extref:{porters-handbook}makefiles[list of categories, porting-categories] in the Porter's Handbook
 +
 . Only once all the above have been done, and no one is any longer reporting problems with the new ports, should the old ports be deleted from their previous locations in the repository.
 ====
@@ -3688,7 +3737,7 @@ To do this, use the [.filename]#chkorigin.sh# tool: `env PORTSDIR=/path/to/ports
 
 This is much simpler than a physical category. Only a few modifications are needed:
 
-* the extref:{porters-handbook}[list of categories, PORTING-CATEGORIES] in the Porter's Handbook
+* the extref:{porters-handbook}makefiles[list of categories, porting-categories] in the Porter's Handbook
 
 [[ports-qa-misc-questions]]
 === Miscellaneous Questions
@@ -3714,7 +3763,7 @@ No unauthorized commits may ever be made to ports maintained by those groups.
 The packages are built multiple times each week.
 If a port fails, the maintainer will receive an email from `pkg-fallout@FreeBSD.org`.
 
-Reports for all the package builds (official, experimental, and non-regression) are aggregated at link:pkg-status.FreeBSD.org[pkg-status.FreeBSD.org].
+Reports for all the package builds (official, experimental, and non-regression) are aggregated at link:https://pkg-status.FreeBSD.org[pkg-status.FreeBSD.org].
 
 [[ports-qa-misc-INDEX]]
 ==== I added a new port. Do I need to add it to the [.filename]#INDEX#?

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2025-05-01 19:56-0300\n"
+"POT-Creation-Date: 2026-02-22 15:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:59
-msgid "Before reading this chapter, you should:"
+msgid "Before reading this chapter:"
 msgstr ""
 
 #. type: Plain text
@@ -68,7 +68,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:63
-msgid "After reading this chapter, you will know:"
+msgid "Read this chapter to learn:"
 msgstr ""
 
 #. type: Plain text
@@ -222,7 +222,7 @@ msgstr ""
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:118
 #, no-wrap
-msgid "mtree configuration files, see man: mtree[8] for more information."
+msgid "mtree configuration files, see man:mtree[8] for more information."
 msgstr ""
 
 #. type: Table
@@ -401,7 +401,7 @@ msgstr ""
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:173
 #, no-wrap
-msgid "virtual memory"
+msgid "Virtual memory"
 msgstr ""
 
 #. type: Table

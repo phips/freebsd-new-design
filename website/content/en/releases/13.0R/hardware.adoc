@@ -1735,7 +1735,7 @@ The {{< manpage "bwn" "4">}} driver supports Broadcom BCM43xx based wireless dev
 
 [i386, amd64] Intel PRO/Wireless 2200BG/2915ABG MiniPCI and 2225BG PCI network adapters ({{< manpage "iwi" "4">}} driver)
 
-[i386, amd64] Intel Dual Band Wireless AC 3160/7260/7265 IEEE 802.11ac network adapters ({{< manpage "iwn" "4">}} driver)
+[i386, amd64] Intel Dual Band Wireless AC 3160/7260/7265 IEEE 802.11ac network adapters ({{< manpage "iwm" "4">}} driver)
 
 [i386, amd64] Intel Wireless WiFi Link 4965AGN IEEE 802.11n PCI network adapters ({{< manpage "iwn" "4">}} driver)
 
@@ -2421,35 +2421,7 @@ The {{< manpage "snd_vibes" "4">}} driver supports audio devices based on the fo
 
 * S3 SonicVibes
 
-[[camera]]
-=== Camera and Video Capture Devices
 
-The {{< manpage "bktr" "4">}} driver supports video capture cards based on the Brooktree Bt848/849/878/879 chips, as well as Pinnacle PCTV cards, including:
-
-* AOpen VA1000
-* AVerMedia AVerTV Studio
-* AVerMedia TF/FM-98
-* ATI TV Wonder VE
-* Hauppauge WinCast/TV
-* Hauppauge WinTV-Go-FM
-* Hauppauge WinTV-pci
-* Hauppauge WinTV-radio
-* Intel Smart Video Recorder III
-* KWORLD PCI TV Tuner
-* Miro PC TV
-* Pinnacle PCTV Pro
-* Pinnacle PCTV Rave
-* PixelView PlayTV PAK
-* PixelView PlayTV Pro (rev 4C, 9D)
-* SIGMA TV II
-* STB TV PCI Television Tuner
-* Super TV Tuner
-* TerraTec TValue
-* V-Stream XPERT TV-PVR 878
-* Video Highway XTreme
-* VideoLogic Captivator PCI
-    
-[i386] Connectix QuickCam
 
 [[usb]]
 === USB Devices

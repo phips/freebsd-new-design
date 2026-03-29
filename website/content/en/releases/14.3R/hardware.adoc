@@ -75,6 +75,10 @@ AWS / Annapurna Labs:
 * Graviton 2
 * Graviton 3
 
+Microsoft:
+
+* Windows Dev Kit 2023
+
 NXP Semiconductors:
 
 * LS1028A SoC
@@ -4188,11 +4192,6 @@ driver supports audio devices based on the following chipset:
 *	S3 SonicVibes
 
 
-[[camera]]
-=== Camera and Video Capture Devices
-
-
-[i386] Connectix QuickCam
 
 [[usb]]
 === USB Devices
@@ -4215,7 +4214,6 @@ USB Bluetooth adapters can be found in <<bluetooth,Bluetooth>>.
 USB human interface devices can be found in <<misc,Miscellaneous>>.
 ====
 
-Altera University Program Secure Data Card IP Core (man:altera_sdcard[4] driver)
 
 
 The

@@ -1,588 +1,317 @@
+# ---------------------------------------------------
 # Global
+# ---------------------------------------------------
 [freebsd]
 other = "FreeBSD"
 
-[freebsdProject]
+[freebsd-project]
 other = "Le Projet FreeBSD"
 
-[freebsdPowerServe]
-other = "FreeBSD The Power to Serve"
-
-[freebsdFoundation]
+[freebsd-foundation]
 other = "La fondation FreeBSD"
 
-[downloadFreeBSD]
-other = "Télécharger FreeBSD"
+[freebsd-documentation]
+other = "Documentation FreeBSD"
 
-[production]
-other = "Production"
+[freebsd-documentation-main-desc]
+other = "FreeBSD est un système d'exploitation pour les plates-formes de type serveur, station de travail et les systèmes embarqués"
 
-# Header
-[donate]
-other = "Faire un don à FreeBSD"
+[global-search-placeholder]
+other = "Chercher dans les articles, livres et guides."
 
-[donateFoundation]
-other = "Faire un don à la fondation FreeBSD"
+[toc]
+other = "Sommaire"
+
+[resources]
+other = "Ressources"
+
+[download-pdf]
+other = "Téléchargement en PDF"
+
+[edit-page]
+other = "Éditer cette page"
+
+[trademarks]
+other = "Marques déposées"
+
+[books]
+other = "Livres"
+
+[articles]
+other = "Articles"
+
+[choose-language]
+other = "Choose language"
+
+[last-modified]
+other = "Last modified on"
+
+[by]
+other = "by"
 
 [search]
-other = "Recherche"
+other = "Search"
 
-# Navigation
-[home]
-other = "Accueil"
-
-[about]
-other = "A propos"
-
-[introduction]
-other = "Introduction"
-
-[features]
-other = "Fonctionnalités"
-
-[advocacy]
-other = "Prosélytisme"
-
-[marketing]
-other = "Marketing"
-
-[privacyPolicy]
-other = "Politique de confidentialité"
-
-[projects]
-other = "Projects"
-
-[getFreeBSD]
-other = "Obtenir FreeBSD"
-
-[releaseInformation]
-other = "Information sur les versions"
-
-[releaseEngineering]
-other = "Production des versions"
-
+# ---------------------------------------------------
+# Header
+# ---------------------------------------------------
 [documentation]
 other = "Documentation"
-
-[faq]
-other = "FAQ"
-
-[handbook]
-other = "Manuel de référence"
-
-[porterHandbook]
-other = "Manuel du porteur d'application"
-
-[developerHandbook]
-other = "Manuel du développeur"
-
-[manualPages]
-other = "Pages de manuel"
-
-[documentationProjectPrimer]
-other = "Manuel d'introduction au projet de documentation"
-
-[allBooksArticles]
-other = "Tous les livres et articles"
 
 [community]
 other = "Communauté"
 
-[mailingLists]
-other = "Listes de diffusion"
+# ---------------------------------------------------
+# Main page
+# ---------------------------------------------------
+[getting-started]
+other = "Débuter"
 
-[forums]
-other = "Forums"
+[learn-basics]
+other = "Apprendre les bases de FreeBSD"
 
-[userGroups]
-other = "Groupes d'utilisateurs"
+[download]
+other = "Téléchargement"
 
-[events]
-other = "Événements"
+[download-freebsd]
+other = "Télécharger FreeBSD"
 
-[FreeBSDJournal]
-other = "Journal FreeBSD"
+[handbook]
+other = "Manuel de référence"
 
-[QA]
-other = "Q&R (externe)"
+[handbook-desc]
+other = "Une ressource complète et en constante évolution à destination des utilisateurs de FreeBSD"
 
-[developers]
-other = "Développeurs"
+[porters-handbook]
+other = "Manuel du porteur d'application"
 
-[projectIdeas]
-other = "Idées de project"
+[porters-handbook-desc]
+other = "Une référence complète sur le système des logiciels portés de FreeBSD"
 
-[gitRepository]
-other = "Dépôt Git"
+[faq]
+other = "FAQ FreeBSD"
 
-[gitMirror]
-other = "Miroir GitHub"
+[faq-desc]
+other = "Questions Fréquemment Posées sur FreeBSD 13.X et 12.X"
 
-[phabricator]
-other = "Code Review (Phabricator)"
+[fdp]
+other = "Manuel d'introduction au projet de documentation"
 
-[wiki]
-other = "Wiki"
+[fdp-desc]
+other = "Un guide complet pour commencer à contribuer à la documentation"
 
-[CI]
-other = "Continuous Integration Service"
+[books-list]
+other = "Liste des livres FreeBSD"
 
-[support]
-other = "Support"
+[articles-list]
+other = "Liste des articles FreeBSD"
 
-[vendors]
-other = "Revendeurs"
-
-[securityInformation]
-other = "Information de sécurité"
-
-[bugReports]
-other = "Rapport de bogue"
-
-[submittingBugReports]
-other = "Envoyer un rapport de bogue"
-
-[foundation]
-other = "Fondation"
-
-[monetaryDonations]
-other = "Don d'argent"
-
-[hardwareDonations]
-other = "Don de matériel"
-
-#Main
-[freebsdDescription1]
-other = "FreeBSD est un système d'exploitation pour les plates-formes de type serveur, station de travail et les systèmes embarqués"
-
-[freebsdDescription2]
-other = "modernes."
-
-[freebsdDescription3]
-other = "Une importante"
-
-[freebsdDescription4]
-other = "communauté"
-
-[freebsdDescription5]
-other="l'a développé continuellement pendant plus de trente ans. Ses fonctionnalités réseau, de sécurité et de stockage avancées ont fait de FreeBSD la plate-forme de choix de certains"
-
-[freebsdDescription6]
-other = "des sites Web les plus visités"
-
-[freebsdDescription7]
-other = "ainsi que pour la plupart des systèmes embarqués orientés réseau et des systèmes de stockage les plus répandus."
-
-[learnMore]
-other = "En apprendre plus"
-
-[getThe]
-other = "Obtenir le"
-
-[journal]
-other = "Journal FreeBSD"
-
-[25th-logo]
-other = "25th Anniversary Logo"
-
-[supportedReleases]
-other = "Versions supportées"
-
-[supportLifecycle]
-other = "Cycle de vie des versions"
-
-[upcoming]
-other = "A venir"
-
-[newFreeBSD]
-other= "Débutant sous FreeBSD?"
-
-[shortcuts]
-other = "Accès rapides"
-
-[reportingProblems]
-other = "Rapporter un problème"
-
-[ports]
-other = "Logiciels portés"
-
-[latestNews]
-other = "DERNIÈRES NOUVELLES"
-
-[upcomingEvents]
-other = "ÉVÉNEMENTS A VENIR"
-
-[press]
-other = "DANS LA PRESSE"
-
-[securityAdvisories]
-other = "AVIS DE SÉCURITÉ"
-
-[errataNotices]
-other = "ERRATA"
-
-[more]
-other = "Plus"
-
-[rssNews]
-other = "Flux RSS de nouvelles"
-
-[rssSecurity]
-other = "Flux RSS des avis de sécurité et des errata"
-
-#404
-[pageNotFound]
-other = "Page not found."
-
-[notFoundTitle]
-other = "We could not find the page you requested."
-
-[notFoundDesc]
-other = "Please try your request again, use one of the links in the navigation menu, or the search box at the top of the page."
-
-# Footer
-[copyright]
-other = "All rights reserved."
-
-[trademark]
-other = "The mark FreeBSD is a registered trademark of The FreeBSD Foundation and is used by The FreeBSD Project with the permission of"
-
-[contact]
-other = "Contact"
-
-[legalNotices]
-other = "Legal Notices"
-
-# Ports form
-[ports-search]
-other = "Search ports for:"
-
-[all]
-other = "Tout"
-
-[package-name]
-other = "Nom du paquet"
-
-[description]
-other = "Description"
-
-[long-description]
-other = "Long description"
-
-[maintainer]
-other = "Maintainer"
-
-[requires]
-other = "Requires"
-
-[submit]
-other = "Envoyer"
-
-# Months
-[1]
-other = "Janvier"
-
-[2]
-other = "Février"
-
-[3]
-other = "Mars"
-
-[4]
-other = "Avril"
-
-[5]
-other = "Mai"
-
-[6]
-other = "Juin"
-
-[7]
-other = "Juillet"
-
-[8]
-other = "Août"
-
-[9]
-other = "Septembre"
-
-[10]
-other = "Octobre"
-
-[11]
-other = "Novembre"
-
-[12]
-other = "Décembre"
-
-# Security section
-[data]
-other = "Data"
-
-[errataNoticeName]
-other = "Nom de l'errata"
-
-[advisoryName]
-other = "Nom de l'avis de sécurité"
-
-# Events section
-[currentEvents]
-other = "Current/Upcoming Events:"
-
-[pastEvents]
-other = "Événements passés:"
-
-[upcomingFreeBSDEvents]
-other = "Événements à venir"
-
-# Continents, countries
-[europe]
-other = "Europe"
-
-[africa]
-other = "Afrique"
-
-[australia]
-other = "Australie"
-
-[newZealand]
-other = "Nouvelle Zélande"
-
-[northAmerica]
-other = "Amérique du nord"
-
-[asia]
-other = "Asie"
-
-[southAmerica]
-other = "Amérique du sud"
-
-[oceania]
-other = "Océanie"
-
-[global]
-other = "Global"
-
-# Commercial software
-[databases]
-other = "Bases de données"
-
-[developmentTools]
-other = "Outils de développement"
-
-[ecommerce]
-other = "Outils et solutions d'E-Commerce"
-
-[email]
-other = "Logiciels de messagerie électronique"
-
-[misc]
-other = "Divers"
-
-[network]
-other = "Systèmes réseau et applications"
-
-[scientific]
-other = "Outils scientifiques et linguistiques"
-
-[security]
-other = "Sécurité"
-
-[isp]
-other = "Administration système / FAI"
-
-# sidenav
-[applications]
-other = "Applications"
-
-[administration]
-other = "Administration"
-
-[news]
-other = "Nouvelles du projet"
-
-[pressSidenav]
-other = "Presse"
-
-[multimedia]
-other = "Multimedia"
-
-[art]
-other = "Ressources artistiques"
-
-[logo]
-other = "Logo"
-
-[donations]
-other = "Donations"
-
-[privacy]
-other = "Politique de confidentialité"
-
-[mailinglists]
-other = "Listes de diffusion"
-
-[newsgroups]
-other = "Forums de discussion"
-
-[usergroups]
-other = "Groupes d'utilisateurs"
-
-[sourceCodeRepositories]
-other = "Dépôt des codes source"
-
-[releng]
-other = "Production des versions"
-
-[platforms]
-other = "Plates-formes"
-
-[ideas]
-other = "Idées de projet"
-
-[contributing]
-other = "Contribuer"
-
-[FAQ]
-other = "FAQ"
-
-[man]
+[manual-pages]
 other = "Pages de manuel"
 
-[papers]
-other = "Présentations et papiers"
+[manual-pages-desc]
+other = "Pages de manuel FreeBSD"
 
-[booksArticles]
-other = "Livres et articles en ligne"
+# ---------------------------------------------------
+# Footer
+# ---------------------------------------------------
+[system]
+other = "System"
 
-[publications]
-other = "Publications"
+[light]
+other = "Clair"
 
-[newbies]
-other = "Pour les débutants"
+[dark]
+other = "Sombre"
 
-[docproj]
-other = "Projet de documentation"
+[high-contrast]
+other = "Contraste élevé"
 
-[archive]
-other = "Archive"
+[previous-versions]
+other = "Versions précédentes"
 
-[releases]
-other = "Information sur les versions"
+[4-4bsd-documents]
+other = "Documents 4.4BSD"
 
-[productionRelease]
-other = "Version de production"
+[about]
+other = "À propos"
 
-[upcomingRelease]
-other = "Version à venir"
+[legal]
+other = "Informations légales"
 
-[snapshotReleases]
-other = "Instantanés"
+[donations]
+other = "Dons"
 
-[portedApplications]
-other = "Applications portées"
+[legal-notices]
+other = "Informations légales et Copyright"
 
-[gnome]
-other = "GNOME"
+[made-with]
+other = "Fait avec"
 
-[installationInstructions]
-other = "Instructions d'installation"
+[by-freebsd-community]
+other = "par la communauté FreeBSD"
 
-[upgradeInstructions]
-other = "Instructions de mise à jour"
+[copyright]
+other = "Tous droits réservés."
 
-[availableApplications]
-other = "Applications disponibles"
+# ---------------------------------------------------
+# Articles page
+# ---------------------------------------------------
+[list-desc-articles]
+other = "Explore a comprehensive list of FreeBSD articles."
 
-[howHelp]
-other = "Comment participer"
+# ---------------------------------------------------
+# Books page
+# ---------------------------------------------------
+[prev]
+other = "Prev"
 
-[reportingBug]
-other = "Rapporter un bogue"
+[next]
+other = "Next"
 
-[screenshots]
-other = "Captures d'écran"
+[home]
+other = "Home"
 
-[contactUs]
-other = "Nous contacter"
+[split-html]
+other = "Split HTML"
 
-[HALFAQ]
-other = "FAQ sur l'HAL"
+[single-html]
+other = "Single HTML"
 
-[upgradeFAQ]
-other = "FAQ mise à jour 2.10 à 2.12"
+[book-chapters]
+other = "Book chapters"
 
-[developmentBranchFAQ]
-other = "FAQ branche de développement"
+[book-menu]
+other = "Book menu"
 
-[creatingPorts]
-other = "Création des logiciels portés"
+[list-desc-books]
+other = "Explore a comprehensive list of FreeBSD books."
 
-[knownIssues]
-other = "Problèmes connus"
+# ---------------------------------------------------
+# Languages page
+# ---------------------------------------------------
+[select-language]
+other = "Select a language"
 
-[aboutPorts]
-other = "À propos des logiciels portés"
+[current-selection]
+other = "Current selection:"
 
-[installing]
-other = "Installation"
+# ---------------------------------------------------
+# Copyright
+# ---------------------------------------------------
+[freebsd-copyright]
+other = "FreeBSD is a registered trademark of the FreeBSD Foundation."
 
-[updating]
-other = "Mise à jour"
+[pam]
+other = "This article was written for the FreeBSD Project by ThinkSec AS and Network Associates Laboratories, the Security Research Division of Network Associates, Inc. under DARPA/SPAWAR contract N66001-01-C-8035 (“CBOSS”), as part of the DARPA CHATS research program."
 
-[searching]
-other = "Recherche"
+[coverity]
+other = "Coverity is a registered trademark; Coverity Extend, Coverity Prevent and Coverity Prevent SQS are trademarks of Coverity, Inc."
 
-[categories]
-other = "Catégories"
+[ibm]
+other = "IBM, AIX, OS/2, PowerPC, PS/2, S/390, and ThinkPad are trademarks of International Business Machines Corporation in the United States, other countries, or both."
 
-[alphabetically]
-other = "classées par ordre alphabétique"
+[ieee]
+other = "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical and Electronics Engineers, Inc. in the United States."
 
-[logicalGroup]
-other = "classées par groupes"
+[redhat]
+other = "Red Hat, RPM, are trademarks or registered trademarks of Red Hat, Inc. in the United States and other countries."
 
-[allPorts]
-other = "Liste de tous les logiciels portés"
+[3com]
+other = "3Com and HomeConnect are registered trademarks of 3Com Corporation."
 
-[moreInformation]
-other = "Pour plus d'informations"
+[amd]
+other = "AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
 
-[software]
-other = "Logiciel"
+[adobe]
+other = "Adobe, Acrobat, Acrobat Reader, Flash and PostScript are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries."
 
-[hardware]
-other = "Matériel"
+[apple]
+other = "Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. and other countries."
 
-[consulting]
-other = "Consultants"
+[git]
+other = "Git and the Git logo are either registered trademarks or trademarks of Software Freedom Conservancy, Inc., corporate home of the Git Project, in the United States and/or other countries."
 
-[ispCommercial]
-other = "Fournisseurs d'accès à Internet"
+[github]
+other = "GitHub is a trademark of GitHub Inc., registered in the United States and other countries."
 
-[securityInfo]
-other = "Information de sécurité"
+[gitlab]
+other = "GITLAB is a trademark of GitLab Inc. in the United States and other countries and regions."
 
-[advisories]
-other = "Avis de sécurité"
+[intel]
+other = "Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries."
 
-[errataNoticesSidenav]
-other = "Errata"
+[linux]
+other = "Linux is a registered trademark of Linus Torvalds."
 
-[unsupportedReleases]
-other = "Versions non-supportées"
+[microsoft]
+other = "Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media and Windows NT are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries."
 
-[readSecurityAdvisories]
-other = "Comment lire les avis de sécurité FreeBSD"
+[opengroup]
+other = "Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The Open Group are trademarks of The Open Group in the United States and other countries."
 
-[charterSecurityOfficerTeam]
-other = "Charte de l'officier de Sécurité et de son équipe"
+[qualcomm]
+other = "QUALCOMM and Eudora are registered trademarks of QUALCOMM Incorporated."
 
-[bugreports]
-other = "Rapports de bogues"
+[sparc]
+other = "SPARC, SPARC64, and UltraSPARC are trademarks of SPARC International, Inc in the United States and other countries. SPARC International, Inc owns all of the SPARC trademarks and under licensing agreements allows the proper use of these trademarks by its members."
 
-[submitPR]
-other = "Envoyer un rapport de bogue"
+[sun]
+other = "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries."
 
-[webresources]
-other = "Ressources Web"
+[unix]
+other = "UNIX is a registered trademark of The Open Group in the United States and other countries."
+
+[netbsd]
+other = "NetBSD is a registered trademark of the NetBSD Foundation."
+
+[realnetworks]
+other = "RealNetworks, RealPlayer, and RealAudio are the registered trademarks of RealNetworks, Inc."
+
+[oracle]
+other = "Oracle is a registered trademark of Oracle Corporation."
+
+[3ware]
+other = "3ware is a registered trademark of 3ware Inc."
+
+[arm]
+other = "ARM is a registered trademark of ARM Limited."
+
+[adaptec]
+other = "Adaptec is a registered trademark of Adaptec, Inc."
+
+[google]
+other = "Android is a trademark of Google Inc."
+
+[heidelberger]
+other = "Heidelberg, Helvetica, Palatino, and Times Roman are either registered trademarks or trademarks of Heidelberger Druckmaschinen AG in the U.S. and other countries."
+
+[intuit]
+other = "Intuit and Quicken are registered trademarks and/or registered service marks of Intuit Inc., or one of its subsidiaries, in the United States and other countries."
+
+[lsilogic]
+other = "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID and Mylex are trademarks or registered trademarks of LSI Logic Corp."
+
+[themathworks]
+other = "MATLAB is a registered trademark of The MathWorks, Inc."
+
+[thomson]
+other = "SpeedTouch is a trademark of Thomson."
+
+[vmware]
+other = "VMware is a trademark of VMware, Inc."
+
+[wolframresearch]
+other = "Mathematica is a registered trademark of Wolfram Research, Inc."
+
+[xiph]
+other = "Ogg Vorbis and Xiph.Org are trademarks of Xiph.Org."
+
+[xfree86]
+other = "XFree86 is a trademark of The XFree86 Project, Inc."
+
+[daemon-news]
+other = "This article was originally published in the January 2000 issue of <a class=\"link\" href=\"http://www.daemonnews.org/\">DaemonNews</a>. This version of the article may include updates from Matt and other authors to reflect changes in FreeBSD's VM implementation."
+
+[general]
+other = "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the “™” or the “®” symbol."

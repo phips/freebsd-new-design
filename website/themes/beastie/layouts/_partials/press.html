@@ -1,7 +1,11 @@
-<h3>{{ i18n "press" }}</h3>
+<h4>{{ i18n "press" }}</h4>
 {{ $pressPath := (printf "data/%s/press/press.toml" $.Language.Lang) }}
 
 {{ $translatedPressEnabled := false }}
+
+{{ if in (slice "ru" "fr") $.Language.Lang }}
+  {{ $translatedPressEnabled = true }}
+{{ end }}
 
 {{ $pressData := "" }}
 {{ if $translatedPressEnabled -}}
@@ -17,17 +21,16 @@
   {{ $pressMonthCounter := 1 }}
   {{ $pressMonthPrev := false }}
   {{ range (sort .press "date" "desc") }}
-    {{ if lt $pressCounter 6 }}
+    {{ if lt $pressCounter 5 }}
       {{ $pressMonthCur := dateFormat "2006-01" .date }}
       {{ if eq $pressMonthCur $pressMonthPrev }}
         {{ $pressMonthCounter = add $pressMonthCounter 1 }}
       {{ else }}
         {{ $pressMonthCounter = 1 }}
       {{ end }}
-      {{ if ne $pressMonthCur $pressMonthPrev }}
-      <h4 class="feed-item-date" title="{{ dateFormat "02 Jan 2006" .date }}">{{ dateFormat "2006-01" .date }}</h4>
-      {{ end }}
-      <p class="feed-item">
+      <p>
+        <span>{{ dateFormat "2006-01" .date }}</span>
+        <br />
         <a href="{{ if $translatedPressEnabled }}{{ .Site.BaseURL | relLangURL }}{{ else }}{{ $.Site.BaseURL }}{{ end }}press/#{{ dateFormat "2006-01" .date }}:{{ $pressMonthCounter }}">{{ .name }}</a>
       </p>
       {{ $pressCounter = add $pressCounter 1 }}
@@ -36,6 +39,8 @@
   {{ end }}
 {{ end }}
 <div class="feed-source">
-  <a href="{{ printf "%s%s/%s" ($.Scratch.Get "sUrl") ($.Scratch.Get "lang") "press/" }}">{{ i18n "more" }}</a>,
-  <a href="{{ absLangURL ($.Site.BaseURL) }}press/feed.xml">Feed</a>
+  <a href="{{ "press" | relLangURL }}">{{ i18n "more" }}</a> |
+  <a href="{{ "press/feed.xml" | relURL }}" title={{ i18n "rss" }}>
+    <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt={{ i18n "rss" }} width="27" height="12" />
+  </a>
 </div>

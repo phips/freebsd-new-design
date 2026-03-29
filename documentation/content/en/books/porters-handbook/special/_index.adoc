@@ -990,6 +990,34 @@ GO_TARGET=  ./dnscrypt-proxy:${PREFIX}/sbin/dnscrypt-proxy
 will install `dnscrypt-proxy` to `${PREFIX}/sbin`.
 ====
 
+[[overriding-go-mod]]
+.Overriding go.mod in Modules Mode
+[example]
+====
+During the fetch phase, modules-aware mode (that is, `USES=go:modules`) obtains sources for dependent packages by fetching the port's [.filename]#go.mod# and then immediately running `go mod download` against it.
+Because the fetch phase occurs long before patching, regular patches in [.filename]#files/# are applied far too late to affect those dependency resolution and fetch steps.
+
+While patching the upstream [.filename]#go.mod# to alter dependencies isn't possible at this time, you can still *override* it by listing another [.filename]#go.mod# as a second distfile.
+
+[.programlisting]
+....
+PORTNAME=	miller
+DISTVERSIONPREFIX=	v
+DISTVERSION=	6.17.0
+CATEGORIES=	textproc
+MASTER_SITES=	https://raw.githubusercontent.com/johnkerl/${PORTNAME}/${DISTVERSIONFULL}/:gomod
+
+DISTFILES=	go.mod:gomod
+....
+
+To override [.filename]#go.sum# as well, just add it to `DISTFILES`:
+
+[.programlisting]
+....
+DISTFILES=	go.mod:gomod go.sum:gomod
+....
+====
+
 [[using-cabal]]
 === Building Haskell Applications with `cabal`
 
@@ -3163,7 +3191,7 @@ If the port needs a Java(TM) Development Kit (JDK(TM)) to either build, run or e
 
 There are several JDKs in the ports collection, from various vendors, and in several versions.
 If the port must use a particular version, specify it using the `JAVA_VERSION` variable.
-The most current version is package:java/openjdk18[], with package:java/openjdk17[], package:java/openjdk16[], package:java/openjdk15[], package:java/openjdk14[], package:java/openjdk13[], package:java/openjdk12[], package:java/openjdk11[], package:java/openjdk8[], and package:java/openjdk7[] also available.
+The most current version is package:java/openjdk25[], with package:java/openjdk24[], package:java/openjdk23[], package:java/openjdk22[], package:java/openjdk21[], package:java/openjdk17[], package:java/openjdk11[], and package:java/openjdk8[], also available.
 
 [[using-java-variables]]
 .Variables Which May be Set by Ports That Use Java
@@ -3577,6 +3605,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 |`USE_PYTHON=optsuffix`
 |If the current Python version is not the default version, the port will gain `PKGNAMESUFFIX=${PYTHON_PKGNAMESUFFIX}`. Only useful with flavors.
+
+|`USE_PYTHON=pep517`
+|Support building and installing wheels according to the PEP-517 standard.
 
 |`PYTHON_PKGNAMEPREFIX`
 |Used as a `PKGNAMEPREFIX` to distinguish packages for different Python versions. Example: `py27-`
@@ -4844,7 +4875,7 @@ See crossref:uses[uses-sqlite,`sqlite`] for more information.
 
 [.filename]#rc.d# scripts are used to start services on system startup, and to give administrators a standard way of stopping, starting and restarting the service.
 Ports integrate into the system [.filename]#rc.d# framework.
-Details on its usage can be found in extref:{handbook}[the rc.d Handbook chapter, configtuning-rcd].
+Details on its usage can be found in extref:{handbook}config[the rc.d Handbook chapter, configtuning-rcd].
 Detailed explanation of the available commands is provided in man:rc[8] and man:rc.subr[8].
 Finally, there is extref:{rc-scripting}[an article] on practical aspects of [.filename]#rc.d# scripting.
 

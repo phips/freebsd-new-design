@@ -55,11 +55,11 @@ endif::[]
 One of the important aspects of FreeBSD is proper system configuration.
 This chapter explains much of the FreeBSD configuration process, including some of the parameters which can be set to tune a FreeBSD system.
 
-Before reading this chapter, you should:
+Before reading this chapter:
 
 * Understand UNIX(R) and FreeBSD basics (crossref:basics[basics,FreeBSD Basics]).
 
-After reading this chapter, you will know:
+Read this chapter to learn:
 
 * How to use the various configuration files in [.filename]#/etc#.
 * The basics of [.filename]#rc.conf# configuration and [.filename]#/usr/local/etc/rc.d# startup scripts.
@@ -113,7 +113,7 @@ The [.filename]#/etc# directory contains all of the FreeBSD base system configur
 |Extra man:sendmail[8] configuration and other MTA configuration files.
 
 |[.filename]#/etc/mtree#
-|mtree configuration files, see man: mtree[8] for more information.
+|mtree configuration files, see man:mtree[8] for more information.
 
 |[.filename]#/etc/pam.d#
 |Configuration files for the Pluggable Authentication Modules (PAM) library.
@@ -168,7 +168,7 @@ The state to be retrieved or set is described using a "Management Information Ba
 |Kernel functions and features
 
 |vm
-|virtual memory
+|Virtual memory
 
 |vfs
 |Filesystem
@@ -991,7 +991,7 @@ Configuring centralized logging can reduce some of the administrative burden of 
 
 In FreeBSD, centralized log file aggregation, merging, and rotation can be configured using syslogd and newsyslog.
 
-This section demonstrates an example configuration, where host `A`, named `logserv.example.com`, will collect logging information for the local network. 
+This section demonstrates an example configuration, where host `A`, named `logserv.example.com`, will collect logging information for the local network.
 
 Host `B`, named `logclient.example.com`, will be configured to pass logging information to the logging server.
 

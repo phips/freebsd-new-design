@@ -1,7 +1,7 @@
 # Generate the FreeBSD website
 #
-# Copyright (c) 2020-2025, The FreeBSD Documentation Project
-# Copyright (c) 2020-2025, Sergio Carlavilla <carlavilla@FreeBSD.org>
+# Copyright (c) 2020-2026, The FreeBSD Documentation Project
+# Copyright (c) 2020-2026, Sergio Carlavilla <carlavilla@FreeBSD.org>
 #
 # Targets intended for use on the command line
 #
@@ -16,7 +16,7 @@
 MAINTAINER=carlavilla@FreeBSD.org
 
 # List of all languages we have content for
-ALL_LANGUAGES=	en zh-tw
+ALL_LANGUAGES=	en ru zh-tw
 
 LOCALBASE?=	/usr/local
 

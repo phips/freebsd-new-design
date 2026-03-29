@@ -1,8 +1,491 @@
-# Original EN revision (24.07.2022): 41a39b1b9049a17b2a63c59e07d7adee5a362cc2
+#
+# The FreeBSD Russian Documentation Project
+#
+# Original EN revision (14.07.2023): fbf328b48f749b62f2166771e94b5cd0664dd52d
+#
 
-# Глобальные
+# ---------------------------------------------------
+# Глобальные значения
+# ---------------------------------------------------
 [freebsd]
 other = "FreeBSD"
+
+[freebsd-project]
+other = "Проект FreeBSD"
+
+[freebsd-foundation]
+other = "Фонд FreeBSD"
+
+[freebsd-documentation]
+other = "Документация FreeBSD"
+
+[freebsd-documentation-main-desc]
+other = "FreeBSD - это операционная система, обеспечивающая работу современных серверов, настольных компьютеров и встраиваемых платформ."
+
+[global-search-placeholder]
+other = "Поиск в статьях, книгах и руководствах."
+
+[toc]
+other = "Содержание"
+
+[resources]
+other = "Материалы"
+
+[download-pdf]
+other = "Скачать PDF"
+
+[edit-page]
+other = "Редактировать эту страницу"
+
+[trademarks]
+other = "товарные знаки"
+
+[books]
+other = "Книги"
+
+[articles]
+other = "Статьи"
+
+[choose-language]
+other = "Выберите язык"
+
+[last-modified]
+other = "Изменено"
+
+[by]
+other = "by"
+
+[search]
+other = "Поиск"
+
+[stale-warning-message]
+other = "Этот перевод может быть устаревшим. Для того, чтобы помочь с переводом, пожалуйста, обратитесь к"
+
+[translation-instance]
+other = "Сервер переводов FreeBSD"
+
+# ---------------------------------------------------
+# Верхний колонтитул
+# ---------------------------------------------------
+[documentation]
+other = "Документация"
+
+[community]
+other = "Сообщество"
+
+[h-about]
+other = "О нас"
+
+[h-freebsd]
+other = "FreeBSD"
+
+[h-freebsd-foundation]
+other = "Фонд FreeBSD"
+
+[h-code-of-conduct]
+other = "Кодекс Этики"
+
+[h-get-freebsd]
+other = "Получить FreeBSD"
+
+[h-release-information]
+other = "Информация о релизах"
+
+[h-release-engineering]
+other = "Подготовка релизов"
+
+[h-security-advisories]
+other = "Бюллетени Безопасности"
+
+[h-documentation]
+other = "Документация"
+
+[h-documentation-portal]
+other = "Портал документации"
+
+[h-freebsd-handbook]
+other = "Руководство"
+
+[h-porter-handbook]
+other = "Руководство по созданию портов"
+
+[h-documentation-handbook]
+other = "Учебник Проекта Документирования"
+
+[h-manual-pages]
+other = "Страницы Справочника"
+
+[h-presentation-and-papers]
+other = "Презентации и публикации"
+
+[h-wiki]
+other = "Wiki"
+
+[h-books]
+other = "Книги"
+
+[h-articles]
+other = "Статьи"
+
+[h-community]
+other = "Сообщество"
+
+[h-get-involved]
+other = "Стать участником"
+
+[h-community-forum]
+other = "Форум"
+
+[h-mailing-lists]
+other = "Списки рассылки"
+
+[h-irc-channels]
+other = "Каналы IRC"
+
+[h-bug-tracker]
+other = "Трекер ошибок"
+
+[h-support]
+other = "Поддержка"
+
+[h-donate]
+other = "Пожертвования"
+
+# ---------------------------------------------------
+# Главная страница
+# ---------------------------------------------------
+[getting-started]
+other = "Начать знакомство"
+
+[learn-basics]
+other = "Изучить основы FreeBSD"
+
+[download]
+other = "Скачать"
+
+[download-freebsd]
+other = "Скачать FreeBSD"
+
+[handbook]
+other = "Руководство по FreeBSD"
+
+[handbook-desc]
+other = "Постоянно развивающийся и обширный источник информации для пользователей FreeBSD"
+
+[porters-handbook]
+other = "Руководство FreeBSD по созданию портов"
+
+[porters-handbook-desc]
+other = "Полное справочное руководство по системе управления портами FreeBSD"
+
+[faq]
+other = "FreeBSD FAQ"
+
+[faq-desc]
+other = "Часто Задаваемые Вопросы (ЧаВО) по FreeBSD"
+
+[fdp]
+other = "Учебник Проекта Документирования"
+
+[fdp-desc]
+other = "Полное руководство, посвящённое тому, как принять участие в создании документации"
+
+[books-list]
+other = "Список книг о FreeBSD"
+
+[articles-list]
+other = "Список статей о FreeBSD"
+
+[manual-pages]
+other = "Страницы Справочника"
+
+[manual-pages-desc]
+other = "Страницы Справочника FreeBSD"
+
+# ---------------------------------------------------
+# Нижний колонтитул
+# ---------------------------------------------------
+[system]
+other = "Система"
+
+[light]
+other = "Светлый"
+
+[dark]
+other = "Тёмный"
+
+[high-contrast]
+other = "Высокая контрастность"
+
+[f-about]
+other = "О нас"
+
+[f-freebsd]
+other = "FreeBSD"
+
+[f-freebsd-foundation]
+other = "Фонд FreeBSD"
+
+[f-get-freebsd]
+other = "Получить FreeBSD"
+
+[f-code-of-conduct]
+other = "Кодекс Этики"
+
+[f-security-advisories]
+other = "Бюллетени Безопасности"
+
+[f-documentation]
+other = "Документация"
+
+[f-documentation-portal]
+other = "Портал документации"
+
+[f-manual-pages]
+other = "Страницы Справочника"
+
+[f-presentation-and-papers]
+other = "Презентации и публикации"
+
+[f-previous-versions]
+other = "Предыдущие версии"
+
+[f-44bsd-documents]
+other = "Документы 4.4BSD"
+
+[f-wiki]
+other = "Wiki"
+
+[f-community]
+other = "Сообщество"
+
+[f-get-involved]
+other = "Принять участие"
+
+[f-community-forum]
+other = "Форум Сообщества"
+
+[f-mailing-lists]
+other = "Списки рассылки"
+
+[f-irc-channels]
+other = "Каналы IRC"
+
+[f-bug-tracker]
+other = "Трекер ошибок"
+
+[f-legal]
+other = "Юридическая информация"
+
+[f-donations]
+other = "Пожертвования"
+
+[f-licensing]
+other = "Лицензирование"
+
+[f-privacy-policy]
+other = "Политика Конфиденциальности"
+
+[f-legal-notices]
+other = "Юридические оговорки"
+
+[f-all-rights-reserved]
+other = "Проект FreeBSD. Все права защищены"
+
+[f-made-with]
+other = "Сделано с помощью"
+
+[f-by-freebsd-community]
+other = "Сообществом FreeBSD"
+
+[previous-versions]
+other = "Предыдущие версии"
+
+[4-4bsd-documents]
+other = "Документы 4.4BSD"
+
+[about]
+other = "О нас"
+
+[legal]
+other = "Юридическая информация"
+
+[donations]
+other = "Пожертвования"
+
+[legal-notices]
+other = "Юридические оговорки"
+
+[made-with]
+other = "Сделано при помощи"
+
+[by-freebsd-community]
+other = "Сообществом FreeBSD"
+
+[copyright]
+other = "Все права защищены."
+
+# ---------------------------------------------------
+# Страница публикаций
+# ---------------------------------------------------
+[list-desc-articles]
+other = "Изучите обширный список публикаций FreeBSD."
+
+# ---------------------------------------------------
+# Страница книг
+# ---------------------------------------------------
+[prev]
+other = "Назад"
+
+[next]
+other = "Далее"
+
+[home]
+other = "Главная"
+
+[split-html]
+other = "Постраничный HTML"
+
+[single-html]
+other = "Единый HTML"
+
+[book-chapters]
+other = "Главы книги"
+
+[book-menu]
+other = "Меню книги"
+
+[list-desc-books]
+other = "Изучите обширный список книг по FreeBSD."
+
+# ---------------------------------------------------
+# Страница языков
+# ---------------------------------------------------
+[select-language]
+other = "Выберите язык"
+
+[current-selection]
+other = "Текущий выбор:"
+
+# ---------------------------------------------------
+# Авторские права
+# ---------------------------------------------------
+[freebsd-copyright]
+other = "FreeBSD является зарегистрированным товарным знаком Фонда FreeBSD."
+
+[pam]
+other = "Эта статья была написана для Проекта FreeBSD компаниями ThinkSec AS и Network Associates Laboratories, входящей в Security Research Division of Network Associates, Inc., в рамках договора DARPA/SPAWAR N66001-01-C-8035 (“CBOSS”), как часть исследовательской программы DARPA CHATS."
+
+[coverity]
+other = "Coverity является зарегистрированным товарным знаком; Coverity Extend, Coverity Prevent и Coverity Prevent SQS являются зарегистрированными товарными знаками Coverity, Inc."
+
+[ibm]
+other = "IBM, AIX, OS/2, PowerPC, PS/2, S/390 и ThinkPad являются товарными знаками International Business Machines Corporation в Соединённых Штатах, других странах, или по всему миру."
+
+[ieee]
+other = "IEEE, POSIX и 802 являются зарегистрированными товарными знаками Institute of Electrical and Electronics Engineers, Inc. в Соединённых Штатах."
+
+[redhat]
+other = "Red Hat и RPM это торговые марки или зарегистрированные торговые марки Red Hat, Inc. в Соединенных Штатах и других странах."
+
+[3com]
+other = "3Com и HomeConnect это зарегистрированные торговые марки 3Com Corporation."
+
+[amd]
+other = "AMD, AMD Athlon, AMD Opteron, Athlon, &Eacute;lan, и PCnet это торговые марки Advanced Micro Devices, Inc."
+
+[adobe]
+other = "Adobe, Acrobat, Acrobat Reader и PostScript это или зарегистрированные торговые марки или торговые марки Adobe Systems Incorporated в Соединенных Штатах и/или других странах."
+
+[apple]
+other = "Apple, AirPort, FireWire, Mac, Macintosh, Mac OS, Quicktime и TrueType это торговые марки Apple Computer, Inc., зарегистрированные в Соединенных Штатах и других странах."
+
+[git]
+other = "Git и логотип Git являются зарегистрированными торговыми знаками или торговыми знаками Software Freedom Conservancy, Inc., являющимся корпоративным местонахождением Git Project, в Соединённых Штатах и/или других странах."
+
+[github]
+other = "GitHub является торговым знаком GitHub Inc., зарегистрированным в Соединённых Штатах и других странах."
+
+[gitlab]
+other = "GITLAB является торговым знаком GitLab Inc. в Соединённых Штатах и других странах и регионах."
+
+[intel]
+other = "Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium и Xeon это торговые марки или зарегистрированные торговые марки Intel Corporation или ее дочерних компаний в Соединенных Штатах и других странах."
+
+[linux]
+other = "Linux является торговым знаком Linus Torvalds."
+
+[microsoft]
+other = "Microsoft, FrontPage, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media и Windows NT это или зарегистрированные торговые марки или торговые марки Microsoft Corporation в Соединенных Штатах и/или других странах."
+
+[opengroup]
+other = "Motif, OSF/1 и UNIX это зарегистрированные торговые марки, а IT DialTone и The Open Group это торговые марки Open Group в Соединенных Штатах и других странах."
+
+[qualcomm]
+other = "QUALCOMM и Eudora это зарегистрированные торговые марки QUALCOMM Incorporated."
+
+[sparc]
+other = "Sparc, Sparc64, и UltraSPARC это торговые марки SPARC International, Inc в Соединенных Штатах и других странах. Продукты с торговой маркой SPARC основаны на архитектуре, разработанной Sun Microsystems, Inc."
+
+[sun]
+other = "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, Solaris, StarOffice, SunOS это торговые марки или зарегистрированные торговые марки Sun Microsystems, Inc. в Соединенных Штатах и других странах."
+
+[unix]
+other = "Unix это зарегистрированная торговая марка Open Group в Соединенных Штатах и других странах."
+
+[netbsd]
+other = "NetBSD это зарегистрированная торговая марка NetBSD Foundation."
+
+[realnetworks]
+other = "RealNetworks, RealPlayer и RealAudio это зарегистрированные торговые марки RealNetworks, Inc."
+
+[oracle]
+other = "Oracle это зарегистрированная торговая марка Oracle Corporation."
+
+[3ware]
+other = "3ware и Escalade это зарегистрированные торговые марки 3ware Inc."
+
+[arm]
+other = "ARM это зарегистрированная торговая марка ARM Limited."
+
+[adaptec]
+other = "Adaptec это зарегистрированная торговая марка Adaptec, Inc."
+
+[google]
+other = "Android является товарным знаком Google Inc."
+
+[heidelberger]
+other = "Heidelberg, Helvetica, Palatino и Times Roman это или зарегистрированные торговые марки или торговые марки Heidelberger Druckmaschinen AG в США и других странах."
+
+[intuit]
+other = "Intuit и Quicken это зарегистрированные торговые марки и/или зарегистрированные сервис марки Intuit Inc., или одной из ее дочерних компаний в Соединенных Штатах и других странах."
+
+[lsilogic]
+other = "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID и Mylex является товарными знаками или зарегистрированные торговыми марками LSI Logic Corp."
+
+[themathworks]
+other = "MATLAB является товарным знаком MathWorks, Inc."
+
+[thomson]
+other = "SpeedTouch является товарным знаком Thomson."
+
+[vmware]
+other = "VMware является товарным знаком VMware, Inc."
+
+[wolframresearch]
+other = "Mathematica является товарным знаком Wolfram Research, Inc."
+
+[xiph]
+other = "Ogg Vorbis и Xiph.Org являются товарными знаками Xiph.Org."
+
+[xfree86]
+other = "XFree86 является товарным знаком XFree86 Project, Inc."
+
+[daemon-news]
+other = "Эта статья была впервые опубликована в январском номере 2000 года издания <a class=\"link\" href=\"http://www.daemonnews.org/\">DaemonNews</a>. Данная версия публикации может содержать обновления от Мэтта и других авторов, отражающие изменения в реализации VM во FreeBSD."
+
+[general]
+other = "Многие из обозначений, используемые производителями и продавцами для обозначения своих продуктов, заявляются в качестве товарных знаков. Когда такие обозначения появляются в этом документе, и Проекту FreeBSD известно о товарном знаке, к обозначению добавляется знак “™” или “®”."
 
 [freebsdProject]
 other = "Проект FreeBSD"
@@ -19,12 +502,6 @@ other = "Скачать FreeBSD"
 [production]
 other = "Продуктивный"
 
-[last-modified]
-other = "Дата последнего изменения"
-
-[by]
-other = "выполнил"
-
 # Заголовок
 [donate]
 other = "Пожертвование в пользу FreeBSD"
@@ -32,16 +509,7 @@ other = "Пожертвование в пользу FreeBSD"
 [donateFoundation]
 other = "Пожертвование в Фонд FreeBSD"
 
-[search]
-other = "Поиск"
-
 # Навигация
-[home]
-other = "На главную"
-
-[about]
-other = "О FreeBSD"
-
 [introduction]
 other = "Введение"
 
@@ -55,7 +523,7 @@ other = "Продвижение"
 other = "Маркетинг"
 
 [privacyPolicy]
-other = "Политика конфиденциальности"
+other = "По\u00ADли\u00ADти\u00ADка кон\u00ADфи\u00ADден\u00ADци\u00ADаль\u00ADнос\u00ADти"
 
 [projects]
 other = "Проекты"
@@ -68,15 +536,6 @@ other = "Информация о релизах"
 
 [releaseEngineering]
 other = "Подготовка релизов"
-
-[documentation]
-other = "Документация"
-
-[faq]
-other = "Часто задаваемые вопросы"
-
-[handbook]
-other = "Руководство"
 
 [porterHandbook]
 other = "Руководство портера"
@@ -91,13 +550,10 @@ other = "Руководство коммиттера"
 other = "Страницы справочника"
 
 [documentationProjectPrimer]
-other = "Учебник Проекта документирования"
+other = "Учеб\u00ADник Про\u00ADек\u00ADта до\u00ADку\u00ADмен\u00ADти\u00ADро\u00ADва\u00ADния"
 
 [allBooksArticles]
 other = "Все книги и статьи"
-
-[community]
-other = "Сообщество"
 
 [mailingLists]
 other = "Списки рассылки"
@@ -160,7 +616,7 @@ other = "Фонд"
 other = "Помощь деньгами"
 
 [hardwareDonations]
-other = "Помощь оборудованием"
+other = "По\u00ADмощь обо\u00ADру\u00ADдо\u00ADва\u00ADни\u00ADем"
 
 #Main
 [freebsdDescription1]
@@ -197,7 +653,7 @@ other = "Журнал FreeBSD"
 other = "Логотип 25-летнего юбилея"
 
 [supportedReleases]
-other = "Поддерживаемые релизы"
+other = "Под\u00ADдер\u00ADжи\u00ADва\u00ADе\u00ADмые ре\u00ADли\u00ADзы"
 
 [supportLifecycle]
 other = "Цикл поддержки"
@@ -252,9 +708,6 @@ other = "Мы не смогли найти запрошенную страниц
 other = "Пожалуйста, повторите ваш запрос либо воспользуйтесь одной из ссылок в меню навигации или окном поиска вверху страницы."
 
 # Footer
-[copyright]
-other = "Все права защищены."
-
 [trademark]
 other = "Название FreeBSD является зарегистрированным торговым знаком The FreeBSD Foundation и используется Проектом FreeBSD с разрешения"
 
@@ -404,46 +857,44 @@ other = "Системное администрирование / Поддерж�
 
 # боковая панель навигации
 [applications]
-other = "Приложения"
+other = "При\u00ADло\u00ADже\u00ADния"
 
 [administration]
-other = "Администрация"
+other = "Ад\u00ADми\u00ADни\u00ADстра\u00ADция"
 
 [news]
-other = "Новости"
+other = "Но\u00ADво\u00ADсти"
 
 [pressSidenav]
-other = "Пресса"
+other = "Прес\u00ADса"
 
 [multimedia]
-other = "Медиаресурсы"
+other = "Ме\u00ADди\u00ADа\u00ADре\u00ADсур\u00ADсы"
 
 [art]
-other = "Иллюстрации"
+other = "Ил\u00ADлюс\u00ADтра\u00ADции"
 
 [logo]
 other = "Логотип"
 
-[donations]
-other = "Пожертвования"
 
 [privacy]
-other = "Политика конфиденциальности"
+other = "Политика кон\u00ADфи\u00ADден\u00ADци\u00ADаль\u00ADнос\u00ADти"
 
 [mailinglists]
 other = "Списки рассылки"
 
 [newsgroups]
-other = "Новостные группы"
+other = "Но\u00ADвост\u00ADные груп\u00ADпы"
 
 [usergroups]
-other = "Группы пользователей"
+other = "Группы поль\u00ADзова\u00ADте\u00ADлей"
 
 [sourceCodeRepositories]
-other = "Репозитории исходного кода"
+other = "Ре\u00ADпо\u00ADзи\u00ADто\u00ADрии ис\u00ADход\u00ADно\u00ADго кода"
 
 [releng]
-other = "Подготовка релизов"
+other = "Под\u00ADго\u00ADтов\u00ADка ре\u00ADли\u00ADзов"
 
 [platforms]
 other = "Платформы"
@@ -455,67 +906,67 @@ other = "Идеи для проекта"
 other = "Участие в проекте"
 
 [FAQ]
-other = "Часто задаваемые вопросы"
+other = "Час\u00ADто за\u00ADда\u00ADва\u00ADе\u00ADмые воп\u00ADро\u00ADсы"
 
 [man]
-other = "Страницы Справочника"
+other = "Стра\u00ADни\u00ADцы Спра\u00ADвоч\u00ADни\u00ADка"
 
 [papers]
-other = "Презентации и исследования"
+other = "Пре\u00ADзен\u00ADта\u00ADции и ис\u00ADсле\u00ADдо\u00ADва\u00ADния"
 
 [booksArticles]
 other = "Книги и статьи"
 
 [publications]
-other = "Публикации"
+other = "Пуб\u00ADли\u00ADка\u00ADции"
 
 [newbies]
-other = "Для новичков"
+other = "Для но\u00ADвич\u00ADков"
 
 [docproj]
-other = "Проект документирования"
+other = "Про\u00ADект до\u00ADку\u00ADмен\u00ADти\u00ADро\u00ADва\u00ADния"
 
 [archive]
 other = "Архив"
 
 [releases]
-other = "Информация о релизах"
+other = "Ин\u00ADфор\u00ADма\u00ADция о ре\u00ADли\u00ADзах"
 
 [productionRelease]
-other = "Продуктивный релиз"
+other = "Про\u00ADдук\u00ADтив\u00ADный ре\u00ADлиз"
 
 [upcomingRelease]
-other = "Предстоящий релиз"
+other = "Пред\u00ADсто\u00ADя\u00ADщий ре\u00ADлиз"
 
 [snapshotReleases]
-other = "Снэпшот-релизы"
+other = "Про\u00ADме\u00ADжу\u00ADточ\u00ADные сбор\u00ADки"
 
 [portedApplications]
-other = "Портированные приложения"
+other = "Пор\u00ADти\u00ADро\u00ADван\u00ADные при\u00ADло\u00ADже\u00ADния"
 
 [gnome]
 other = "GNOME"
 
 [installationInstructions]
-other = "Инструкции по установке"
+other = "Ин\u00ADструк\u00ADции по уста\u00ADнов\u00ADке"
 
 [upgradeInstructions]
-other = "Инструкции по обновлению"
+other = "Ин\u00ADструк\u00ADции по об\u00ADнов\u00ADле\u00ADнию"
 
 [availableApplications]
-other = "Доступные приложения"
+other = "До\u00ADступ\u00ADные при\u00ADло\u00ADже\u00ADния"
 
 [howHelp]
 other = "Как помочь"
 
 [reportingBug]
-other = "Сообщить об ошибке"
+other = "Со\u00ADоб\u00ADщить об оши\u00ADбке"
 
 [screenshots]
 other = "Скриншоты"
 
 [contactUs]
-other = "Связаться с нами"
+other = "Свя\u00ADзать\u00ADся с на\u00ADми"
 
 [HALFAQ]
 other = "HAL FAQ"
@@ -563,16 +1014,16 @@ other = "Дополнительная информация"
 other = "Программное обеспечение"
 
 [hardware]
-other = "Оборудование"
+other = "Обо\u00ADру\u00ADдо\u00ADва\u00ADние"
 
 [consulting]
-other = "Консалтинговые услуги"
+other = "Кон\u00ADсал\u00ADтин\u00ADго\u00ADвые ус\u00ADлу\u00ADги"
 
 [ispCommercial]
 other = "Интернет-провайдеры"
 
 [securityInfo]
-other = "О информационной безопасности"
+other = "О ин\u00ADфор\u00ADма\u00ADци\u00ADон\u00ADной бе\u00ADзо\u00ADпас\u00ADнос\u00ADти"
 
 [advisories]
 other = "Бюллетени"
@@ -581,13 +1032,13 @@ other = "Бюллетени"
 other = "Ошибки"
 
 [unsupportedReleases]
-other = "Неподдерживаемые релизы"
+other = "Не\u00ADпод\u00ADдер\u00ADжи\u00ADва\u00ADе\u00ADмые ре\u00ADли\u00ADзы"
 
 [readSecurityAdvisories]
-other = "Как читать Бюллетени безопасности FreeBSD"
+other = "Как чи\u00ADтать Бюл\u00ADле\u00ADте\u00ADни бе\u00ADзо\u00ADпас\u00ADно\u00ADсти FreeBSD"
 
 [charterSecurityOfficerTeam]
-other = "Устав директора и команды по информационной безопасности"
+other = "Ус\u00ADтав ди\u00ADрек\u00ADто\u00ADра и ко\u00ADман\u00ADды по ин\u00ADфор\u00ADма\u00ADци\u00ADон\u00ADной бе\u00ADзо\u00ADпас\u00ADно\u00ADсти"
 
 [bugreports]
 other = "Сообщения об ошибках"
