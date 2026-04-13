@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<html lang="{{ $.Site.LanguageCode | default " en" }}">
   {{ partial "site-head.html" . }}
   <body>
-      {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-      <main>
-        {{ block "main" . }}{{ end }}
-      </main>
-      {{ block "footer" . }}{{ partial "site-footer.html" .}}{{ end }}
+    {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "footer" . }}{{ partial "site-footer.html" .}}{{ end }}
   </body>
 </html>

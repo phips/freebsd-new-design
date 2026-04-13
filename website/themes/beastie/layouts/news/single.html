@@ -5,15 +5,8 @@
         {{ partial "sidenav.html" (dict "sidenavType" .Params.sidenav "data" .Site.Data "language" $.Site.Language.Lang ) }}
       </div>
       <div id="feedlinks">
-        <ul>
-          <li>
-            <a
-              href="{{ absLangURL ($.Site.BaseURL) }}news/feed.xml"
-              title="FreeBSD RSS 2.0 Feed"
-              >RSS 2.0 Feed</a
-            >
-          </li>
-        </ul>
+        <img class="rssimage" src="{{ absLangURL ($.Site.BaseURL) }}images/rss_icon.png" alt={{ i18n "rss" }} width="27" height="12" />
+        <a href="{{ absLangURL ($.Site.BaseURL) }}news/feed.xml" title="FreeBSD RSS 2.0 Feed">RSS 2.0 Feed</a>
       </div>
     </div>
     <div id="contentwrap">
@@ -33,7 +26,6 @@
           {{ $newsData = $dataDefaultLanguage.news }}
         {{ end }}
 
-
         <!-- First load all year-month to the array -->
         {{ $yearsMonths := slice }}
         {{ with $newsData.news }}
@@ -41,7 +33,6 @@
             {{ $yearsMonths = $yearsMonths | append (dateFormat "2006-1" .date) }}
           {{ end }}
         {{ end }}
-
 
         <!-- Remove duplicates -->
         {{ $yearsMonths = $yearsMonths | uniq }}
@@ -65,13 +56,8 @@
                       {{ end }}
                       <li>
                         <p class="localized">
-                          <a
-                            id="{{ dateFormat "2006-01-02" .date }}:{{ $newsDayCounter }}"
-                          ></a>
-                          <strong
-                            >{{ dateFormat "2" .date }}
-                            {{ i18n (dateFormat "1" .date) }}:</strong
-                          >
+                          <a id="{{ dateFormat "2006-01-02" .date }}:{{ $newsDayCounter }}"></a>
+                          <strong>{{ dateFormat "2" .date }} {{ i18n (dateFormat "1" .date) }}:</strong>
                           {{ .description | safeHTML }}
                         </p>
                       </li>
@@ -85,18 +71,10 @@
         {{ end }}
       {{ end }}
       {{ if .GitInfo }}
-        <hr>
-        <div class="last-modified">
-          <p>
-            <strong>{{ i18n "last-modified" }}</strong>:
-            {{ .GitInfo.AuthorDate | time.Format ":date_long" }} {{ i18n "by" }}
-            <a
-              href="https://cgit.freebsd.org/doc/commit/?id={{ .GitInfo.AbbreviatedHash }}"
-              target="_blank"
-              >{{ .GitInfo.AuthorName }}</a
-            >
-          </p>
-        </div>
+      <hr />
+      <div class="last-modified">
+        <p><strong>{{ i18n "last-modified" }}</strong>: {{ .GitInfo.AuthorDate | time.Format ":date_long" }} {{ i18n "by" }} <a href="https://cgit.freebsd.org/doc/commit/?id={{ .GitInfo.AbbreviatedHash }}" target="_blank">{{ .GitInfo.AuthorName }}</a></p>
+      </div>
       {{ end }}
     </div>
   </div>
