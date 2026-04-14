@@ -7,46 +7,46 @@
       <div class="front-page-tagline">{{ i18n "title-one" }}<br />{{ i18n "title-two" }}</div>
       <section class="downloads-container">
         <section class="downloads download-section">
-          <div class="download-section-title">{{ i18n "download-freebsd" }} {{ index $.Site.Data.releases "rel150-current" }}</div>
+          <div class="download-section-title">{{ i18n "download-freebsd" }} {{ index hugo.Data.releases "rel150-current" }}</div>
           <div>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ index $.Site.Data.releases "rel150-current" }}/">amd64</a>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ index $.Site.Data.releases "rel150-current" }}/">aarch64</a>
+            <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ index hugo.Data.releases "rel150-current" }}/">amd64</a>
+            <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ index hugo.Data.releases "rel150-current" }}/">aarch64</a>
             <a class="download-button-release" href="/where/#download">{{ i18n "other" }}</a>
           </div>
           <div class="download-links">
-            <a href="/releases/{{ index $.Site.Data.releases "rel150-current" }}R/announce/">{{ i18n "announcement" }}</a>,
-            <a href="/releases/{{ index $.Site.Data.releases "rel150-current" }}R/relnotes/">{{ i18n "notes" }}</a>
+            <a href="/releases/{{ index hugo.Data.releases "rel150-current" }}R/announce/">{{ i18n "announcement" }}</a>,
+            <a href="/releases/{{ index hugo.Data.releases "rel150-current" }}R/relnotes/">{{ i18n "notes" }}</a>
           </div>
         </section>
         <section class="downloads download-section">
-          <div class="download-section-title">{{ i18n "download-freebsd" }} {{ index $.Site.Data.releases "rel143-current" }}</div>
+          <div class="download-section-title">{{ i18n "download-freebsd" }} {{ index hugo.Data.releases "rel143-current" }}</div>
           <div>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ index $.Site.Data.releases "rel143-current" }}/">amd64</a>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ index $.Site.Data.releases "rel143-current" }}/">aarch64</a>
+            <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ index hugo.Data.releases "rel143-current" }}/">amd64</a>
+            <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ index hugo.Data.releases "rel143-current" }}/">aarch64</a>
             <a class="download-button-release" href="/where/#download">{{ i18n "other" }}</a>
           </div>
           <div class="download-links">
-            <a href="/releases/{{ index $.Site.Data.releases "rel143-current" }}R/announce/">{{ i18n "announcement" }}</a>,
-            <a href="/releases/{{ index $.Site.Data.releases "rel143-current" }}R/relnotes/">{{ i18n "notes" }}</a>
+            <a href="/releases/{{ index hugo.Data.releases "rel143-current" }}R/announce/">{{ i18n "announcement" }}</a>,
+            <a href="/releases/{{ index hugo.Data.releases "rel143-current" }}R/relnotes/">{{ i18n "notes" }}</a>
           </div>
         </section>
         <section class="downloads download-section">
           <div class="download-section-title">{{ i18n "upcoming-releases" }}</div>
           <div class="additional-downloads">
-            {{ $betaUpcoming := index $.Site.Data.releases "beta-upcoming" }}
+            {{ $betaUpcoming := index hugo.Data.releases "beta-upcoming" }}
             {{ if ne $betaUpcoming "IGNORE" }}
-              <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel-schedule" }}>{{ index $.Site.Data.releases "betarel-current" }}</a>
+              <a class="download-button-release" href={{ index hugo.Data.releases "u-betarel-schedule" }}>{{ index hugo.Data.releases "betarel-current" }}</a>
             {{ end }}
-            {{ $beta2Upcoming := index $.Site.Data.releases "beta2-upcoming" }}
+            {{ $beta2Upcoming := index hugo.Data.releases "beta2-upcoming" }}
             {{ if ne $beta2Upcoming "IGNORE" }}
-              <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel2-schedule" }}>{{ index $.Site.Data.releases "betarel2-current" }}</a>
+              <a class="download-button-release" href={{ index hugo.Data.releases "u-betarel2-schedule" }}>{{ index hugo.Data.releases "betarel2-current" }}</a>
             {{ end }}
-            {{ $beta3Upcoming := index $.Site.Data.releases "beta3-upcoming" }}
+            {{ $beta3Upcoming := index hugo.Data.releases "beta3-upcoming" }}
             {{ if ne $beta3Upcoming "IGNORE" }}
-              <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel3-schedule" }}>{{ index $.Site.Data.releases "betarel3-current" }}</a>
+              <a class="download-button-release" href={{ index hugo.Data.releases "u-betarel3-schedule" }}>{{ index hugo.Data.releases "betarel3-current" }}</a>
             {{ end }}
-            <!--{{ index $.Site.Data.releases "rel151-current" }}: <a href="/releases/{{ index $.Site.Data.releases "rel151-current" }}R/schedule/">2025-12</a> -
-            {{ index $.Site.Data.releases "rel144-current" }}: <a href="/releases/{{ index $.Site.Data.releases "rel144-current" }}R/schedule/">2026-03</a>-->
+            <!--{{ index hugo.Data.releases "rel151-current" }}: <a href="/releases/{{ index hugo.Data.releases "rel151-current" }}R/schedule/">2025-12</a> -
+            {{ index hugo.Data.releases "rel144-current" }}: <a href="/releases/{{ index hugo.Data.releases "rel144-current" }}R/schedule/">2026-03</a>-->
           </div>
           <div>
             <a href="/where/#download-snapshots">{{ i18n "development-snapshots" }}</a>
