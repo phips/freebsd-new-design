@@ -1,11 +1,11 @@
 <footer>
   <div class="footer-container">
     <section class="logo-column">
-        <img src="{{ absLangURL ($.Site.BaseURL) }}images/beastie-right.svg" width="160" height="250" alt="FreeBSD logo" />
+      <img src="{{ "images/beastie-right.svg" | relURL }}" width="160" height="250" alt="FreeBSD logo" />
         <div class="options-container">
           <div class="language-container">
             <a id="languages" href="{{ "languages" | absLangURL }}">
-              <img src="{{ absLangURL ($.Site.BaseURL ) }}images/language.png" class="language-image" alt="{{ i18n "choose-language" }}">
+              <img src="{{ "images/language.png" | relURL }}" class="language-image" alt="{{ i18n "choose-language" }}">
               <span>{{ .Site.Language.LanguageName }}</span>
             </a>
           </div>
