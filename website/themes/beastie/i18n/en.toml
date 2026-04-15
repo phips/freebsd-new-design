@@ -161,7 +161,7 @@ other = "for more insights"
 other = "Native ZFS"
 
 [zfs-description]
-other = "is an outstanding storage platform that encompasses the functionality of traditional filesystems, volume managers, and more. FreeBSD is one of the few operating systems to offer it as a fully integrated feature, meaning you won’t have to worry during system upgrades"
+other = "is an outstanding storage platform that encompasses the functionality of traditional filesystems, volume managers, and more. FreeBSD is one of the few operating systems to offer it as a fully integrated feature, meaning you won’t have to worry during system upgrades."
 
 [virtualization-title]
 other = "Virtualization"
@@ -185,7 +185,7 @@ other = "Jails"
 other = "enable you to partition your system’s workload within isolated environments. Want to run a web server with its own isolated file system and networking? Put it in a jail. Use the built-in"
 
 [jails-description-two]
-other = "command or leverage alternative tools to make jail management trivial"
+other = "command or leverage alternative tools to make jail management trivial."
 
 [networking-title]
 other = "Networking"
@@ -200,10 +200,10 @@ other = "Documentation"
 other = "FreeBSD prides itself on having comprehensive, well-written documentation. There’s the dedicated"
 
 [documentation-description-two]
-other = "documentation home"
+other = "portal"
 
 [documentation-description-three]
-other = ", and perhaps more importantly, it is a part of the operating system itself"
+other = ", and perhaps more importantly, it is a part of the operating system itself."
 
 [community-title]
 other = "Community"
@@ -218,7 +218,7 @@ other = "community"
 other = " is vibrant and collaborative. Groups are active across many mediums, from real-time communications to mailing lists and newsgroups. Be sure to check out the community engagement that is driven by the"
 
 [community-description-four]
-other = "FreeBSD Foundation"
+other = "FreeBSD Foundation."
 
 [latest-news]
 other = "Latest news"
