@@ -145,6 +145,10 @@ a|
 
 |===
 
+== Production Quality (legacy)
+
+Some FreeBSD `RELEASEs` are supported but are older or built from older `STABLE` branches; these are considered "legacy" and are probably only of interest to people maintaining existing systems on FreeBSD.
+
 [[download-rel143]]
 === FreeBSD {rel143-current}-RELEASE
 
@@ -199,10 +203,6 @@ a|
 * link:{u-rel143-signatures}[Signed Checksums]
 
 |===
-
-== Production Quality (legacy)
-
-Some FreeBSD `RELEASEs` are supported but are older or built from older `STABLE` branches; these are considered "legacy" and are probably only of interest to people maintaining existing systems on FreeBSD.
 
 [[download-rel135]]
 === FreeBSD {rel135-current}-RELEASE
