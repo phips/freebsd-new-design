@@ -176,6 +176,10 @@
 
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   scroll-padding-top: var(--header-height);
@@ -312,16 +316,23 @@ figcaption {
 }
 
 pre {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
   border-radius: 0.25rem;
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-family: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
   background-color: var(--pre-background-color);
   font-size: 1rem;
   color: var(--pre-font-color);
   line-height: 1.4;
-  margin: 0 0 24px;
-  overflow: auto !important;
-  padding: 1rem;
-  margin: 0;
 }
 
 p {
@@ -899,6 +910,10 @@ section.feed-flex-item {
   margin: .5rem 0;
 }
 
+#contentwrap {
+  min-width: 0;
+}
+
 #contentwrap h1 {
   margin-top: 0;
   padding-bottom: 1.2rem;
@@ -908,6 +923,12 @@ section.feed-flex-item {
   #sidewrap {
     display: none;
   }
+}
+
+/* Downloads page*/
+.tblDownload ul {
+  list-style: none;
+  padding: 0 10px;
 }
 
 /* Languages page */
@@ -933,19 +954,24 @@ ul.language-list .selected {
 }
 
 .imageblock .title {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   padding-bottom: 0;
   font-weight: bolder;
   font-style: italic;
 }
 
 .literalblock {
-  margin: 0.75em 0;
-  overflow: auto;
+  margin: .75em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
 }
 
 .literalblock .content {
-  overflow: auto;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 /* 404 */
