@@ -124,6 +124,60 @@ other = "Support"
 [h-donate]
 other = "Donate"
 
+[h-privacy-policy]
+other = "Privacy Policy"
+
+[h-projects]
+other = "Projects"
+
+[h-ports]
+other = "Ports"
+
+[h-forums]
+other = "Forums"
+
+[h-user-groups]
+other = "User Groups"
+
+[h-events]
+other = "Events"
+
+[h-freebsd-journal]
+other = "FreeBSD Journal"
+
+[h-developers]
+other = "Developers"
+
+[h-project-ideas]
+other = "Project Ideas"
+
+[h-git-repository]
+other = "Git Repository"
+
+[h-git-mirror]
+other = "GitHub Mirror"
+
+[h-phabricator]
+other = "Code Review (Phabricator)"
+
+[h-CI]
+other = "Continuous Integration Service"
+
+[h-vendors]
+other = "Vendors"
+
+[h-security-information]
+other = "Security Information"
+
+[h-bug-reports]
+other = "Bug Reports"
+
+[h-submitting-bug-reports]
+other = "Submitting Bug Reports"
+
+[h-webresources]
+other = "Web Resources"
+
 # ---------------------------------------------------
 # Main
 # ---------------------------------------------------
