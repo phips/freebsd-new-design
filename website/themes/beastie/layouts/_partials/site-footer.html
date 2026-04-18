@@ -4,7 +4,7 @@
       <img src="{{ "images/beastie-right.svg" | relURL }}" width="160" height="250" alt="FreeBSD logo" />
         <div class="options-container">
           <div class="language-container">
-            <a id="languages" href="{{ "languages" | absLangURL }}">
+            <a id="languages" href="{{ "languages" | relLangURL }}">
               <img src="{{ "images/language.png" | relURL }}" class="language-image" alt="{{ i18n "choose-language" }}">
               <span>{{ .Site.Language.LanguageName }}</span>
             </a>
@@ -22,19 +22,19 @@
         <h3 class="column-title">{{ i18n "f-about" }}</h3>
         <ul class="column-elements-container">
           <li>
-            <a href="https://www.freebsd.org/about/" target="_blank" class="column-element">{{ i18n "f-freebsd" }}</a>
+            <a href="{{ "about" | relLangURL }}" class="column-element">{{ i18n "f-freebsd" }}</a>
           </li>
           <li>
-            <a href="https://freebsdfoundation.org/" target="_blank" class="column-element">{{ i18n "f-freebsd-foundation" }}</a>
+            <a href="https://freebsdfoundation.org/" class="column-element">{{ i18n "f-freebsd-foundation" }}</a>
           </li>
           <li>
-            <a href="https://www.freebsd.org/where/" target="_blank" class="column-element">{{ i18n "f-get-freebsd" }}</a>
+            <a href="{{ "where" | relLangURL }}" class="column-element">{{ i18n "f-get-freebsd" }}</a>
           </li>
           <li>
-            <a href="https://www.freebsd.org/internal/code-of-conduct" target="_blank" class="column-element">{{ i18n "f-code-of-conduct" }}</a>
+            <a href="{{ "internal/code-of-conduct" | relLangURL }}" class="column-element">{{ i18n "f-code-of-conduct" }}</a>
           </li>
           <li>
-            <a href="https://www.freebsd.org/security/" target="_blank" class="column-element">{{ i18n "f-security-advisories" }}</a>
+            <a href="{{ "security" | relLangURL }}" class="column-element">{{ i18n "f-security-advisories" }}</a>
           </li>
         </ul>
       </section>
@@ -42,7 +42,7 @@
         <h3 class="column-title">{{ i18n "f-documentation" }}</h3>
         <ul class="column-elements-container">
           <li>
-            <a href="{{ .Site.BaseURL | relLangURL }}" class="column-element">{{ i18n "f-documentation-portal" }}</a>
+            <a href="https://docs.freebsd.org" class="column-element">{{ i18n "f-documentation-portal" }}</a>
           </li>
           <li>
             <a href="https://man.FreeBSD.org" target="_blank" class="column-element">{{ i18n "f-manual-pages" }}</a>
@@ -65,7 +65,7 @@
         <h3 class="column-title">{{ i18n "f-community" }}</h3>
         <ul class="column-elements-container">
           <li>
-            <a href={{ "articles/contributing" | absLangURL }} class="column-element">{{ i18n "f-get-involved" }}</a>
+            <a href={{ "articles/contributing" | relLangURL }} class="column-element">{{ i18n "f-get-involved" }}</a>
           </li>
           <li>
             <a href="https://forums.freebsd.org/" target="_blank" class="column-element">{{ i18n "f-community-forum" }}</a>
@@ -88,14 +88,13 @@
             <a href="https://freebsdfoundation.org/donate/" target="_blank" class="column-element">{{ i18n "f-donations" }}</a>
           </li>
           <li>
-            <a href="https://www.freebsd.org/copyright/freebsd-license/" target="_blank"
-              class="column-element">{{ i18n "f-licensing" }}</a>
+            <a href="{{ "copyright/freebsd-license" | relLangURL }}" class="column-element">{{ i18n "f-licensing" }}</a>
           </li>
           <li>
-            <a href="https://www.freebsd.org/privacy/" target="_blank" class="column-element">{{ i18n "f-privacy-policy" }}</a>
+            <a href="{{ "privacy" | relLangURL }}" class="column-element">{{ i18n "f-privacy-policy" }}</a>
           </li>
           <li>
-            <a href="https://www.freebsd.org/copyright/" target="_blank" class="column-element">{{ i18n "f-legal-notices" }}</a>
+            <a href="{{ "copyright" | relLangURL }}" class="column-element">{{ i18n "f-legal-notices" }}</a>
           </li>
         </ul>
       </section>
