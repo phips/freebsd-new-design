@@ -38,9 +38,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   if (theme === "theme-dark") {
     setTheme('theme-dark');
     themeChooser.value = 'theme-dark';
-  } else if (theme === "theme-high-contrast") {
-    setTheme('theme-high-contrast');
-    themeChooser.value = 'theme-high-contrast';
   } else if (theme === "theme-light") {
     setTheme('theme-light');
     themeChooser.value = 'theme-light';
@@ -54,8 +51,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     if (theme === "theme-dark") {
       setTheme('theme-dark');
-    } else if (theme === "theme-high-contrast") {
-      setTheme('theme-high-contrast');
     } else if (theme === "theme-light") {
       setTheme('theme-light');
     } else {
