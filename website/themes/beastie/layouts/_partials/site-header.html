@@ -126,9 +126,9 @@
           </ul>
         </li>
         <li class="menu-item">
-          <input id="community" type="checkbox">
-          <a href="#" aria-label="Navigate to get Community section">
-            <label class="menu-item-description" for="community">
+          <input id="developers" type="checkbox">
+          <a href="#" aria-label="Navigate to get Developers section">
+            <label class="menu-item-description" for="developers">
               {{ i18n "h-developers" }}
               <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
             </label>
@@ -158,9 +158,9 @@
           </ul>
         </li>
         <li class="menu-item">
-          <input id="community" type="checkbox">
-          <a href="#" aria-label="Navigate to get Community section">
-            <label class="menu-item-description" for="community">
+          <input id="support" type="checkbox">
+          <a href="#" aria-label="Navigate to get Support section">
+            <label class="menu-item-description" for="support">
               {{ i18n "h-support" }}
               <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
             </label>
@@ -185,7 +185,7 @@
               <a href="{{ "support/webresources" | relLangURL }}">{{ i18n "h-webresources" }}</a>
             </li>
           </ul>
-        </li>
+        </li>          
       </ul>
     </nav>
     <div class="search-donate-container">
@@ -215,6 +215,25 @@
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
       </form>
+      <details class="i18n">
+        <summary class="lang-toggle">
+          <img src="{{ "images/language.png" | relURL }}" class="language-image" alt="{{ i18n "choose-language" }}" />
+        </summary>
+        <ul class="lang-dropdown">
+          <li>
+            <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}" class="current-lang" aria-current="page">
+              {{ .Language.LanguageName }}
+            </a>
+          </li>
+          {{ range .Translations }}
+            <li>
+              <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
+                {{ .Language.LanguageName }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </details>
       <div class="donate">
         <a href="https://freebsdfoundation.org/donate/">
           <span class="heart">❤️</span>

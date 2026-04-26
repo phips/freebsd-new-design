@@ -2,20 +2,12 @@
   <div class="footer-container">
     <section class="logo-column">
       <img src="{{ "images/beastie-right.svg" | relURL }}" width="160" height="250" alt="FreeBSD logo" />
-        <div class="options-container">
-          <div class="language-container">
-            <a id="languages" href="{{ "languages" | relLangURL }}">
-              <img src="{{ "images/language.png" | relURL }}" class="language-image" alt="{{ i18n "choose-language" }}">
-              <span>{{ .Site.Language.LanguageName }}</span>
-            </a>
-          </div>
-          <div class="theme-container">
-            <select id="theme-chooser">
-              <option value="theme-system">{{ i18n "system" }}</option>
-              <option value="theme-light">{{ i18n "light" }}</option>
-              <option value="theme-dark">{{ i18n "dark" }}</option>
-            </select>
-          </div>
+        <div class="theme-container">
+          <select id="theme-chooser">
+            <option value="theme-system">{{ i18n "system" }}</option>
+            <option value="theme-light">{{ i18n "light" }}</option>
+            <option value="theme-dark">{{ i18n "dark" }}</option>
+          </select>
         </div>
       </section>
       <section class="about-column">

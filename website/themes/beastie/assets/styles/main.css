@@ -27,7 +27,6 @@
  * SUCH DAMAGE.
  *
  */
-
 :root {
   --main-tag-padding: 30px 40px;
   --header-tag-padding: 8px 15px 8px 15px;
@@ -485,6 +484,7 @@ input[type='checkbox'] {
   background-color: var(--white);
   border: 1px solid var(--white);
   margin-top: 0px;
+  margin-right: .5rem;
 }
 
 .search input[type='text'] {
@@ -529,6 +529,58 @@ input[type='checkbox'] {
 .donate:hover a .heart,
 .heart:hover .heart {
   color: #D1332E;
+}
+
+.i18n {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-toggle {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+.lang-toggle img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--lines-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 120px;
+  z-index: 10;
+}
+
+.i18n[open] .lang-dropdown {
+  display: block;
+}
+
+.lang-dropdown li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #444;
+}
+
+.lang-dropdown li a:hover {
+  background: #F5F5F5;
+}
+
+.lang-dropdown .current-lang {
+  font-weight: bold;
+  background: #F0F0F0;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1300px) {
@@ -914,49 +966,6 @@ section.feed-flex-item {
   padding: 0 10px;
 }
 
-/* Languages page */
-ul.language-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-ul.language-list li {
-  flex: 1 0 25%;
-  list-style-type: none;
-  max-width: 25%;
-}
-
-ul.language-list li a {
-  cursor: pointer;
-  color: var(--global-font-color);
-}
-
-ul.language-list .selected {
-  font-weight: bolder;
-}
-
-.imageblock .title {
-  margin-top: .5rem;
-  padding-bottom: 0;
-  font-weight: bolder;
-  font-style: italic;
-}
-
-.literalblock {
-  margin: .75em 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  max-width: 100%;
-}
-
-.literalblock .content {
-  min-width: 0;
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 /* 404 */
 .error-section {
   display: flex;
@@ -1093,21 +1102,28 @@ table.stretch {
   width: 100%;
 }
 
+.admonitionblock table tbody tr td.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+}
+
 .admonitionblock table tbody tr td.icon i {
   display: inline-flex;
   align-items: center;
   width: auto;
-  background-position-x: .5em;
+  background-position-x: 0.5em;
   vertical-align: initial;
   font-style: normal;
-  padding-bottom: 2rem;
 }
 
 .admonitionblock table tbody tr td.icon i::after {
   content: attr(title);
-  font-family: sans-serif;
+  font-family: 'Inter var', sans-serif;
   font-weight: bolder;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   margin: -0.05em;
 }
 
@@ -1148,6 +1164,10 @@ table.stretch {
 
 .admonitionblock table tbody tr td.content .title {
   margin-top: 2rem;
+}
+
+.admonitionblock table tbody tr td.content .paragraph {
+  padding-top: 0.5rem;
 }
 
 .admonitionblock table tbody tr td.content a {
@@ -1214,6 +1234,27 @@ table.stretch {
 }
 
 /* Misc */
+.imageblock .title {
+  margin-top: .5rem;
+  padding-bottom: 0;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.literalblock {
+  margin: .75em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+.literalblock .content {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .fa {
   font-family: FontAwesome;
   font-style: normal;
@@ -1342,45 +1383,12 @@ footer {
   color: #D1332E;
 }
 
-.options-container {
-  display: flex;
-  align-items: center;
-}
-
-.theme-container {
-  display: none;
-  margin-left: 2rem;
-}
-
 .theme-container select {
   border: 1px solid #CCC;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #FCFCFD;
   color: #444;
-}
-
-.language-container {
-  display: flex;
-  align-items: center;
-}
-
-.language-container a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--global-font-color);
-  border-radius: 1px;
-  padding: .3rem;
-}
-
-.language-container a img {
-  display: inline-flex;
-  padding-right: .1rem;
-  align-items: center;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
 }
 
 @media screen and (min-width: 450px) {
