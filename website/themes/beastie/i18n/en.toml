@@ -386,15 +386,6 @@ other = "Made with"
 other = "by the FreeBSD Community"
 
 # ---------------------------------------------------
-# Languages page
-# ---------------------------------------------------
-[select-language]
-other = "Select a language"
-
-[current-selection]
-other = "Current selection:"
-
-# ---------------------------------------------------
 # 404
 # ---------------------------------------------------
 [pageNotFound]
