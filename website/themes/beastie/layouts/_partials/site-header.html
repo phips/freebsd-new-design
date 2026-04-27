@@ -185,7 +185,7 @@
               <a href="{{ "support/webresources" | relLangURL }}">{{ i18n "h-webresources" }}</a>
             </li>
           </ul>
-        </li>          
+        </li>
       </ul>
     </nav>
     <div class="search-donate-container">
@@ -221,15 +221,11 @@
         </summary>
         <ul class="lang-dropdown">
           <li>
-            <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}" class="current-lang" aria-current="page">
-              {{ .Language.LanguageName }}
-            </a>
+            <a href="{{ .Language.Lang | relLangURL }}" class="current-lang" aria-current="page">{{ .Language.LanguageName }}</a>
           </li>
           {{ range .Translations }}
             <li>
-              <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
-                {{ .Language.LanguageName }}
-              </a>
+              <a href="{{ .Language.Lang | relURL }}" lang="{{ .Language.Lang }}">{{ .Language.LanguageName }}</a>
             </li>
           {{ end }}
         </ul>
