@@ -1,6 +1,6 @@
 <h4>{{- i18n "security-advisories" -}}</h4>
 {{- $advisoriesCounter := 0 -}}
-{{- with .Site.Data.security.advisories -}}
+{{- with hugo.Data.security.advisories -}}
   {{- range (sort .advisories "date" "desc") -}}
     {{- if lt $advisoriesCounter 4 -}}
       <p>
