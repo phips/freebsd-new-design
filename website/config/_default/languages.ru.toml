@@ -1,4 +1,4 @@
 title = "The FreeBSD Project"
 contentDir = "content/ru"
-languageName = "Russian"
+label = "Russian"
 weight = 12
