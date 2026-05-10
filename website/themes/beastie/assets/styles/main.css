@@ -176,6 +176,15 @@
   box-sizing: border-box;
 }
 
+:focus-visible {
+  outline: 2px solid var(--links-color);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   scroll-padding-top: var(--header-height);
@@ -237,9 +246,9 @@ h6 { font-size: var(--size-300); }
   color: var(--global-font-color);
 }
 
-:is(h2, h3, h4, h5, h6):hover .anchor::before {
+:is(h2, h3, h4, h5, h6):hover .anchor::before,
+:is(h2, h3, h4, h5, h6):focus-within .anchor::before {
   visibility: visible;
-  transition: visibility 0s ease 0s;
 }
 
 hr {
@@ -322,7 +331,7 @@ kbd {
   background-color: #f7f7f7;
   border: 1px solid #ccc;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 0.1em #fff inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 0.1em var(--white) inset;
   margin: 0 .15em;
   padding: .2em .5em;
   vertical-align: middle;
@@ -405,8 +414,7 @@ input[type='checkbox'] {
   display: flex;
   margin-right: 1rem;
   align-items: center;
-  color: var(--white) !important;
-  margin-top: 0px !important;
+  color: var(--white);
 }
 
 .menu-item a {
@@ -426,7 +434,16 @@ input[type='checkbox'] {
 }
 
 .donate a {
-  color: var(--black) !important;
+  color: var(--black);
+}
+
+.heart {
+  font-size: 1.2rem;
+  color: #E38582;
+}
+
+.heart:hover {
+  color: #D1332E;
 }
 
 .menu-item i {
@@ -464,17 +481,16 @@ input[type='checkbox'] {
 }
 
 .sub-menu li a {
-  font-weight: normal !important;
+  font-weight: normal;
 }
 
 .sub-menu .title a {
-  font-weight: bolder !important;
+  font-weight: bolder;
 }
 
 .search-donate-container {
   display: flex;
   align-items: center;
-  margin-top: 0px;
   margin-left: auto;
 }
 
@@ -483,7 +499,6 @@ input[type='checkbox'] {
   border-radius: .4rem;
   background-color: var(--white);
   border: 1px solid var(--white);
-  margin-top: 0px;
   margin-right: .5rem;
 }
 
@@ -520,8 +535,8 @@ input[type='checkbox'] {
   border-radius: .4rem;
 }
 
-.donate a .heart,
-.heart .heart {
+/*.donate a .heart,
+.heart {
   font-size: 1.2rem;
   color: #E38582;
 }
@@ -529,7 +544,7 @@ input[type='checkbox'] {
 .donate:hover a .heart,
 .heart:hover .heart {
   color: #D1332E;
-}
+}*/
 
 .i18n {
   position: relative;
@@ -609,7 +624,7 @@ input[type='checkbox'] {
   }
 
   #menu-bars:checked~nav .menu {
-  display: block !important;
+    display: block;
   }
 
   .menu-item {
@@ -664,7 +679,9 @@ input[type='checkbox'] {
   #about:checked~.sub-menu,
   #download:checked~.sub-menu,
   #documentation:checked~.sub-menu,
-  #community:checked~.sub-menu {
+  #community:checked~.sub-menu,
+  #developers:checked~.sub-menu,
+  #support:checked~.sub-menu {
     display: flex;
   }
 
@@ -719,8 +736,7 @@ input[type='checkbox'] {
   background: var(--background-frontpage-band-color);
 }
 
-.front-page-band-content,
-section.front-page-band-content {
+.front-page-band-content {
   max-width: var(--max-width);
   margin: 0px auto;
   padding: var(--main-tag-padding);
@@ -728,8 +744,7 @@ section.front-page-band-content {
   padding-bottom: 20px;
 }
 
-.main-section,
-section.main-section {
+.main-section {
   margin: 40px 0 70px 0;
 }
 
@@ -766,25 +781,19 @@ section.main-section {
   text-align: center;
 }
 
-.downloads-container,
-section.downloads-container {
+.downloads-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 }
 
-.downloads,
-section.downloads {
-  margin: 0;
-  min-width: 275px;
-}
-
-.download-section,
-section.download-section {
+.download-section {
   flex: 0 0 20%;
-  text-align: center;
+  min-width: 275px;
+  margin: 0;
   margin-top: 50px;
+  text-align: center;
 }
 
 .download-section-title {
@@ -821,16 +830,14 @@ section.download-section {
   margin: 5px 0;
 }
 
-.why-freebsd-flex,
-section.why-freebsd-flex {
+.why-freebsd-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 30px;
 }
 
-.why-freebsd-flex-item,
-section.why-freebsd-flex-item {
+.why-freebsd-flex-item {
   flex: 1 1 30%;
   min-width: 280px;
 }
@@ -870,15 +877,13 @@ section.why-freebsd-flex-item {
 }
 
 /* Feeds section in home page */
-.feed-flex,
-section.feed-flex {
+.feed-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 20px;
 }
 
-.feed-flex-item,
-section.feed-flex-item {
+.feed-flex-item {
   background: var(--feeds-background);
   line-height: 1.3em;
   border-radius: 7px;
@@ -994,7 +999,7 @@ section.feed-flex-item {
 /* Callouts */
 .conum {
   display: inline-block;
-  color: #fff !important;
+  color: var(--white);
   background-color: #000;
   border-radius: 100px;
   text-align: center;
@@ -1006,7 +1011,7 @@ section.feed-flex-item {
 }
 
 .conum[data-value] {
-  color: #fff !important;
+  color: var(--white);
   text-align: center;
   font-size: .75em;
   line-height: 1.67em;
@@ -1218,8 +1223,8 @@ table.stretch {
 }
 
 .exampleblock .content .literalblock .content {
-  background: #fefde6 !important;
-  border: none !important;
+  background: #fefde6;
+  border: none;
   color: var(--global-font-color);
 }
 
@@ -1372,15 +1377,6 @@ footer {
   line-height: 2rem;
   color: inherit;
   font-size: inherit;
-}
-
-.heart {
-  font-size: 1.2rem;
-  color: #E38582;
-}
-
-.heart:hover {
-  color: #D1332E;
 }
 
 .theme-container select {
