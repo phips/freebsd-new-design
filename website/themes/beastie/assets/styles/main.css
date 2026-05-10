@@ -535,17 +535,6 @@ input[type='checkbox'] {
   border-radius: .4rem;
 }
 
-/*.donate a .heart,
-.heart {
-  font-size: 1.2rem;
-  color: #E38582;
-}
-
-.donate:hover a .heart,
-.heart:hover .heart {
-  color: #D1332E;
-}*/
-
 .i18n {
   position: relative;
   display: inline-block;
