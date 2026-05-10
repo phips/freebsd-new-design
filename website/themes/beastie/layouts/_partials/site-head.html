@@ -20,9 +20,6 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   <link rel="stylesheet" href="{{ "css/font-awesome-min.css" | relURL }}">
 
-  {{- $themeChooser := resources.Get "js/theme-chooser.js" | resources.Minify }}
-  <script defer src="{{ $themeChooser.RelPermalink }}"></script>
-
   <meta name="twitter:card" content="summary">
   <meta name="twitter:domain" content="docs.FreeBSD.org">
   <meta name="twitter:site" content="@freebsd">
