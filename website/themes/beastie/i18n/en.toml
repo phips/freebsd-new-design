@@ -215,64 +215,37 @@ other = "for more insights"
 other = "Native ZFS"
 
 [zfs-description]
-other = "is an outstanding storage platform that encompasses the functionality of traditional filesystems, volume managers, and more. FreeBSD is one of the few operating systems to offer it as a fully integrated feature, meaning you won’t have to worry during system upgrades."
+other = "combines the roles of a filesystem and volume manager into a single, reliable storage platform. In FreeBSD, it is fully integrated into the operating system."
 
 [virtualization-title]
 other = "Virtualization"
 
-[virtualization-description-one]
-other = "FreeBSD comes with"
-
-[virtualization-description-two]
-other = ", a feature-rich type 2 hypervisor. bhyve supports virtio hardware, PCI passthrough, and high-performance emulated NVMe. Run"
-
-[virtualization-description-three]
-other = "directly, or leverage tools like"
-
-[virtualization-description-four]
-other = "to simplify management of virtual machines."
+[virtualization-description]
+other = "is FreeBSD’s modern hypervisor, with support for virtio, PCI passthrough, and fast NVMe emulation."
 
 [jails-title]
 other = "Jails"
 
-[jails-description-one]
-other = "enable you to partition your system’s workload within isolated environments. Want to run a web server with its own isolated file system and networking? Put it in a jail. Use the built-in"
-
-[jails-description-two]
-other = "command or leverage alternative tools to make jail management trivial."
+[jails-description]
+other = "FreeBSD jails provide isolation for services and applications. Each jail can run with its own filesystem, networking, and configuration."
 
 [networking-title]
 other = "Networking"
 
 [networking-description]
-other = "The technology industry has long known FreeBSD for its excellent networking performance. Today, globally significant companies rely on the performance and stability of FreeBSD’s network stack to handle some of the most demanding loads in the world."
+other = "FreeBSD is widely recognized for its network performance and stability. It powers infrastructure that handles demanding workloads around the world."
 
 [documentation-title]
 other = "Documentation"
 
-[documentation-description-one]
-other = "FreeBSD prides itself on having comprehensive, well-written documentation. There’s the dedicated"
-
-[documentation-description-two]
-other = "portal"
-
-[documentation-description-three]
-other = ", and perhaps more importantly, it is a part of the operating system itself."
+[documentation-description]
+other = "FreeBSD includes extensive, well-maintained documentation. From the Handbook to manual pages, documentation is treated as a core part of the system."
 
 [community-title]
 other = "Community"
 
-[community-description-one]
-other = "The FreeBSD "
-
-[community-description-two]
-other = "community"
-
-[community-description-three]
-other = " is vibrant and collaborative. Groups are active across many mediums, from real-time communications to mailing lists and newsgroups. Be sure to check out the community engagement that is driven by the"
-
-[community-description-four]
-other = "FreeBSD Foundation."
+[community-description]
+other = "For over 30 years, this has been a grass roots project carried by passionate volunteers."
 
 [latest-news]
 other = "Latest news"

@@ -507,7 +507,7 @@ input[type='checkbox'] {
 .sub-menu {
   visibility: hidden;
   position: absolute;
-  top: 55px;
+  top: 3rem;
   padding: 1rem .75rem;
   min-width: 250px;
   background-color: var(--white);
@@ -788,7 +788,7 @@ input[type='checkbox'] {
 }
 
 .main-section {
-  margin: 40px 0 70px 0;
+  margin: 1rem 0 0 0;
 }
 
 .freebsd-horizontal .logo-box-image {

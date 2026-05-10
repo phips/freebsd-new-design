@@ -5,10 +5,10 @@
 other = "FreeBSD"
 
 [freebsdProject]
-other = "FreeBSD 計畫"
+other = "FreeBSD 專案"
 
 [freebsdPowerServe]
-other = "FreeBSD The Power to Serve"
+other = "FreeBSD 伺服世界的力量"
 
 [freebsdFoundation]
 other = "FreeBSD 基金會"
@@ -17,7 +17,7 @@ other = "FreeBSD 基金會"
 other = "下載 FreeBSD"
 
 [production]
-other = "Production"
+other = "正式版本"
 
 [last-modified]
 other = "最後修改於"
@@ -29,7 +29,7 @@ other = "由"
 other = "更多"
 
 [rss]
-other = "feed"
+other = "訂閱"
 
 # ---------------------------------------------------
 # Header
@@ -56,16 +56,16 @@ other = "FreeBSD"
 other = "FreeBSD 基金會"
 
 [h-code-of-conduct]
-other = "Code of Conduct"
+other = "行為準則"
 
 [h-get-freebsd]
 other = "取得 FreeBSD"
 
 [h-release-information]
-other = "Release Information"
+other = "版本資訊"
 
 [h-release-engineering]
-other = "Release Engineering"
+other = "版本工程"
 
 [h-security-advisories]
 other = "安全公告"
@@ -74,22 +74,22 @@ other = "安全公告"
 other = "文件"
 
 [h-documentation-portal]
-other = "Documentation portal"
+other = "文件入口"
 
 [h-freebsd-handbook]
-other = "FreeBSD 使用手冊"
+other = "FreeBSD 手冊"
 
 [h-porter-handbook]
-other = "FreeBSD Porter 手冊"
+other = "Ports 開發者手冊"
 
 [h-documentation-handbook]
-other = "文件計畫入門書"
+other = "文件專案手冊"
 
 [h-manual-pages]
-other = "Manual Pages"
+other = "手冊頁"
 
 [h-presentation-and-papers]
-other = "Presentations and Papers"
+other = "簡報與論文"
 
 [h-wiki]
 other = "Wiki"
@@ -104,7 +104,7 @@ other = "文章"
 other = "社群"
 
 [h-get-involved]
-other = "Get involved"
+other = "參與方式"
 
 [h-community-forum]
 other = "論壇"
@@ -113,22 +113,22 @@ other = "論壇"
 other = "郵件論壇"
 
 [h-irc-channels]
-other = "IRC Channels"
+other = "IRC 頻道"
 
 [h-bug-tracker]
-other = "Bug Tracker"
+other = "錯誤追蹤"
 
 [h-support]
 other = "支援"
 
 [h-donate]
-other = "捐贈"
+other = "捐款"
 
 [h-privacy-policy]
-other = "隱私政策"
+other = "隱私權政策"
 
 [h-projects]
-other = "Projects"
+other = "專案"
 
 [h-ports]
 other = "Ports"
@@ -137,7 +137,7 @@ other = "Ports"
 other = "論壇"
 
 [h-user-groups]
-other = "愛用者組織"
+other = "使用者群組"
 
 [h-events]
 other = "活動"
@@ -149,16 +149,16 @@ other = "FreeBSD Journal"
 other = "開發者"
 
 [h-project-ideas]
-other = "計畫構想"
+other = "專案構想"
 
 [h-git-repository]
-other = "Git 檔案庫"
+other = "Git 儲存庫"
 
 [h-git-mirror]
-other = "Git 鏡像站"
+other = "GitHub 鏡像"
 
 [h-phabricator]
-other = "程式碼審查 (Phabricator)"
+other = "程式碼審查（Phabricator）"
 
 [h-CI]
 other = "持續整合服務"
@@ -170,130 +170,103 @@ other = "供應商"
 other = "安全資訊"
 
 [h-bug-reports]
-other = "問題回報"
+other = "錯誤回報"
 
 [h-submitting-bug-reports]
-other = "提交問題回報"
+other = "提交錯誤回報"
 
 [h-webresources]
-other = "Web Resources"
+other = "網路資源"
 
 # ---------------------------------------------------
 # Main
 # ---------------------------------------------------
 [title-one]
-other = "A Powerful, Open Source"
+other = "強大且開源的"
 
 [title-two]
-other = "Operating System"
+other = "作業系統"
 
 [download-freebsd]
 other = "下載 FreeBSD"
 
 [other]
-other = "other"
+other = "其他"
 
 [announcement]
-other = "announcement"
+other = "公告"
 
 [notes]
-other = "notes"
+other = "說明"
 
 [upcoming-releases]
-other = "Upcoming Releases"
+other = "即將推出的版本"
 
 [development-snapshots]
-other = "development snapshots"
+other = "開發快照"
 
 [features-introduction-two]
-other = "features"
+other = "特色"
 
 [features-introduction-three]
-other = "for more insights"
+other = "了解更多"
 
 [zfs-title]
-other = "Native ZFS"
+other = "原生 ZFS"
 
 [zfs-description]
-other = "is an outstanding storage platform that encompasses the functionality of traditional filesystems, volume managers, and more. FreeBSD is one of the few operating systems to offer it as a fully integrated feature, meaning you won’t have to worry during system upgrades."
+other = "將檔案系統與磁碟區管理整合為單一可靠的儲存平台。在 FreeBSD 中，它已完整整合至作業系統。"
 
 [virtualization-title]
-other = "Virtualization"
+other = "虛擬化"
 
-[virtualization-description-one]
-other = "FreeBSD comes with"
-
-[virtualization-description-two]
-other = ", a feature-rich type 2 hypervisor. bhyve supports virtio hardware, PCI passthrough, and high-performance emulated NVMe. Run"
-
-[virtualization-description-three]
-other = "directly, or leverage tools like"
-
-[virtualization-description-four]
-other = "to simplify management of virtual machines."
+[virtualization-description]
+other = "是 FreeBSD 的現代化虛擬機管理程式，支援 virtio、PCI passthrough 與高速 NVMe 模擬。"
 
 [jails-title]
 other = "Jails"
 
-[jails-description-one]
-other = "enable you to partition your system’s workload within isolated environments. Want to run a web server with its own isolated file system and networking? Put it in a jail. Use the built-in"
-
-[jails-description-two]
-other = "command or leverage alternative tools to make jail management trivial."
+[jails-description]
+other = "FreeBSD jails 為服務與應用程式提供隔離環境。每個 jail 都能擁有自己的檔案系統、網路與設定。"
 
 [networking-title]
-other = "Networking"
+other = "網路"
 
 [networking-description]
-other = "The technology industry has long known FreeBSD for its excellent networking performance. Today, globally significant companies rely on the performance and stability of FreeBSD’s network stack to handle some of the most demanding loads in the world."
+other = "FreeBSD 以優異的網路效能與穩定性聞名，支撐全球高負載基礎設施。"
 
 [documentation-title]
-other = "Documentation"
+other = "文件"
 
-[documentation-description-one]
-other = "FreeBSD prides itself on having comprehensive, well-written documentation. There’s the dedicated"
-
-[documentation-description-two]
-other = "portal"
-
-[documentation-description-three]
-other = ", and perhaps more importantly, it is a part of the operating system itself."
+[documentation-description]
+other = "FreeBSD 提供完整且維護良好的文件。從 Handbook 到手冊頁，文件被視為系統核心的一部分。"
 
 [community-title]
-other = "Community"
+other = "社群"
 
-[community-description-one]
-other = "The FreeBSD "
-
-[community-description-two]
-other = "community"
-
-[community-description-three]
-other = " is vibrant and collaborative. Groups are active across many mediums, from real-time communications to mailing lists and newsgroups. Be sure to check out the community engagement that is driven by the"
-
-[community-description-four]
-other = "FreeBSD Foundation."
+[community-description]
+other = "三十多年來，這個專案一直由充滿熱情的志工共同推動。"
 
 [latest-news]
-other = "最新新聞"
+other = "最新消息"
 
 [upcoming-events]
-other = "近期活動"
+other = "即將舉辦的活動"
 
 [press]
-other = "媒體報導"
+other = "媒體"
 
 [security-advisories]
 other = "安全公告"
 
 [errata-notices]
-other = "勘誤公告"
+other = "勘誤通知"
 
 # ---------------------------------------------------
 # Footer
 # ---------------------------------------------------
 [system]
-other = "System"
+other = "系統"
 
 [light]
 other = "淺色"
@@ -317,7 +290,7 @@ other = "FreeBSD 基金會"
 other = "取得 FreeBSD"
 
 [f-code-of-conduct]
-other = "Code of Conduct"
+other = "行為準則"
 
 [f-security-advisories]
 other = "安全公告"
@@ -326,16 +299,16 @@ other = "安全公告"
 other = "文件"
 
 [f-documentation-portal]
-other = "Documentation portal"
+other = "文件入口"
 
 [f-manual-pages]
-other = "Manual Pages"
+other = "手冊頁"
 
 [f-presentation-and-papers]
-other = "Presentations and Papers"
+other = "簡報與論文"
 
 [f-previous-versions]
-other = "先前版本"
+other = "舊版本"
 
 [f-44bsd-documents]
 other = "4.4BSD 文件"
@@ -347,397 +320,40 @@ other = "Wiki"
 other = "社群"
 
 [f-get-involved]
-other = "Get involved"
+other = "參與方式"
 
 [f-community-forum]
-other = "論壇"
+other = "社群論壇"
 
 [f-mailing-lists]
 other = "郵件論壇"
 
 [f-irc-channels]
-other = "IRC Channels"
+other = "IRC 頻道"
 
 [f-bug-tracker]
-other = "Bug Tracker"
+other = "錯誤追蹤"
 
 [f-legal]
-other = "法律"
+other = "法律資訊"
 
 [f-donations]
-other = "捐贈"
+other = "捐款"
 
 [f-licensing]
-other = "Licensing"
+other = "授權"
 
 [f-privacy-policy]
-other = "隱私政策"
+other = "隱私權政策"
 
 [f-legal-notices]
 other = "法律聲明"
 
 [f-all-rights-reserved]
-other = "FreeBSD 計畫. 保留所有權利"
+other = "FreeBSD 專案。保留所有權利"
 
 [f-made-with]
-other = "Made with"
+other = "由"
 
 [f-by-freebsd-community]
-other = "由 FreeBSD 社群"
-
-# ---------------------------------------------------
-# Languages page
-# ---------------------------------------------------
-[select-language]
-other = "Select a language"
-
-[current-selection]
-other = "Current selection:"
-
-# ---------------------------------------------------
-# 404
-# ---------------------------------------------------
-[pageNotFound]
-other = "Page not found."
-
-[notFoundTitle]
-other = "We could not find the page you requested."
-
-[notFoundDesc]
-other = "Please try your request again, use one of the links in the navigation menu, or the search box at the top of the page."
-
-# ---------------------------------------------------
-# Ports form
-# ---------------------------------------------------
-[ports-search]
-other = "Search ports for:"
-
-[all]
-other = "All"
-
-[package-name]
-other = "Package Name"
-
-[description]
-other = "Description"
-
-[long-description]
-other = "Long description"
-
-[maintainer]
-other = "Maintainer"
-
-[requires]
-other = "Requires"
-
-[submit]
-other = "Submit"
-
-# Months
-[1]
-other = "January"
-
-[2]
-other = "February"
-
-[3]
-other = "March"
-
-[4]
-other = "April"
-
-[5]
-other = "May"
-
-[6]
-other = "June"
-
-[7]
-other = "July"
-
-[8]
-other = "August"
-
-[9]
-other = "September"
-
-[10]
-other = "October"
-
-[11]
-other = "November"
-
-[12]
-other = "December"
-
-# Security section
-[data]
-other = "Data"
-
-[errataNoticeName]
-other = "Errata Notice name"
-
-[advisoryName]
-other = "Advisory name"
-
-# Events section
-[currentEvents]
-other = "Current/Upcoming Events:"
-
-[pastEvents]
-other = "Past Events:"
-
-[upcomingFreeBSDEvents]
-other = "Upcoming FreeBSD Events"
-
-# Continents, countries
-[europe]
-other = "Europe"
-
-[africa]
-other = "Africa"
-
-[australia]
-other = "Australia"
-
-[newZealand]
-other = "New Zealand"
-
-[northAmerica]
-other = "North America"
-
-[asia]
-other = "Asia"
-
-[southAmerica]
-other = "South America"
-
-[oceania]
-other = "Oceania"
-
-[global]
-other = "Global"
-
-# Commercial software
-[databases]
-other = "Databases"
-
-[developmentTools]
-other = "Development Tools"
-
-[ecommerce]
-other = "E-Commerce Solutions and Tools"
-
-[email]
-other = "Electronic Mail Software"
-
-[misc]
-other = "Miscellaneous"
-
-[network]
-other = "Network Systems and Applications"
-
-[scientific]
-other = "Scientific and Language Tools"
-
-[security]
-other = "Security"
-
-[isp]
-other = "System Administration / ISP"
-
-# sidenav
-[applications]
-other = "Applications"
-
-[administration]
-other = "Administration"
-
-[news]
-other = "News"
-
-[pressSidenav]
-other = "Press"
-
-[multimedia]
-other = "Multimedia"
-
-[art]
-other = "Artwork"
-
-[logo]
-other = "Logo"
-
-[donations]
-other = "捐贈"
-
-[privacy]
-other = "隱私政策"
-
-[mailinglists]
-other = "郵件論壇"
-
-[newsgroups]
-other = "Newsgroups"
-
-[usergroups]
-other = "愛用者組織"
-
-[sourceCodeRepositories]
-other = "Source code repositories"
-
-[releng]
-other = "Release Engineering"
-
-[platforms]
-other = "Platforms"
-
-[ideas]
-other = "Project Ideas"
-
-[contributing]
-other = "Contributing"
-
-[FAQ]
-other = "FAQ"
-
-[man]
-other = "Manual Pages"
-
-[papers]
-other = "Presentations and Papers"
-
-[booksArticles]
-other = "Books and Articles Online"
-
-[publications]
-other = "Publications"
-
-[newbies]
-other = "新手上路"
-
-[docproj]
-other = "文件計畫"
-
-[archive]
-other = "Archive"
-
-[releases]
-other = "Release Information"
-
-[productionRelease]
-other = "Production Release"
-
-[upcomingRelease]
-other = "Upcoming Release"
-
-[snapshotReleases]
-other = "Snapshot Releases"
-
-[portedApplications]
-other = "Ported Applications"
-
-[gnome]
-other = "GNOME"
-
-[installationInstructions]
-other = "Installation Instructions"
-
-[upgradeInstructions]
-other = "Upgrade Instructions"
-
-[availableApplications]
-other = "Available Applications"
-
-[howHelp]
-other = "How to Help"
-
-[reportingBug]
-other = "Reporting a Bug"
-
-[screenshots]
-other = "Screenshots"
-
-[contactUs]
-other = "Contact Us"
-
-[HALFAQ]
-other = "HAL FAQ"
-
-[upgradeFAQ]
-other = "2.30 to 2.32 Upgrade FAQ"
-
-[developmentBranchFAQ]
-other = "Development Branch FAQ"
-
-[creatingPorts]
-other = "Creating Ports"
-
-[knownIssues]
-other = "Known Issues"
-
-[aboutPorts]
-other = "About ports"
-
-[installing]
-other = "Installing"
-
-[updating]
-other = "Updating"
-
-[searching]
-other = "Searching"
-
-[categories]
-other = "Categories"
-
-[alphabetically]
-other = "listed alphabetically"
-
-[logicalGroup]
-other = "listed by logical group"
-
-[allPorts]
-other = "List of All Ports"
-
-[moreInformation]
-other = "For More Information"
-
-[software]
-other = "Software"
-
-[hardware]
-other = "Hardware"
-
-[consulting]
-other = "Consulting"
-
-[ispCommercial]
-other = "Internet Service Providers"
-
-[securityInfo]
-other = "Security Information"
-
-[advisories]
-other = "Advisories"
-
-[errataNoticesSidenav]
-other = "Errata Notices"
-
-[unsupportedReleases]
-other = "Unsupported Releases"
-
-[readSecurityAdvisories]
-other = "How to read FreeBSD Security Advisories"
-
-[charterSecurityOfficerTeam]
-other = "Charter for the Security Officer and Team"
-
-[bugreports]
-other = "Bug Reports"
-
-[submitPR]
-other = "Submit a Problem Report"
-
-[webresources]
-other = "Web Resources"
+other = "FreeBSD 社群打造"
