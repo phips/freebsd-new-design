@@ -245,7 +245,7 @@ other = "FreeBSD includes extensive, well-maintained documentation. From the Han
 other = "Community"
 
 [community-description]
-other = "For over 30 years, this has been a grass roots project carried by passionate volunteers."
+other = "FreeBSD has a vibrant and collaborative community, from individual contributors to large corporate organisations. Groups are active across various channels, from real-time communications to mailing lists and newsgroups."
 
 [latest-news]
 other = "Latest news"
